@@ -1,0 +1,20 @@
+{
+  "name": "bible-verse-analyzer",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Bible verse analysis agent for linguistic and theological analysis",
+  "main": "single_verse_analyzer.js",
+  "scripts": {
+    "analyze": "node single_verse_analyzer.js",
+    "test": "node test_analyzer.js",
+    "batch": "node batch_processor.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.64.0",
+    "pg": "^8.11.3",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
