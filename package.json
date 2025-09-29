@@ -1,26 +1,29 @@
 {
   "name": "bible-transcription-site",
   "version": "1.0.0",
-  "description": "성경 필사를 위한 웹사이트입니다.",
-  "main": "check_database.js",
+  "description": "Bible verse analysis and transcription site",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
+    "dev": "node agents/single_verse_analyzer.js",
+    "migrate": "node scripts/apply_supabase_schema.js",
+    "extract-data": "node scripts/extract_local_data.js",
+    "upload-data": "node scripts/upload_to_supabase.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zzoony/bible-transcription-site.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/zzoony/bible-transcription-site/issues"
-  },
-  "homepage": "https://github.com/zzoony/bible-transcription-site#readme",
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.64.0",
-    "dotenv": "^17.2.2",
-    "pg": "^8.16.3"
-  }
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "bible",
+    "analysis",
+    "transcription",
+    "linguistics",
+    "supabase"
+  ],
+  "author": "",
+  "license": "MIT"
 }
