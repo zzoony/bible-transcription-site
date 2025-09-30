@@ -18,6 +18,16 @@ export interface ShareModalProps {
   onOpenChange: (open: boolean) => void
 }
 
+/**
+ * Renders a dialog allowing the user to share a verse via copy link, Twitter, Facebook, or email.
+ *
+ * The component computes a share URL from the current page and a share text from the provided `verse`.
+ *
+ * @param verse - Verse object used to build the display text and share content (book, chapter, verse, text).
+ * @param open - Whether the dialog is open.
+ * @param onOpenChange - Callback invoked when the dialog open state changes.
+ * @returns The share modal React element.
+ */
 export function ShareModal({ verse, open, onOpenChange }: ShareModalProps) {
   const [copied, setCopied] = useState(false)
 

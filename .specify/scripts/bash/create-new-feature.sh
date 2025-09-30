@@ -18,7 +18,9 @@ if [ -z "$FEATURE_DESCRIPTION" ]; then
     exit 1
 fi
 
-# Function to find the repository root by searching for existing project markers
+# find_repo_root searches upward from DIR for a directory containing a `.git` or `.specify` marker and echoes the first matching directory.
+# DIR is the starting directory to begin the search.
+# Exits with status 0 and prints the repository root path when found; returns 1 if no marker is found.
 find_repo_root() {
     local dir="$1"
     while [ "$dir" != "/" ]; do

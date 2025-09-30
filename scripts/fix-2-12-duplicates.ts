@@ -13,6 +13,11 @@ const supabaseKey = process.env.SUPABASE_SERVICE_KEY!
 
 const supabase = createClient(supabaseUrl, supabaseKey)
 
+/**
+ * Remove duplicate sentence_structures for Philippians 2:12 by keeping the most recent record for each sequence_order.
+ *
+ * Queries the verse with reference "Philippians 2:12" and its related sentence_structures; for every sequence_order that has multiple records, preserves the record with the highest `id` and deletes the others. The function exits early if the verse or structures are not found and logs progress and final verification details.
+ */
 async function fixDuplicates() {
   console.log('🔍 Finding duplicates in Philippians 2:12...\n')
 

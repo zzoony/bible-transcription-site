@@ -12,6 +12,14 @@ export interface HeaderProps {
   className?: string
 }
 
+/**
+ * Renders the application header containing the logo, navigation links, an optional mobile menu button, and a theme toggle.
+ *
+ * @param onMenuClick - Callback invoked when the mobile menu button is clicked.
+ * @param showMobileMenu - If true, shows the mobile menu button (hidden on medium and larger screens).
+ * @param className - Additional CSS classes to apply to the header element.
+ * @returns The header JSX element used as the top navigation bar.
+ */
 export function Header({
   onMenuClick,
   showMobileMenu = false,

@@ -6,6 +6,12 @@ export interface FooterProps {
   className?: string
 }
 
+/**
+ * Renders the site footer with About, Quick Links, and Credits sections and the current year.
+ *
+ * @param className - Optional CSS class names to append to the footer container
+ * @returns The footer element containing site information, navigation links, credits, and a copyright line showing the current year
+ */
 export function Footer({ className }: FooterProps) {
   const currentYear = new Date().getFullYear()
 

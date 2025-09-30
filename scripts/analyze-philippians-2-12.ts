@@ -57,6 +57,10 @@ const ANALYSIS_PROMPT = `당신은 성경 언어학 전문가입니다. 다음 N
 2. 복잡한 문장은 의미 단위로 분리
 3. JSON 형식을 정확히 지켜주세요`
 
+/**
+ * Orchestrates analysis of Philippians 2:12 by retrieving the verse, sending it to Anthropic Claude for structured linguistic analysis, and storing the resulting sentence structures, vocabulary, contextual explanation, Korean translation, and special explanation into Supabase tables.
+ *
+ * Performs database reads and writes and logs progress and errors; returns early if the verse cannot be retrieved. */
 async function analyzeVerse() {
   console.log('🔍 Analyzing Philippians 2:12...\n')
 

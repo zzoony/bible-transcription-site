@@ -34,6 +34,12 @@ export const metadata: Metadata = {
   },
 }
 
+/**
+ * Application root layout that wraps page content with HTML/body, theme handling, header, main content container, and footer.
+ *
+ * @param children - The page content to render inside the layout's main area.
+ * @returns The top-level HTML structure for the application with theme provider, header, main container, and footer.
+ */
 export default function RootLayout({
   children,
 }: {

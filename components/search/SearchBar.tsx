@@ -18,6 +18,22 @@ export interface SearchBarProps {
   className?: string
 }
 
+/**
+ * Render a search input with debounced querying, optional clear button, and an optional autocomplete suggestions dropdown.
+ *
+ * The component manages input state, debounces calls to `onSearch`, shows suggestions when `showAutocomplete` is true and the input has at least two characters, and exposes handlers for clearing and selecting suggestions.
+ *
+ * @param onSearch - Called with the trimmed query when a search should be performed.
+ * @param onClear - Optional callback invoked when the input is cleared.
+ * @param placeholder - Placeholder text for the input.
+ * @param defaultValue - Initial input value.
+ * @param debounceMs - Debounce delay in milliseconds before invoking `onSearch`.
+ * @param showAutocomplete - Whether to show the autocomplete dropdown when suggestions are available.
+ * @param autocompleteSuggestions - Array of suggestion strings shown in the dropdown.
+ * @param onSuggestionSelect - Optional callback invoked with the suggestion when a suggestion is chosen.
+ * @param className - Optional additional class names applied to the component container.
+ * @returns The SearchBar React element.
+ */
 export function SearchBar({
   onSearch,
   onClear,

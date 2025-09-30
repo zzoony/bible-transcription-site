@@ -5,6 +5,19 @@ import { supabase } from '@/lib/supabase'
 import { parseVerseReference } from '@/lib/utils'
 import type { VerseAnalysis, VerseLoadingState } from '@/lib/types'
 
+/**
+ * Hook that manages loading and retrieval of verse analysis data by reference.
+ *
+ * Provides reactive state for the currently requested reference, loading status, any error message, and the loaded VerseAnalysis, plus functions to fetch a verse by reference and to reset state.
+ *
+ * @returns An object containing:
+ * - `reference`: the last requested verse reference or `null`
+ * - `isLoading`: `true` while a fetch is in progress, `false` otherwise
+ * - `error`: an error message string when a fetch fails, or `null`
+ * - `data`: the loaded `VerseAnalysis` object when available, or `null`
+ * - `fetchVerse(reference: string)`: function to initiate fetching analysis for the given verse reference
+ * - `clear()`: function to reset the hook state to its initial values
+ */
 export function useVerse() {
   const [state, setState] = useState<VerseLoadingState>({
     reference: null,

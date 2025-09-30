@@ -32,6 +32,15 @@ interface MissingStructure {
   missing_text?: string
 }
 
+/**
+ * Verifies that each verse in the database has sentence structures and reports missing or potentially incomplete analyses.
+ *
+ * Queries the `verses` table (optionally filtered to a book by prefix), counts associated `sentence_structures` per verse,
+ * identifies verses with zero structures and verses where the estimated sentence count (from NIV text) exceeds the structure count,
+ * and prints a concise statistics and report to the console.
+ *
+ * @param bookName - Optional book name prefix to limit the check to verses whose `reference` starts with this value (case-insensitive)
+ */
 async function verifyCompleteness(bookName?: string) {
   console.log('🔍 Verifying Bible Analysis Completeness\n')
 
@@ -146,6 +155,12 @@ async function verifyCompleteness(bookName?: string) {
   console.log('='.repeat(60))
 }
 
+/**
+ * Estimate the number of sentences in a string.
+ *
+ * @param text - The input text to analyze; sentence boundaries are detected by `.` `!` or `?` characters.
+ * @returns The estimated number of sentences based on occurrences of `.`, `!`, or `?`. Returns `1` if none are found.
+ */
 function countSentences(text: string): number {
   // Count sentences by periods, exclamation marks, question marks
   // This is a rough estimate

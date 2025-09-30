@@ -4,6 +4,13 @@ import type { SearchResponse, SearchResult } from '@/lib/types'
 import { koreanBookToEnglish } from '@/lib/bible-books'
 import { parseVerseReference } from '@/lib/utils'
 
+/**
+ * Handle GET /api/search requests and return paginated verse search results.
+ *
+ * Validates query parameters (`q`, `book`, `chapter`, `limit`, `offset`), performs a database search (optionally full-text when `q` is not `*`), filters by book or chapter when provided, maps and sorts matching verses, and returns a paginated SearchResponse.
+ *
+ * @returns A JSON `SearchResponse` containing `query`, `results`, `total`, `limit`, `offset`, and `hasMore` on success; on failure returns a JSON error object with an appropriate HTTP status code and message.
+ */
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
   const query = searchParams.get('q')
@@ -155,7 +162,11 @@ export async function GET(request: NextRequest) {
 }
 
 /**
- * Highlight search terms in text with <mark> tags
+ * Wraps occurrences of words from `query` found in `text` with `<mark>` tags.
+ *
+ * @param text - The original text to highlight
+ * @param query - Space-separated search terms to highlight within `text`
+ * @returns The input `text` with each match of any query word wrapped in `<mark>` tags
  */
 function highlightSearchTerms(text: string, query: string): string {
   // Simple word-based highlighting
@@ -174,7 +185,10 @@ function highlightSearchTerms(text: string, query: string): string {
 }
 
 /**
- * Escape special regex characters
+ * Escapes regular-expression metacharacters in a string.
+ *
+ * @param str - The input text to escape
+ * @returns The input with characters that have special meaning in regular expressions escaped so it can be used safely in a RegExp
  */
 function escapeRegex(str: string): string {
   return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')

@@ -3,6 +3,14 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Home, Search } from 'lucide-react'
 
+/**
+ * Renders a centered 404 "Page Not Found" UI with actions to go home or search.
+ *
+ * Displays a prominent "404" heading, a brief explanatory message, and two action
+ * buttons linking to the home page and the search page.
+ *
+ * @returns The JSX element for the NotFound page
+ */
 export default function NotFound() {
   return (
     <div className="flex min-h-[60vh] items-center justify-center">

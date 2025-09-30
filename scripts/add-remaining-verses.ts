@@ -104,6 +104,15 @@ interface VerseAnalysis {
   }
 }
 
+/**
+ * Produce a structured verse analysis by sending the given verse reference and NIV text to Claude and parsing the returned JSON.
+ *
+ * Sends the analysis prompt with the verse reference and NIV text to the Anthropic (Claude) model and parses the model's JSON response into a `VerseAnalysis` object.
+ *
+ * @param reference - Verse reference (e.g., "Philippians 2:5")
+ * @param nivText - The verse text in NIV
+ * @returns The parsed `VerseAnalysis` object if analysis and JSON extraction succeed, `null` otherwise
+ */
 async function analyzeVerseWithClaude(reference: string, nivText: string): Promise<VerseAnalysis | null> {
   try {
     const message = await anthropic.messages.create({
@@ -138,6 +147,18 @@ async function analyzeVerseWithClaude(reference: string, nivText: string): Promi
   }
 }
 
+/**
+ * Persist a verse analysis into the database across related tables.
+ *
+ * Inserts sentence structures, vocabulary entries, contextual explanations, Korean translations,
+ * and special explanations for the specified verse and, if all inserts succeed, marks the verse
+ * record as analyzed.
+ *
+ * @param verseId - The numeric ID of the verse row to associate the inserted records with
+ * @param reference - Human-readable verse reference (e.g., "Philippians 1:1")
+ * @param analysis - The parsed `VerseAnalysis` payload containing sections to persist
+ * @returns `true` if all inserts succeeded and the verse was marked as analyzed, `false` otherwise.
+ */
 async function insertVerseAnalysis(verseId: number, reference: string, analysis: VerseAnalysis): Promise<boolean> {
   try {
     let allSuccess = true
@@ -259,6 +280,13 @@ async function insertVerseAnalysis(verseId: number, reference: string, analysis:
   }
 }
 
+/**
+ * Process a list of verses by analyzing each verse's text and persisting the resulting analysis, returning counts of successful and failed verse operations.
+ *
+ * @param verses - Array of verse objects with properties: `id` (database id), `reference` (verse reference string), and `niv_text` (verse text in NIV)
+ * @param chapterName - Human-readable chapter or group name used in logs and summaries
+ * @returns An object with `successCount` (number of verses fully inserted) and `errorCount` (number of verses that failed or partially failed)
+ */
 async function processVerses(verses: Array<{ id: number, reference: string, niv_text: string }>, chapterName: string) {
   let successCount = 0
   let errorCount = 0
@@ -302,6 +330,14 @@ async function processVerses(verses: Array<{ id: number, reference: string, niv_
   return { successCount, errorCount }
 }
 
+/**
+ * Orchestrates analysis and insertion of missing Philippians verse structures into Supabase.
+ *
+ * Fetches all Philippians verses, identifies those without `sentence_structures`, processes missing
+ * verses grouped by Chapter 2, Chapter 4, and other verses via `processVerses`, aggregates success
+ * and error counts, and performs a final verification. Logs progress, summaries, and any verses
+ * still missing structures.
+ */
 async function main() {
   console.log('🚀 Adding remaining missing verses to Supabase\n')
 

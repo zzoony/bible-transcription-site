@@ -13,6 +13,11 @@ const supabaseKey = process.env.SUPABASE_SERVICE_KEY!
 
 const supabase = createClient(supabaseUrl, supabaseKey)
 
+/**
+ * Logs the verse and its associated sentence structures for "Philippians 2:12" to the console.
+ *
+ * If the verse is not found, logs '❌ Verse not found' and returns early.
+ */
 async function checkVerse() {
   const { data: verse } = await supabase
     .from('verses')

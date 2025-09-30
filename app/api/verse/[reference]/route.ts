@@ -3,6 +3,18 @@ import { createServerClient } from '@/lib/supabase'
 import { parseVerseReference } from '@/lib/utils'
 import type { VerseAnalysisResponse, VerseAnalysis } from '@/lib/types'
 
+/**
+ * Handle GET requests for a verse reference and return the verse analysis.
+ *
+ * This endpoint accepts a route parameter `reference` (e.g., "book-chapter-verse" or "Book Chapter:Verse"), validates and normalizes it, looks up the verse and its related analysis data, and responds with a JSON payload describing whether the verse was found and, if so, the assembled analysis.
+ *
+ * @param request - The incoming NextRequest (unused for body parsing; used for request context).
+ * @param params - Route parameters object containing `reference`, the verse identifier to query.
+ * @returns A JSON response with a `VerseAnalysisResponse`:
+ *          - If the verse is found: `{ reference, found: true, data: VerseAnalysis }`.
+ *          - If not found or the reference is invalid: `{ reference, found: false, data: null, error?: string, message?: string }`.
+ *          - On internal errors: includes `error` and `message` describing the failure.
+ */
 export async function GET(
   request: NextRequest,
   { params }: { params: { reference: string } }

@@ -18,6 +18,24 @@ export interface SearchResultsProps {
   className?: string
 }
 
+/**
+ * Render paginated search results with optional loading and empty states.
+ *
+ * Displays a loading indicator when `isLoading` is true, an empty-state message when `results` is empty,
+ * and otherwise shows a header with total/result summary, a list of result cards, and pagination controls.
+ *
+ * @param results - Array of search result items to render
+ * @param total - Total number of matching results across all pages
+ * @param limit - Number of results per page
+ * @param offset - Current result offset (0-based)
+ * @param hasMore - Whether additional results are available beyond the current page
+ * @param query - Optional search query string to show in the header
+ * @param isLoading - When true, shows the loading state instead of results
+ * @param onPageChange - Optional callback invoked with the new offset when the user navigates pages
+ * @param onResultClick - Optional callback invoked with a result `reference` when a result is clicked
+ * @param className - Optional CSS class applied to the root container
+ * @returns A React element containing the results header, list, and pagination controls
+ */
 export function SearchResults({
   results,
   total,

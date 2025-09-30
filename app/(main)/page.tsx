@@ -5,6 +5,15 @@ import { useRouter } from 'next/navigation'
 import { SearchBar } from '@/components/search/SearchBar'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
+/**
+ * Render the Home page containing the search bar, feature cards, and a persisted "Recent Searches" list.
+ *
+ * The component persists up to 5 most recent, deduplicated queries to localStorage (when available),
+ * updates that list when a new search is performed, and navigates to `/search?q={encoded query}` for searches
+ * and recent-search clicks. On mount it attempts to load persisted recent searches from localStorage.
+ *
+ * @returns The Home page React element
+ */
 export default function HomePage() {
   const router = useRouter()
   const [recentSearches, setRecentSearches] = useState<string[]>([])
