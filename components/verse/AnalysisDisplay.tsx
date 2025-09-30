@@ -8,6 +8,15 @@ export interface AnalysisDisplayProps {
   className?: string
 }
 
+/**
+ * Renders a card-based, sectioned view of a verse analysis.
+ *
+ * Renders zero or more sections (sentence structure, vocabulary, contextual explanation, Korean translation, special explanation) based on which fields are present in the provided analysis; if no data is available, renders an empty-state card.
+ *
+ * @param analysis - The VerseAnalysis object used to populate each section. Sections are rendered only when their corresponding data is present and non-empty.
+ * @param className - Optional CSS class applied to the root container element.
+ * @returns A React element that displays the analysis as a series of cards or an empty-state message when no analysis data exists.
+ */
 export function AnalysisDisplay({ analysis, className }: AnalysisDisplayProps) {
   return (
     <div className={className} data-testid="analysis-display">

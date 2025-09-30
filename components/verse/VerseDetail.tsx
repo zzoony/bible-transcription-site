@@ -16,6 +16,20 @@ export interface VerseDetailProps {
   className?: string
 }
 
+/**
+ * Renders a detailed view of a verse including its reference, text, analysis, and action controls.
+ *
+ * Shows optional back, copy, and share actions, displays loading state when requested, and manages
+ * copy success feedback and share modal visibility.
+ *
+ * @param analysis - The verse analysis containing verse metadata and text to display
+ * @param onBack - Optional callback invoked when the Back button is clicked
+ * @param onCopy - Optional callback invoked after a successful copy action
+ * @param onShare - Optional callback invoked when the Share action is triggered
+ * @param isLoading - If true, renders a loading placeholder instead of the verse content
+ * @param className - Optional CSS class names applied to the outer container
+ * @returns The rendered verse detail React element
+ */
 export function VerseDetail({
   analysis,
   onBack,

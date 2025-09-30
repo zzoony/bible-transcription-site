@@ -232,7 +232,12 @@ export interface PaginationMeta {
   totalPages: number
 }
 
-// Type Guards
+/**
+ * Determines whether a value represents a Verse entity.
+ *
+ * @param obj - The value to test
+ * @returns `true` if `obj` has string `reference` and `text` properties and can be treated as a `Verse`, `false` otherwise.
+ */
 
 export function isVerse(obj: unknown): obj is Verse {
   return (
@@ -245,6 +250,11 @@ export function isVerse(obj: unknown): obj is Verse {
   )
 }
 
+/**
+ * Determines whether a value conforms to the SearchResponse interface shape.
+ *
+ * @returns `true` if `obj` conforms to `SearchResponse`, `false` otherwise.
+ */
 export function isSearchResponse(obj: unknown): obj is SearchResponse {
   return (
     typeof obj === 'object' &&
@@ -256,6 +266,12 @@ export function isSearchResponse(obj: unknown): obj is SearchResponse {
   )
 }
 
+/**
+ * Checks whether a value conforms to the `VerseAnalysisResponse` shape.
+ *
+ * @param obj - The value to test
+ * @returns `true` if `obj` is a `VerseAnalysisResponse`, `false` otherwise.
+ */
 export function isVerseAnalysisResponse(
   obj: unknown
 ): obj is VerseAnalysisResponse {

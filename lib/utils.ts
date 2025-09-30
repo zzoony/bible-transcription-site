@@ -2,14 +2,21 @@ import { type ClassValue, clsx } from 'clsx'
 import { twMerge } from 'tailwind-merge'
 import { parseKoreanReference } from './bible-books'
 
+/**
+ * Merge CSS class inputs into a single class string and resolve Tailwind utility conflicts.
+ *
+ * @param inputs - One or more class name inputs (strings, arrays, objects, etc.) compatible with `clsx`
+ * @returns The final class string with combined values and Tailwind classes deduplicated/merged
+ */
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
 /**
- * Parse verse reference string into components
- * @param reference - e.g., "Philippians 3:1", "philippians-3-1", "빌립보서 3:1"
- * @returns Object with book, chapter, verse
+ * Parse a verse reference string into its book, chapter, and verse components.
+ *
+ * @param reference - Verse string in formats like "Philippians 3:1", "philippians-3-1", or Korean "빌립보서 3:1"
+ * @returns An object with `book`, `chapter`, and `verse` when parsing succeeds, or `null` if the string cannot be parsed
  */
 export function parseVerseReference(reference: string): {
   book: string
@@ -47,11 +54,12 @@ export function parseVerseReference(reference: string): {
 }
 
 /**
- * Format verse reference for URL
- * @param book - Book name
+ * Create a URL-safe verse reference string.
+ *
+ * @param book - Book name (will be lowercased in the output)
  * @param chapter - Chapter number
  * @param verse - Verse number
- * @returns URL-safe reference string
+ * @returns A string in the form `book-chapter-verse` where `book` is lowercased
  */
 export function formatVerseReference(
   book: string,
@@ -62,11 +70,12 @@ export function formatVerseReference(
 }
 
 /**
- * Format verse reference for display
- * @param book - Book name
+ * Produce a human-readable verse reference.
+ *
+ * @param book - Book name (e.g., "Philippians")
  * @param chapter - Chapter number
  * @param verse - Verse number
- * @returns Human-readable reference string
+ * @returns The reference formatted as "Book Chapter:Verse" (e.g., "Philippians 3:1")
  */
 export function formatVerseDisplay(
   book: string,

@@ -1,6 +1,16 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { WifiOff } from 'lucide-react'
 
+/**
+ * Render a centered offline notice card for users with no network connection.
+ *
+ * Displays a WifiOff icon, a heading stating "You're Offline", and two explanatory
+ * paragraphs (one prompting the user to check their connection and one noting
+ * that cached content may still be available). This component is purely
+ * presentational and has no state or side effects.
+ *
+ * @returns A JSX element containing the centered offline notice card.
+ */
 export default function OfflinePage() {
   return (
     <div className="flex min-h-[60vh] items-center justify-center">

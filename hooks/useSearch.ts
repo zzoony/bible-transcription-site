@@ -5,6 +5,29 @@ import { supabase } from '@/lib/supabase'
 import type { SearchResult, SearchQuery, SearchState } from '@/lib/types'
 import { parseVerseReference } from '@/lib/utils'
 
+/**
+ * React hook that manages verse search state and operations against the Supabase backend.
+ *
+ * Provides query text, optional filters, current results, pagination, loading and error state,
+ * and actions to perform searches, clear state, update query/filters, and paginate.
+ *
+ * @returns An object with the current search state and control methods:
+ * - `query` — current search string
+ * - `filters` — active filters (`book` and/or `chapter`)
+ * - `results` — current page of `SearchResult` items
+ * - `total` — total number of matching results
+ * - `limit` — page size
+ * - `offset` — current result offset
+ * - `hasMore` — `true` if more results are available beyond the current page, `false` otherwise
+ * - `isLoading` — `true` while a search is in progress, `false` otherwise
+ * - `error` — error message when a search fails, or `null`
+ * - `search(params)` — performs a search using a partial `SearchQuery` (supports `q`, `limit`, `offset`, `book`, `chapter`)
+ * - `clear()` — resets the hook to its initial state
+ * - `setQuery(query)` — updates only the `query` in state
+ * - `setFilters(filters)` — updates only the `filters` in state
+ * - `nextPage()` — advances to the next page when `hasMore` is `true`
+ * - `previousPage()` — moves to the previous page when `offset > 0`
+ */
 export function useSearch() {
   const [state, setState] = useState<SearchState>({
     query: '',

@@ -6,6 +6,13 @@ import { VerseDetail } from '@/components/verse/VerseDetail'
 import { useVerse } from '@/hooks/useVerse'
 import { Card, CardContent } from '@/components/ui/card'
 
+/**
+ * Page component that displays a Bible verse identified by the route `reference`, handling loading, error, and success states.
+ *
+ * When the `reference` route parameter is present the component fetches the verse data, renders a loading placeholder while fetching, shows an error card if fetching fails, and renders the VerseDetail view on success. Exposes back navigation and a share action that uses the Web Share API with a clipboard fallback.
+ *
+ * @returns The page's rendered element showing verse detail, a loading placeholder, or an error UI.
+ */
 export default function VersePage() {
   const router = useRouter()
   const params = useParams()

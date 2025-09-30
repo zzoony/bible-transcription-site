@@ -15,6 +15,13 @@ import {
 } from '@/components/ui/select'
 import { parseSearchQuery } from '@/lib/bible-books'
 
+/**
+ * Renders the search page content including the search bar, book filter, error display, and paginated results, and synchronizes search state with URL query parameters.
+ *
+ * The component reads `q`, `book`, `chapter`, and `offset` from the URL, triggers searches when those parameters change, and updates the router when the user performs a search, changes pages, selects a book, or clears filters.
+ *
+ * @returns The rendered JSX element for the search interface.
+ */
 function SearchPageContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
@@ -168,6 +175,14 @@ function SearchPageContent() {
   )
 }
 
+/**
+ * Renders the Bible search page wrapped in a React Suspense boundary.
+ *
+ * The Suspense fallback displays a centered Korean "loading" message while
+ * SearchPageContent is pending.
+ *
+ * @returns A React element containing the Suspense wrapper and SearchPageContent.
+ */
 export default function SearchPage() {
   return (
     <Suspense fallback={

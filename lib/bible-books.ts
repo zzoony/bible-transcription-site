@@ -79,29 +79,39 @@ export const BIBLE_BOOKS_ENG_TO_KOR: Record<string, string> = Object.fromEntries
 )
 
 /**
- * Convert Korean book name to English
+ * Convert a Korean Bible book name to its English equivalent.
+ *
+ * @param koreanBook - The Korean book name (e.g., "창세기")
+ * @returns The English book name if a mapping exists, `null` otherwise
  */
 export function koreanBookToEnglish(koreanBook: string): string | null {
   return BIBLE_BOOKS_KOR_TO_ENG[koreanBook] || null
 }
 
 /**
- * Convert English book name to Korean
+ * Converts an English Bible book name to its Korean equivalent.
+ *
+ * @param englishBook - English book name to convert
+ * @returns The Korean book name if a mapping exists, `null` otherwise.
  */
 export function englishBookToKorean(englishBook: string): string | null {
   return BIBLE_BOOKS_ENG_TO_KOR[englishBook] || null
 }
 
 /**
- * Check if a string is a Korean book name
+ * Determines whether the given string is a recognized Korean Bible book name.
+ *
+ * @returns `true` if the input matches a known Korean Bible book name, `false` otherwise.
  */
 export function isKoreanBookName(name: string): boolean {
   return name in BIBLE_BOOKS_KOR_TO_ENG
 }
 
 /**
- * Parse Korean verse reference to English
- * Example: "빌립보서 3:1" -> "Philippians 3:1"
+ * Parses a Korean Bible reference and returns its English book name with chapter and verse.
+ *
+ * @param reference - Korean reference in the form "BookName chapter:verse" (e.g., "빌립보서 3:1")
+ * @returns An object with `book` (English book name), numeric `chapter`, and numeric `verse` when parsing and conversion succeed; `null` otherwise
  */
 export function parseKoreanReference(
   reference: string
@@ -123,8 +133,9 @@ export function parseKoreanReference(
 }
 
 /**
- * Detect if search query is a Korean book name and return search params
- * Example: "빌립보서" -> { book: "Philippians" }
+ * Determine whether the input is a Korean Bible book name (optionally followed by a chapter:verse) and return parsed search parameters.
+ *
+ * @returns If the input is a Korean book name, an object with `isBookName: true` and `book` set to the English book name; otherwise an object with `isBookName: false` and `searchTerm` set to the trimmed query.
  */
 export function parseSearchQuery(query: string): {
   isBookName: boolean

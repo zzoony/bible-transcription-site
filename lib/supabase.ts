@@ -81,7 +81,12 @@ export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
   },
 })
 
-// Server-side client for admin operations (if needed)
+/**
+ * Creates a Supabase client configured for server-side admin operations using the service key.
+ *
+ * @returns A typed Supabase client connected with the service key and configured to use the `public` schema.
+ * @throws Error if the environment variable `SUPABASE_SERVICE_KEY` is not set.
+ */
 export function createServerClient() {
   const serviceKey = process.env.SUPABASE_SERVICE_KEY
 

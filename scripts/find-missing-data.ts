@@ -8,6 +8,11 @@ const supabaseKey = process.env.SUPABASE_SERVICE_KEY!
 
 const supabase = createClient(supabaseUrl, supabaseKey)
 
+/**
+ * Performs integrity checks for Philippians sentence structures and reports any missing or incomplete data.
+ *
+ * Queries the database for Philippians verses and their sentence_structures, identifies verses that lack any structures, checks specified priority verses for missing sequence_order entries, lists structures with null semantic_classification, and summarizes per-chapter coverage. Results are printed to the console.
+ */
 async function findMissing() {
   console.log('🔍 Finding missing sentence structures...\n')
 
