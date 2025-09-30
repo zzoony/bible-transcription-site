@@ -102,4 +102,3 @@ export function createServerClient() {
 
 // Type exports for convenience
 export type SupabaseClient = typeof supabase
-export type { Database }

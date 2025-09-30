@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { Suspense, useEffect } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { SearchBar } from '@/components/search/SearchBar'
 import { SearchResults } from '@/components/search/SearchResults'
@@ -15,7 +15,7 @@ import {
 } from '@/components/ui/select'
 import { parseSearchQuery } from '@/lib/bible-books'
 
-export default function SearchPage() {
+function SearchPageContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const {
@@ -165,5 +165,17 @@ export default function SearchPage() {
         onResultClick={handleResultClick}
       />
     </div>
+  )
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={
+      <div className="flex items-center justify-center min-h-screen">
+        <p className="text-muted-foreground">로딩 중...</p>
+      </div>
+    }>
+      <SearchPageContent />
+    </Suspense>
   )
 }

@@ -72,12 +72,14 @@ export default function VersePage() {
           analysis={{
             verse: {
               reference: '',
+              verse_number: 0,
+              niv_text: '',
               book: '',
               chapter: 0,
               verse: 0,
               text: '',
             },
-            sentence_structure: null,
+            sentence_structure: [],
             vocabulary: [],
             contextual_explanation: null,
             korean_translation: null,
