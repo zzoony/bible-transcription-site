@@ -20,14 +20,15 @@ export async function GET(request: NextRequest) {
     )
   }
 
-  const limit = limitStr ? parseInt(limitStr) : 10
+  // cap the limit to a maximum of 100 to prevent abuse
+  const limit = limitStr ? Math.min(parseInt(limitStr), 100) : 10
   const offset = offsetStr ? parseInt(offsetStr) : 0
   const chapter = chapterStr ? parseInt(chapterStr) : undefined
 
   // Validate numeric parameters
   if (isNaN(limit) || limit < 0) {
     return NextResponse.json(
-      { error: 'Invalid limit parameter' },
+      { error: 'Invalid limit parameter (must be 0-100)' },
       { status: 400 }
     )
   }
@@ -85,7 +86,12 @@ export async function GET(request: NextRequest) {
       supabaseQuery = supabaseQuery.eq('chapters.chapter_number', chapter)
     }
 
-    // Don't apply range yet - we need to sort first
+    // Apply sorting and pagination at database level
+    supabaseQuery = supabaseQuery
+      .order('chapters.chapter_number', { ascending: true })
+      .order('verse_number', { ascending: true })
+      .range(offset, offset + limit - 1)
+
     const { data, error, count } = await supabaseQuery
 
     if (error) {
@@ -98,8 +104,8 @@ export async function GET(request: NextRequest) {
 
     const total = count || 0
 
-    // Map and sort results by chapter and verse
-    const allResults: SearchResult[] =
+    // Map results
+    const results: SearchResult[] =
       data?.map((verse: any) => {
         // Parse reference to get accurate book, chapter, verse
         const parsed = parseVerseReference(verse.reference)
@@ -114,16 +120,6 @@ export async function GET(request: NextRequest) {
         }
       }) || []
 
-    // Sort by chapter (ascending), then verse (ascending)
-    allResults.sort((a, b) => {
-      if (a.chapter !== b.chapter) {
-        return a.chapter - b.chapter
-      }
-      return a.verse - b.verse
-    })
-
-    // Apply pagination after sorting
-    const results = allResults.slice(offset, offset + limit)
     const hasMore = offset + limit < total
 
     const response: SearchResponse = {
@@ -147,7 +143,9 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(
       {
         error: 'Internal server error',
-        message: error instanceof Error ? error.message : 'Unknown error',
+        ...(process.env.NODE_ENV === 'development' && {
+          message: error instanceof Error ? error.message : 'Unknown error',
+        }),
       },
       { status: 500 }
     )

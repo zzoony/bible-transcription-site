@@ -8,13 +8,13 @@ export default function OfflinePage() {
         <CardContent className="pt-12 pb-12 text-center">
           <WifiOff className="h-16 w-16 mx-auto mb-6 text-muted-foreground" />
           <h1 className="text-2xl font-semibold mb-4">
-            You&apos;re Offline
+            오프라인 상태입니다
           </h1>
           <p className="text-muted-foreground mb-6">
-            Please check your internet connection and try again.
+            인터넷 연결을 확인하고 다시 시도해 주세요.
           </p>
           <p className="text-sm text-muted-foreground">
-            Some cached content may still be available.
+            일부 캐시된 콘텐츠는 사용 가능할 수 있습니다.
           </p>
         </CardContent>
       </Card>

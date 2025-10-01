@@ -53,7 +53,7 @@ export async function GET(
         chapters!inner(chapter_number)
       `
       )
-      .ilike('reference', verseRef)
+      .eq('reference', verseRef)
       .single()
 
     const verseRecord: any = verseData

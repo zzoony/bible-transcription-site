@@ -12,9 +12,9 @@ export default function NotFound() {
             <h1 className="text-6xl font-bold text-muted-foreground mb-2">
               404
             </h1>
-            <h2 className="text-2xl font-semibold mb-4">Page Not Found</h2>
+            <h2 className="text-2xl font-semibold mb-4">페이지를 찾을 수 없습니다</h2>
             <p className="text-muted-foreground">
-              The page you are looking for doesn&apos;t exist or has been moved.
+              요청하신 페이지가 존재하지 않거나 이동되었습니다.
             </p>
           </div>
 
@@ -22,13 +22,13 @@ export default function NotFound() {
             <Link href="/">
               <Button variant="default">
                 <Home className="h-4 w-4 mr-2" />
-                Go Home
+                홈으로
               </Button>
             </Link>
             <Link href="/search">
               <Button variant="outline">
                 <Search className="h-4 w-4 mr-2" />
-                Search Verses
+                구절 검색
               </Button>
             </Link>
           </div>

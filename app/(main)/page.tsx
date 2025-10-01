@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { SearchBar } from '@/components/search/SearchBar'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
@@ -29,7 +29,7 @@ export default function HomePage() {
   }
 
   // Load recent searches from localStorage on mount
-  useState(() => {
+  useEffect(() => {
     if (typeof window !== 'undefined') {
       const stored = localStorage.getItem('recentSearches')
       if (stored) {
@@ -40,7 +40,7 @@ export default function HomePage() {
         }
       }
     }
-  })
+  }, [])
 
   return (
     <div className="max-w-4xl mx-auto">
