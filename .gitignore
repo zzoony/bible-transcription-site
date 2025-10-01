@@ -35,3 +35,13 @@ coverage/
 .cache/
 tmp/
 temp/
+
+# Next.js
+/.next/
+/out/
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo

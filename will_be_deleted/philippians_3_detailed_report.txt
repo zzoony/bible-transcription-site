@@ -1,0 +1,535 @@
+====================================================================================================
+PHILIPPIANS CHAPTER 3 - DETAILED SENTENCE STRUCTURE VERIFICATION
+====================================================================================================
+
+VERSE: Philippians 3:1
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"Further, my brothers and sisters, rejoice in the Lord! It is no trouble for me to write the same things to you again, and it is a safeguard for you."
+
+SENTENCE BREAKDOWN (2 sentence(s)):
+  [1] Further, my brothers and sisters, rejoice in the Lord!
+  [2] It is no trouble for me to write the same things to you again, and it is a safeguard for you.
+
+STRUCTURE ANALYSIS (3 structure(s)):
+  [1] 부가적 권면
+      EN: Further, my brothers and sisters, rejoice in the Lord!
+      KO: 더 나아가, 나의 형제자매들이여, 주 안에서 기뻐하십시오!
+      문법: 전환 부사 + 호격 + 명령문 구조
+
+  [2] 반복의 이유 1
+      EN: It is no trouble for me to write the same things to you again
+      KO: 같은 것들을 여러분에게 다시 쓰는 것이 나에게는 번거롭지 않습니다
+      문법: 가주어 구문 (It is + 형용사 + for me + to부정사)
+
+  [3] 반복의 이유 2
+      EN: and it is a safeguard for you
+      KO: 그리고 그것은 여러분에게 안전장치입니다
+      문법: 등위접속사로 연결된 평서문
+
+STATUS: ✓ DETAILED - Semantic breakdown into 3 components
+
+====================================================================================================
+
+VERSE: Philippians 3:2
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"Watch out for those dogs, those evildoers, those mutilators of the flesh."
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] Watch out for those dogs, those evildoers, those mutilators of the flesh.
+
+STRUCTURE ANALYSIS (1 structure(s)):
+  [1] 강력한 경고
+      EN: Watch out for those dogs, those evildoers, those mutilators of the flesh
+      KO: 저 개들을, 저 악을 행하는 자들을, 저 살을 잘라내는 자들을 조심하라
+      문법: 명령형 동사(watch out) + 전치사구(for) + 3중 동격 명사구
+
+STATUS: ✓ COMPLETE - 1:1 mapping
+
+====================================================================================================
+
+VERSE: Philippians 3:3
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"For it is we who are the circumcision, we who serve God by his Spirit, who boast in Christ Jesus, and who put no confidence in the flesh—"
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] For it is we who are the circumcision, we who serve God by his Spirit, who boast in Christ Jesus, and who put no confidence in the flesh—
+
+STRUCTURE ANALYSIS (4 structure(s)):
+  [1] 신분 정체성 선언
+      EN: For it is we who are the circumcision
+      KO: 우리가 바로 할례자들입니다
+      문법: 강조 구문(it is...who) + 명사절
+
+  [2] 신분의 특징 설명
+      EN: we who serve God by his Spirit
+      KO: 성령으로 하나님을 섬기며
+      문법: 관계대명사절 + 전치사구
+
+  [3] 신분의 특징 설명
+      EN: who boast in Christ Jesus
+      KO: 그리스도 예수 안에서 자랑하며
+      문법: 관계대명사절 + 전치사구
+
+  [4] 대조적 특징 설명
+      EN: who put no confidence in the flesh
+      KO: 육체를 신뢰하지 않는
+      문법: 관계대명사절 + 부정어구
+
+STATUS: ✓ DETAILED - Semantic breakdown into 4 components
+
+====================================================================================================
+
+VERSE: Philippians 3:4
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"though I myself have reasons for such confidence. If someone else thinks they have reasons to put confidence in the flesh, I have more:"
+
+SENTENCE BREAKDOWN (2 sentence(s)):
+  [1] though I myself have reasons for such confidence.
+  [2] If someone else thinks they have reasons to put confidence in the flesh, I have more:
+
+STRUCTURE ANALYSIS (2 structure(s)):
+  [1] 자기 확신의 선언
+      EN: though I myself have reasons for such confidence
+      KO: 비록 나는 그러한 확신의 이유가 있지만
+      문법: 양보절 + 1인칭 강조 + 소유 구문
+
+  [2] 대조적 비교
+      EN: If someone else thinks they have reasons to put confidence in the flesh, I have more
+      KO: 만일 누군가가 육신을 신뢰할 만한 이유가 있다고 생각한다면, 나는 더욱 그러하니
+      문법: 조건절 + 비교 구문
+
+STATUS: ✓ COMPLETE - 1:1 mapping
+
+====================================================================================================
+
+VERSE: Philippians 3:5
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"circumcised on the eighth day, of the people of Israel, of the tribe of Benjamin, a Hebrew of Hebrews; in regard to the law, a Pharisee;"
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] circumcised on the eighth day, of the people of Israel, of the tribe of Benjamin, a Hebrew of Hebrews; in regard to the law, a Pharisee;
+
+STRUCTURE ANALYSIS (3 structure(s)):
+  [1] 바울의 신분적 자격 나열
+      EN: circumcised on the eighth day
+      KO: 생후 팔일 만에 할례를 받았고
+      문법: 수동분사구
+
+  [2] 혈통적 배경 설명
+      EN: of the people of Israel, of the tribe of Benjamin
+      KO: 이스라엘 민족이요 베냐민 지파요
+      문법: 전치사구의 나열
+
+  [3] 문화적/종교적 자격
+      EN: a Hebrew of Hebrews; in regard to the law, a Pharisee
+      KO: 히브리인 중의 히브리인이요, 율법으로는 바리새인이요
+      문법: 동격 명사구 + 전치사구
+
+STATUS: ✓ DETAILED - Semantic breakdown into 3 components
+
+====================================================================================================
+
+VERSE: Philippians 3:6
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"as for zeal, persecuting the church; as for righteousness based on the law, faultless."
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] as for zeal, persecuting the church; as for righteousness based on the law, faultless.
+
+STRUCTURE ANALYSIS (2 structure(s)):
+  [1] 바울의 이전 삶의 자격 나열
+      EN: as for zeal, persecuting the church
+      KO: 열심으로는 교회를 박해하였고
+      문법: 전치사구(as for) + 명사(zeal) + 분사구(persecuting)
+
+  [2] 율법적 의로움에 대한 평가
+      EN: as for righteousness based on the law, faultless
+      KO: 율법의 의로는 흠이 없는 자였노라
+      문법: 전치사구(as for) + 명사구(righteousness) + 형용사(faultless)
+
+STATUS: ✓ DETAILED - Semantic breakdown into 2 components
+
+====================================================================================================
+
+VERSE: Philippians 3:7
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"But whatever were gains to me I now consider loss for the sake of Christ."
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] But whatever were gains to me I now consider loss for the sake of Christ.
+
+STRUCTURE ANALYSIS (1 structure(s)):
+  [1] 가치관의 전환 선언
+      EN: But whatever were gains to me I now consider loss for the sake of Christ
+      KO: 그러나 내게 유익하던 것들을 나는 이제 그리스도를 위하여 다 해로 여기노니
+      문법: 대조 접속사 + 관계대명사절 + 주절(현재시제)
+
+STATUS: ✓ COMPLETE - 1:1 mapping
+
+====================================================================================================
+
+VERSE: Philippians 3:8
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"What is more, I consider everything a loss because of the surpassing worth of knowing Christ Jesus my Lord, for whose sake I have lost all things. I consider them garbage, that I may gain Christ"
+
+SENTENCE BREAKDOWN (2 sentence(s)):
+  [1] What is more, I consider everything a loss because of the surpassing worth of knowing Christ Jesus my Lord, for whose sake I have lost all things.
+  [2] I consider them garbage, that I may gain Christ
+
+STRUCTURE ANALYSIS (2 structure(s)):
+  [1] 가치 평가 선언
+      EN: What is more, I consider everything a loss because of the surpassing worth of knowing Christ Jesus my Lord
+      KO: 그뿐 아니라 나는 내 주 그리스도 예수를 아는 지식이 가장 고귀하므로 모든 것을 해로 여기나니
+      문법: 부가절 + 주절(현재시제) + 이유절
+
+  [2] 개인적 경험 진술
+      EN: for whose sake I have lost all things. I consider them garbage
+      KO: 그를 위하여 내가 모든 것을 잃어버리고 그것들을 쓰레기로 여기노니
+      문법: 관계대명사절 + 완료형 + 평가절
+
+STATUS: ✓ COMPLETE - 1:1 mapping
+
+====================================================================================================
+
+VERSE: Philippians 3:9
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"and be found in him, not having a righteousness of my own that comes from the law, but that which is through faith in Christ—the righteousness that comes from God on the basis of faith."
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] and be found in him, not having a righteousness of my own that comes from the law, but that which is through faith in Christ—the righteousness that comes from God on the basis of faith.
+
+STRUCTURE ANALYSIS (3 structure(s)):
+  [1] 소망적 진술
+      EN: and be found in him
+      KO: 그리스도 안에서 발견되어
+      문법: 수동태 부정사구 + 전치사구
+
+  [2] 대조적 설명
+      EN: not having a righteousness of my own that comes from the law
+      KO: 율법에서 나온 나 자신의 의가 아닌
+      문법: 부정 분사구 + 소유격 + 관계절
+
+  [3] 긍정적 선언
+      EN: but that which is through faith in Christ—the righteousness that comes from God on the basis of faith
+      KO: 믿음으로 말미암아 그리스도를 통해 하나님으로부터 오는 의를 얻어
+      문법: 대조접속사 + 관계절 + 동격 명사구
+
+STATUS: ✓ DETAILED - Semantic breakdown into 3 components
+
+====================================================================================================
+
+VERSE: Philippians 3:10
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"I want to know Christ—yes, to know the power of his resurrection and participation in his sufferings, becoming like him in his death,"
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] I want to know Christ—yes, to know the power of his resurrection and participation in his sufferings, becoming like him in his death,
+
+STRUCTURE ANALYSIS (3 structure(s)):
+  [1] 목적 진술
+      EN: I want to know Christ
+      KO: 내가 그리스도를 알고자 하며
+      문법: 주어 + 불정형동사구(to부정사) 구조
+
+  [2] 부연 설명
+      EN: to know the power of his resurrection and participation in his sufferings
+      KO: 그의 부활의 능력과 그의 고난에 참여함을 알며
+      문법: 병렬 구조의 부정사구
+
+  [3] 결과 진술
+      EN: becoming like him in his death
+      KO: 그의 죽으심을 본받아
+      문법: 현재분사구 형태의 결과절
+
+STATUS: ✓ DETAILED - Semantic breakdown into 3 components
+
+====================================================================================================
+
+VERSE: Philippians 3:11
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"and so, somehow, attaining to the resurrection from the dead."
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] and so, somehow, attaining to the resurrection from the dead.
+
+STRUCTURE ANALYSIS (1 structure(s)):
+  [1] 목표 진술
+      EN: and so, somehow, attaining to the resurrection from the dead
+      KO: 그리하여 어떻게 해서든지 죽은 자들로부터의 부활에 이르고자 하며
+      문법: 접속사(and) + 부사구(so, somehow) + 분사구(attaining to) + 전치사구(from the dead)
+
+STATUS: ✓ COMPLETE - 1:1 mapping
+
+====================================================================================================
+
+VERSE: Philippians 3:12
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"Not that I have already obtained all this, or have already arrived at my goal, but I press on to take hold of that for which Christ Jesus took hold of me."
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] Not that I have already obtained all this, or have already arrived at my goal, but I press on to take hold of that for which Christ Jesus took hold of me.
+
+STRUCTURE ANALYSIS (2 structure(s)):
+  [1] 부정적 선언
+      EN: Not that I have already obtained all this, or have already arrived at my goal
+      KO: 내가 이미 이 모든 것을 얻었다거나 이미 목표에 도달했다는 것이 아니라
+      문법: 부정 서술어(not that) + 현재완료형 병렬구조
+
+  [2] 긍정적 대조
+      EN: but I press on to take hold of that for which Christ Jesus took hold of me
+      KO: 그리스도 예수께서 나를 붙드신 그것을 붙들려고 좇아가노라
+      문법: 대조접속사(but) + 현재진행형 + 목적절
+
+STATUS: ✓ DETAILED - Semantic breakdown into 2 components
+
+====================================================================================================
+
+VERSE: Philippians 3:13
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"Brothers and sisters, I do not consider myself yet to have taken hold of it. But one thing I do: Forgetting what is behind and straining toward what is ahead,"
+
+SENTENCE BREAKDOWN (2 sentence(s)):
+  [1] Brothers and sisters, I do not consider myself yet to have taken hold of it.
+  [2] But one thing I do: Forgetting what is behind and straining toward what is ahead,
+
+STRUCTURE ANALYSIS (2 structure(s)):
+  [1] 겸손한 고백
+      EN: Brothers and sisters, I do not consider myself yet to have taken hold of it
+      KO: 형제자매들아, 나는 아직 그것을 붙잡았다고 생각하지 않습니다
+      문법: 호격 + 주어 + 부정문 + 부정사구
+
+  [2] 결단적 선언
+      EN: But one thing I do: Forgetting what is behind and straining toward what is ahead
+      KO: 오직 한 가지 일: 뒤에 있는 것은 잊어버리고 앞에 있는 것을 향하여 힘쓰며
+      문법: 대조접속사 + 분사구문 2개 연결
+
+STATUS: ✓ COMPLETE - 1:1 mapping
+
+====================================================================================================
+
+VERSE: Philippians 3:14
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"I press on toward the goal to win the prize for which God has called me heavenward in Christ Jesus."
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] I press on toward the goal to win the prize for which God has called me heavenward in Christ Jesus.
+
+STRUCTURE ANALYSIS (2 structure(s)):
+  [1] 목표 지향적 결심
+      EN: I press on toward the goal
+      KO: 나는 목표를 향하여 달려가며
+      문법: 1인칭 주어 + 현재형 동사구 + 방향 전치사구
+
+  [2] 목적의 설명
+      EN: to win the prize for which God has called me heavenward in Christ Jesus
+      KO: 그리스도 예수 안에서 하나님이 위로 부르신 부름의 상을 얻으려
+      문법: 부정사구 + 관계절 + 장소/상태 전치사구
+
+STATUS: ✓ DETAILED - Semantic breakdown into 2 components
+
+====================================================================================================
+
+VERSE: Philippians 3:15
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"All of us, then, who are mature should take such a view of things. And if on some point you think differently, that too God will make clear to you."
+
+SENTENCE BREAKDOWN (2 sentence(s)):
+  [1] All of us, then, who are mature should take such a view of things.
+  [2] And if on some point you think differently, that too God will make clear to you.
+
+STRUCTURE ANALYSIS (2 structure(s)):
+  [1] 성숙한 신자를 향한 권면
+      EN: All of us, then, who are mature should take such a view of things
+      KO: 그러므로 성숙한 우리 모두는 이러한 관점을 가져야 합니다
+      문법: 접속사(then) + 주격 관계대명사절(who are mature) + 조동사 should + 동사구
+
+  [2] 하나님의 인도하심에 대한 확신
+      EN: And if on some point you think differently, that too God will make clear to you
+      KO: 만일 어떤 점에서 다르게 생각한다면, 하나님께서 그것도 분명히 보여주실 것입니다
+      문법: 조건절(if clause) + 주절(하나님의 행위)
+
+STATUS: ✓ COMPLETE - 1:1 mapping
+
+====================================================================================================
+
+VERSE: Philippians 3:16
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"Only let us live up to what we have already attained."
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] Only let us live up to what we have already attained.
+
+STRUCTURE ANALYSIS (1 structure(s)):
+  [1] 실천적 권면
+      EN: Only let us live up to what we have already attained
+      KO: 우리가 이미 얻은 것에 따라 살아갑시다
+      문법: let us (권유형) + live up to (동사구) + 관계절(what we have already attained)
+
+STATUS: ✓ COMPLETE - 1:1 mapping
+
+====================================================================================================
+
+VERSE: Philippians 3:17
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"Join together in following my example, brothers and sisters, and just as you have us as a model, keep your eyes on those who live as we do."
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] Join together in following my example, brothers and sisters, and just as you have us as a model, keep your eyes on those who live as we do.
+
+STRUCTURE ANALYSIS (2 structure(s)):
+  [1] 권면적 명령
+      EN: Join together in following my example, brothers and sisters
+      KO: 형제자매들아, 함께 나를 본받으라
+      문법: 명령형 동사(Join) + 호격(brothers and sisters) + 목적어구
+
+  [2] 부가적 권면
+      EN: and just as you have us as a model, keep your eyes on those who live as we do
+      KO: 우리를 본보기로 삼은 것처럼 우리처럼 살아가는 자들을 주목하라
+      문법: 비교절(just as) + 명령문(keep) + 관계절(who)
+
+STATUS: ✓ DETAILED - Semantic breakdown into 2 components
+
+====================================================================================================
+
+VERSE: Philippians 3:18
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"For, as I have often told you before and now tell you again even with tears, many live as enemies of the cross of Christ."
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] For, as I have often told you before and now tell you again even with tears, many live as enemies of the cross of Christ.
+
+STRUCTURE ANALYSIS (2 structure(s)):
+  [1] 반복적 경고
+      EN: For, as I have often told you before and now tell you again even with tears
+      KO: 내가 너희에게 자주 말했고 지금도 눈물로 다시 말하는 것과 같이
+      문법: 접속사(For) + 비교절(as) + 복합시제 구조
+
+  [2] 경고의 내용
+      EN: many live as enemies of the cross of Christ
+      KO: 많은 사람들이 그리스도의 십자가의 원수로 살고 있다
+      문법: 주어(many) + 동사(live) + 전치사구(as enemies)
+
+STATUS: ✓ DETAILED - Semantic breakdown into 2 components
+
+====================================================================================================
+
+VERSE: Philippians 3:19
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"Their destiny is destruction, their god is their stomach, and their glory is in their shame. Their mind is set on earthly things."
+
+SENTENCE BREAKDOWN (2 sentence(s)):
+  [1] Their destiny is destruction, their god is their stomach, and their glory is in their shame.
+  [2] Their mind is set on earthly things.
+
+STRUCTURE ANALYSIS (4 structure(s)):
+  [1] 결과 선언
+      EN: Their destiny is destruction
+      KO: 그들의 마지막은 멸망이니
+      문법: 소유격 주어 + be동사 + 명사 보어
+
+  [2] 상태 묘사
+      EN: their god is their stomach
+      KO: 그들의 신은 배이며
+      문법: 소유격 주어 + be동사 + 소유격 명사구
+
+  [3] 대조적 특성
+      EN: their glory is in their shame
+      KO: 그들의 영광은 부끄러움에 있고
+      문법: 소유격 주어 + be동사 + 전치사구
+
+  [4] 결론적 진술
+      EN: Their mind is set on earthly things
+      KO: 땅의 일을 생각하는 자들이라
+      문법: 수동태 구문 + 전치사구
+
+STATUS: ✓ DETAILED - Semantic breakdown into 4 components
+
+====================================================================================================
+
+VERSE: Philippians 3:20
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"But our citizenship is in heaven. And we eagerly await a Savior from there, the Lord Jesus Christ,"
+
+SENTENCE BREAKDOWN (2 sentence(s)):
+  [1] But our citizenship is in heaven.
+  [2] And we eagerly await a Savior from there, the Lord Jesus Christ,
+
+STRUCTURE ANALYSIS (2 structure(s)):
+  [1] 선언적 진술
+      EN: But our citizenship is in heaven
+      KO: 그러나 우리의 시민권은 하늘에 있습니다
+      문법: 대조 접속사 + 소유격 + 명사 + be동사 + 전치사구
+
+  [2] 기대적 선언
+      EN: And we eagerly await a Savior from there, the Lord Jesus Christ
+      KO: 그리고 우리는 거기로부터 구원자, 주 예수 그리스도를 간절히 기다립니다
+      문법: 접속사 + 주어 + 부사 + 동사 + 목적어 + 동격 명사구
+
+STATUS: ✓ COMPLETE - 1:1 mapping
+
+====================================================================================================
+
+VERSE: Philippians 3:21
+----------------------------------------------------------------------------------------------------
+
+FULL NIV TEXT:
+"who, by the power that enables him to bring everything under his control, will transform our lowly bodies so that they will be like his glorious body."
+
+SENTENCE BREAKDOWN (1 sentence(s)):
+  [1] who, by the power that enables him to bring everything under his control, will transform our lowly bodies so that they will be like his glorious body.
+
+STRUCTURE ANALYSIS (2 structure(s)):
+  [1] 미래적 변화 선언
+      EN: who, by the power that enables him to bring everything under his control
+      KO: 모든 것을 자기에게 복종하게 하실 수 있는 능력으로
+      문법: 관계대명사절 + 도구적 전치사구
+
+  [2] 종말론적 약속
+      EN: will transform our lowly bodies so that they will be like his glorious body
+      KO: 우리의 낮은 몸을 그의 영광스러운 몸과 같이 변화시키실 것이다
+      문법: 미래시제 + 목적절 구조
+
+STATUS: ✓ DETAILED - Semantic breakdown into 2 components
+
+====================================================================================================
+

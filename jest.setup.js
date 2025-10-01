@@ -1,0 +1,13 @@
+// Learn more: https://github.com/testing-library/jest-dom
+import '@testing-library/jest-dom'
+
+// Polyfill fetch for Node.js test environment
+import { TextEncoder, TextDecoder } from 'util'
+
+global.TextEncoder = TextEncoder
+global.TextDecoder = TextDecoder
+
+// Use node-fetch for fetch polyfill if not available
+if (typeof global.fetch === 'undefined') {
+  global.fetch = require('node-fetch')
+}
