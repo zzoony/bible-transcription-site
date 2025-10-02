@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { SearchBar } from '@/components/search/SearchBar'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { BibleNavigator } from '@/components/navigation/BibleNavigator'
 
 export default function HomePage() {
   const router = useRouter()
@@ -26,6 +27,10 @@ export default function HomePage() {
 
   const handleRecentSearchClick = (query: string) => {
     router.push(`/search?q=${encodeURIComponent(query)}`)
+  }
+
+  const handleNavigate = (reference: string) => {
+    router.push(`/verse/${encodeURIComponent(reference)}`)
   }
 
   // Load recent searches from localStorage on mount
@@ -96,6 +101,11 @@ export default function HomePage() {
             </p>
           </CardContent>
         </Card>
+      </div>
+
+      {/* Bible Navigator */}
+      <div className="mb-12">
+        <BibleNavigator onNavigate={handleNavigate} />
       </div>
 
       {/* Recent Searches */}
