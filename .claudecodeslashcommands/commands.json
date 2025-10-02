@@ -1,0 +1,17 @@
+{
+  "commands": [
+    {
+      "name": "apply-coderabbit",
+      "description": "GitHub PR의 CodeRabbit 리뷰 내용을 자동으로 반영합니다",
+      "parameters": [
+        {
+          "name": "pr_number",
+          "description": "GitHub PR 번호 (예: 3) 또는 --here를 입력하면 현재 작업 중인 PR 자동 감지",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "command": "bash scripts/commands/apply-coderabbit-review.sh {{pr_number}}"
+    }
+  ]
+}
