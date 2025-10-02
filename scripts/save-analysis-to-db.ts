@@ -200,4 +200,5 @@ async function main() {
 
 main()
 
-export { saveAnalysisToDb, AnalysisData }
+export { saveAnalysisToDb }
+export type { AnalysisData }
