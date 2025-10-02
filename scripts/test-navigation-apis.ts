@@ -6,7 +6,35 @@
  * npx tsx scripts/test-navigation-apis.ts
  */
 
+import { appendFileSync, mkdirSync } from 'node:fs'
+import { join } from 'node:path'
+
 const BASE_URL = 'http://localhost:3000'
+const LOG_DIR = join(process.cwd(), 'logs')
+const LOG_FILE = join(LOG_DIR, 'navigation-apis.log')
+
+// logs/ 디렉토리 생성
+mkdirSync(LOG_DIR, { recursive: true })
+
+// 로거 함수: console과 파일에 동시 기록
+const originalConsoleLog = console.log
+console.log = (...args: unknown[]) => {
+  originalConsoleLog(...args)
+  const message = args
+    .map((arg) =>
+      typeof arg === 'string' ? arg : JSON.stringify(arg, null, 2)
+    )
+    .join(' ')
+  try {
+    appendFileSync(
+      LOG_FILE,
+      `${new Date().toISOString()} ${message}\n`,
+      'utf8'
+    )
+  } catch (error) {
+    originalConsoleLog('⚠️  로그 파일 쓰기 실패:', error)
+  }
+}
 
 interface NavigationResponse {
   current: string

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import { supabase } from '@/lib/supabase'
+import { getSupabase } from '@/lib/supabase'
 import { parseVerseReference } from '@/lib/utils'
 import type { VerseAnalysis, VerseLoadingState } from '@/lib/types'
 
@@ -22,6 +22,8 @@ export function useVerse() {
     })
 
     try {
+      const supabase = getSupabase()
+
       // Decode URL-encoded reference
       const decodedReference = decodeURIComponent(reference)
 

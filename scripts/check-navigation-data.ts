@@ -58,11 +58,9 @@ async function checkNavigationData() {
     console.log(`\n총 구절 수: ${verses.length}`)
 
     // 분석 완료된 구절 조회
-    const verseIds = verses.map(v => v.id)
     const { data: structures, error: structuresError } = await supabase
       .from('sentence_structures')
       .select('verse_id')
-      .in('verse_id', verseIds)
 
     if (structuresError) {
       console.error('❌ 문장구조 조회 오류:', structuresError.message)
@@ -76,7 +74,7 @@ async function checkNavigationData() {
 
     verses.forEach((verse: VerseData) => {
       // reference에서 책 이름과 장:절 추출
-      const match = verse.reference.match(/^([A-Za-z\s]+)\s+(\d+):(\d+)$/)
+      const match = verse.reference.match(/^([\dA-Za-z\s]+)\s+(\d+):(\d+)$/)
       if (!match) {
         console.warn(`⚠️  잘못된 reference 형식: ${verse.reference}`)
         return

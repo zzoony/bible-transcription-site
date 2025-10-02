@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Navigation 기능 통합 테스트 실행 스크립트
 
 echo "================================================"
@@ -9,12 +11,18 @@ echo ""
 
 # NavigationControls 컴포넌트 테스트
 echo "✓ NavigationControls 컴포넌트 테스트 실행 중..."
-npm test -- tests/components/NavigationControls.test.tsx --silent
+if ! npm test -- tests/components/NavigationControls.test.tsx --silent; then
+  echo "❌ NavigationControls 컴포넌트 테스트 실패"
+  exit 1
+fi
 
 # BibleNavigator 컴포넌트 테스트
 echo ""
 echo "✓ BibleNavigator 컴포넌트 테스트 실행 중..."
-npm test -- tests/components/BibleNavigator.test.tsx --silent
+if ! npm test -- tests/components/BibleNavigator.test.tsx --silent; then
+  echo "❌ BibleNavigator 컴포넌트 테스트 실패"
+  exit 1
+fi
 
 # 빌드 테스트
 echo ""
