@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useCallback } from 'react'
-import { supabase } from '@/lib/supabase'
+import { getSupabase } from '@/lib/supabase'
 import type { SearchResult, SearchQuery, SearchState } from '@/lib/types'
 import { parseVerseReference } from '@/lib/utils'
 
@@ -34,6 +34,8 @@ export function useSearch() {
       setState((prev) => ({ ...prev, isLoading: true, error: null }))
 
       try {
+        const supabase = getSupabase()
+
         // Build query with joins
         let supabaseQuery = supabase
           .from('verses')

@@ -20,7 +20,7 @@ function parseReference(reference: string): {
   chapter: number
   verse: number
 } | null {
-  const match = reference.match(/^([A-Za-z\s]+)\s+(\d+):(\d+)$/)
+  const match = reference.match(/^(.+?)\s+(\d+):(\d+)$/)
   if (!match) return null
 
   const [, book, chapterStr, verseStr] = match

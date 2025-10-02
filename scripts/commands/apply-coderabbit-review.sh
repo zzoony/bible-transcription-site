@@ -3,7 +3,8 @@
 # CodeRabbit 리뷰 내용을 자동으로 반영하는 스크립트
 # 사용법: ./scripts/commands/apply-coderabbit-review.sh [PR_NUMBER]
 
-set -e
+set -Eeuo pipefail
+trap 'echo -e "\n${RED}Error on line $LINENO. Exiting.${NC}" >&2' ERR
 
 # 색상 정의
 RED='\033[0;31m'
@@ -36,8 +37,8 @@ if [ "$PR_NUMBER" = "--here" ]; then
         exit 1
     fi
 
-    PR_NUMBER=$(echo $PR_DATA | jq -r '.[0].number')
-    PR_STATE=$(echo $PR_DATA | jq -r '.[0].state')
+    PR_NUMBER=$(jq -r '.[0].number' <<<"$PR_DATA")
+    PR_STATE=$(jq -r '.[0].state' <<<"$PR_DATA")
 
     echo -e "${GREEN}✓ 감지된 PR: #${PR_NUMBER} (상태: ${PR_STATE})${NC}\n"
 fi
@@ -47,10 +48,10 @@ echo -e "${BLUE}🤖 CodeRabbit 리뷰 자동 적용 시작...${NC}\n"
 # 1. PR 정보 가져오기
 echo -e "${YELLOW}📋 PR #${PR_NUMBER} 정보 조회 중...${NC}"
 PR_INFO=$(gh pr view $PR_NUMBER --json title,state,headRefName,baseRefName)
-PR_TITLE=$(echo $PR_INFO | jq -r '.title')
-PR_STATE=$(echo $PR_INFO | jq -r '.state')
-HEAD_BRANCH=$(echo $PR_INFO | jq -r '.headRefName')
-BASE_BRANCH=$(echo $PR_INFO | jq -r '.baseRefName')
+PR_TITLE=$(jq -r '.title' <<<"$PR_INFO")
+PR_STATE=$(jq -r '.state' <<<"$PR_INFO")
+HEAD_BRANCH=$(jq -r '.headRefName' <<<"$PR_INFO")
+BASE_BRANCH=$(jq -r '.baseRefName' <<<"$PR_INFO")
 
 if [ "$PR_STATE" != "OPEN" ]; then
     echo -e "${RED}❌ PR이 OPEN 상태가 아닙니다 (현재: $PR_STATE)${NC}"
@@ -70,12 +71,13 @@ fi
 
 # 3. CodeRabbit 코멘트 추출
 echo -e "${YELLOW}🔍 CodeRabbit 리뷰 코멘트 조회 중...${NC}"
-TEMP_FILE="/tmp/coderabbit-review-$PR_NUMBER.json"
+TEMP_FILE="$(mktemp -t coderabbit-review."$PR_NUMBER".XXXXXX.json)"
+trap 'rm -f "$TEMP_FILE"' EXIT
 
-gh api "repos/:owner/:repo/pulls/$PR_NUMBER/comments" --paginate > $TEMP_FILE
+gh api "repos/:owner/:repo/pulls/$PR_NUMBER/comments" --paginate > "$TEMP_FILE"
 
-# CodeRabbit 코멘트 개수 확인
-CODERABBIT_COUNT=$(jq '[.[] | select(.user.login == "coderabbitai[bot]")] | length' $TEMP_FILE)
+# CodeRabbit 코멘트 개수 확인 (pagination 지원)
+CODERABBIT_COUNT=$(jq -s '[.[].[] | select(.user.login == "coderabbitai[bot]")] | length' "$TEMP_FILE")
 
 if [ "$CODERABBIT_COUNT" -eq 0 ]; then
     echo -e "${YELLOW}⚠️  CodeRabbit 리뷰 코멘트가 없습니다${NC}"
