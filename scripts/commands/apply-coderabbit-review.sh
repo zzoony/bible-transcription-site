@@ -16,9 +16,30 @@ NC='\033[0m' # No Color
 PR_NUMBER=$1
 if [ -z "$PR_NUMBER" ]; then
     echo -e "${RED}❌ 오류: PR 번호가 필요합니다${NC}"
-    echo "사용법: $0 <PR_NUMBER>"
+    echo "사용법: $0 <PR_NUMBER|--here>"
     echo "예시: $0 3"
+    echo "예시: $0 --here  (현재 브랜치의 PR 자동 감지)"
     exit 1
+fi
+
+# --here 옵션 처리: 현재 브랜치에서 PR 번호 자동 감지
+if [ "$PR_NUMBER" = "--here" ]; then
+    echo -e "${YELLOW}🔍 현재 브랜치의 PR 자동 감지 중...${NC}"
+    CURRENT_BRANCH=$(git branch --show-current)
+
+    # 현재 브랜치와 연결된 PR 찾기
+    PR_DATA=$(gh pr list --head "$CURRENT_BRANCH" --json number,state --limit 1)
+
+    if [ -z "$PR_DATA" ] || [ "$PR_DATA" = "[]" ]; then
+        echo -e "${RED}❌ 현재 브랜치($CURRENT_BRANCH)와 연결된 PR을 찾을 수 없습니다${NC}"
+        echo -e "${YELLOW}💡 Tip: 먼저 PR을 생성하거나, PR 번호를 직접 입력하세요${NC}"
+        exit 1
+    fi
+
+    PR_NUMBER=$(echo $PR_DATA | jq -r '.[0].number')
+    PR_STATE=$(echo $PR_DATA | jq -r '.[0].state')
+
+    echo -e "${GREEN}✓ 감지된 PR: #${PR_NUMBER} (상태: ${PR_STATE})${NC}\n"
 fi
 
 echo -e "${BLUE}🤖 CodeRabbit 리뷰 자동 적용 시작...${NC}\n"

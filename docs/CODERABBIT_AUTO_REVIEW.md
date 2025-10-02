@@ -16,14 +16,34 @@ GitHub PR에서 CodeRabbit이 남긴 리뷰 코멘트를 자동으로 수집하�
 
 ## 🚀 사용법
 
-### 1. 기본 사용
+### 1. Claude Code 슬래시 커맨드 (권장)
+
+Claude Code에서 `/apply-coderabbit` 명령어를 사용하면 더욱 편리합니다:
+
+```
+/apply-coderabbit 3          # PR #3의 CodeRabbit 리뷰 적용
+/apply-coderabbit --here     # 현재 작업 중인 PR 자동 감지 후 적용
+```
+
+**장점:**
+- ✅ Claude Code 내에서 바로 실행
+- ✅ 프롬프트 자동 복사 (별도 파일 읽기 불필요)
+- ✅ 작업 흐름 중단 없이 진행
+- ✅ `--here` 옵션으로 현재 PR 자동 감지
+
+### 2. 직접 스크립트 실행
+
+터미널에서 직접 실행할 수도 있습니다:
 
 ```bash
 # PR 번호를 인자로 전달
 ./scripts/commands/apply-coderabbit-review.sh 3
+
+# 현재 브랜치의 PR 자동 감지
+./scripts/commands/apply-coderabbit-review.sh --here
 ```
 
-### 2. 실행 흐름
+### 3. 실행 흐름
 
 ```
 1. PR 정보 조회
@@ -179,7 +199,16 @@ cat /tmp/claude-prompt-3.txt | less
 cat /tmp/claude-prompt-3.txt | grep "파일:" -A 10
 ```
 
-### Tip 2: 여러 PR 처리
+### Tip 2: 현재 작업 중인 PR 처리
+```bash
+# 현재 브랜치의 PR 자동 감지
+./scripts/commands/apply-coderabbit-review.sh --here
+
+# 또는 Claude Code에서
+/apply-coderabbit --here
+```
+
+### Tip 3: 여러 PR 처리
 ```bash
 # PR 3 처리
 ./scripts/commands/apply-coderabbit-review.sh 3
@@ -188,7 +217,7 @@ cat /tmp/claude-prompt-3.txt | grep "파일:" -A 10
 ./scripts/commands/apply-coderabbit-review.sh 4
 ```
 
-### Tip 3: 임시 파일 재사용
+### Tip 4: 임시 파일 재사용
 ```bash
 # 임시 파일 유지 선택 → 나중에 다시 참고 가능
 cat /tmp/coderabbit-prompts-3.md
@@ -325,7 +354,7 @@ Already up to date.
 
 ---
 
-**💡 Tip:** 이 스크립트를 alias로 등록하면 더 편리합니다!
+**💡 Tip:** Claude Code 슬래시 커맨드가 가장 편리하지만, 터미널에서도 alias로 등록 가능합니다!
 
 ```bash
 # ~/.bashrc 또는 ~/.zshrc에 추가
@@ -333,4 +362,60 @@ alias crr='./scripts/commands/apply-coderabbit-review.sh'
 
 # 사용
 crr 3
+crr --here
+```
+
+## 🎮 Claude Code 슬래시 커맨드 상세 가이드
+
+### 커맨드 등록
+
+프로젝트에 `.claudecodeslashcommands/commands.json` 파일이 생성되어 있습니다:
+
+```json
+{
+  "commands": [
+    {
+      "name": "apply-coderabbit",
+      "description": "GitHub PR의 CodeRabbit 리뷰 내용을 자동으로 반영합니다",
+      "parameters": [
+        {
+          "name": "pr_number",
+          "description": "GitHub PR 번호 (예: 3) 또는 --here를 입력하면 현재 작업 중인 PR 자동 감지",
+          "required": true,
+          "type": "string"
+        }
+      ],
+      "command": "bash scripts/commands/apply-coderabbit-review.sh {{pr_number}}"
+    }
+  ]
+}
+```
+
+### 사용 방법
+
+Claude Code 대화창에서:
+
+```
+/apply-coderabbit 3          # PR #3 리뷰 적용
+/apply-coderabbit --here     # 현재 브랜치 PR 자동 감지
+```
+
+### --here 옵션 동작 방식
+
+1. **현재 브랜치 확인**: `git branch --show-current`
+2. **연결된 PR 검색**: `gh pr list --head <브랜치명>`
+3. **PR 번호 추출**: 자동으로 PR 번호 감지
+4. **리뷰 적용**: 감지된 PR의 CodeRabbit 리뷰 자동 처리
+
+**예시:**
+```bash
+# 현재 브랜치: feature/improve-navigation
+# 연결된 PR: #3
+
+/apply-coderabbit --here
+
+# 출력:
+# 🔍 현재 브랜치의 PR 자동 감지 중...
+# ✓ 감지된 PR: #3 (상태: OPEN)
+# [리뷰 처리 진행...]
 ```
