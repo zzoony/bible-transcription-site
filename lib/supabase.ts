@@ -54,32 +54,51 @@ export interface Database {
   }
 }
 
-// Environment variable validation
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-
-if (!supabaseUrl) {
-  throw new Error('Missing env.NEXT_PUBLIC_SUPABASE_URL')
+// Environment variable validation (lazy - only when actually used)
+function getSupabaseUrl(): string {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL
+  if (!url) {
+    throw new Error('Missing env.NEXT_PUBLIC_SUPABASE_URL')
+  }
+  return url
 }
 
-if (!supabaseAnonKey) {
-  throw new Error('Missing env.NEXT_PUBLIC_SUPABASE_ANON_KEY')
+function getSupabaseAnonKey(): string {
+  const key = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  if (!key) {
+    throw new Error('Missing env.NEXT_PUBLIC_SUPABASE_ANON_KEY')
+  }
+  return key
 }
 
-// Create Supabase client with TypeScript support
-export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey, {
-  auth: {
-    persistSession: false, // No authentication needed for read-only operations
-  },
-  db: {
-    schema: 'public',
-  },
-  global: {
-    headers: {
-      'x-application-name': 'bible-transcription-site',
-    },
-  },
-})
+// Lazy initialization to avoid build-time errors
+let _supabase: ReturnType<typeof createClient<Database>> | null = null
+
+export function getSupabase() {
+  if (!_supabase) {
+    _supabase = createClient<Database>(getSupabaseUrl(), getSupabaseAnonKey(), {
+      auth: {
+        persistSession: false, // No authentication needed for read-only operations
+      },
+      db: {
+        schema: 'public',
+      },
+      global: {
+        headers: {
+          'x-application-name': 'bible-transcription-site',
+        },
+      },
+    })
+  }
+  return _supabase
+}
+
+// Legacy export for backward compatibility
+// Only initialize if environment variables are available (runtime only)
+export const supabase =
+  typeof window === 'undefined' && !process.env.NEXT_PUBLIC_SUPABASE_URL
+    ? (null as any) // Build-time: return null to avoid errors
+    : getSupabase() // Runtime: initialize normally
 
 // Server-side client for admin operations (if needed)
 export function createServerClient() {
@@ -89,7 +108,7 @@ export function createServerClient() {
     throw new Error('Missing env.SUPABASE_SERVICE_KEY')
   }
 
-  return createClient<Database>(supabaseUrl!, serviceKey, {
+  return createClient<Database>(getSupabaseUrl(), serviceKey, {
     auth: {
       persistSession: false,
       autoRefreshToken: false,
