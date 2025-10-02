@@ -369,26 +369,21 @@ crr --here
 
 ### 커맨드 등록
 
-프로젝트에 `.claudecodeslashcommands/commands.json` 파일이 생성되어 있습니다:
+프로젝트에 `.claude/commands/apply-coderabbit.md` 파일이 생성되어 있습니다:
 
-```json
-{
-  "commands": [
-    {
-      "name": "apply-coderabbit",
-      "description": "GitHub PR의 CodeRabbit 리뷰 내용을 자동으로 반영합니다",
-      "parameters": [
-        {
-          "name": "pr_number",
-          "description": "GitHub PR 번호 (예: 3) 또는 --here를 입력하면 현재 작업 중인 PR 자동 감지",
-          "required": true,
-          "type": "string"
-        }
-      ],
-      "command": "bash scripts/commands/apply-coderabbit-review.sh {{pr_number}}"
-    }
-  ]
-}
+```markdown
+---
+description: GitHub PR의 CodeRabbit 리뷰 내용을 자동으로 반영합니다
+---
+
+다음 명령어를 실행하여 CodeRabbit 리뷰를 가져와서 적용해주세요:
+
+bash scripts/commands/apply-coderabbit-review.sh {{arg1}}
+
+명령어 실행 후:
+1. 생성된 프롬프트 파일의 내용을 읽어주세요
+2. CodeRabbit의 제안사항을 코드에 적용해주세요
+3. 변경사항을 검토하고 필요시 수정해주세요
 ```
 
 ### 사용 방법
