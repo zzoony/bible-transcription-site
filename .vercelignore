@@ -1,0 +1,5 @@
+apps/pipeline/
+packages/database/database/
+*.log
+*.md
+!README.md

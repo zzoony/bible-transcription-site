@@ -1,0 +1,24 @@
+{
+  "name": "pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bible analysis data pipeline",
+  "scripts": {
+    "analyze": "ts-node scripts/analyze-galatians.ts",
+    "verify": "ts-node scripts/verify-galatians.ts",
+    "import-niv": "ts-node scripts/import-galatians-niv.ts",
+    "fix-duplicates": "ts-node scripts/fix-galatians-duplicates.ts"
+  },
+  "dependencies": {
+    "@bible/database": "*",
+    "@supabase/supabase-js": "^2.45.0",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "node-fetch": "^2.7.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.2"
+  }
+}
