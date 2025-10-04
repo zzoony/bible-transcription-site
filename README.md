@@ -1,6 +1,53 @@
-# 성경 필사 사이트
+# Bible Transcription Site - Monorepo
 
-성경 구절별 상세 분석을 제공하는 웹 사이트 프로젝트입니다.
+성경 구절 분석 및 표시를 위한 Monorepo 프로젝트입니다.
+
+## 📁 프로젝트 구조 (Monorepo)
+
+```
+bible-transcription-site/
+├── apps/
+│   ├── web/              # Next.js 웹 애플리케이션
+│   │   ├── app/          # Next.js App Router
+│   │   ├── components/   # React 컴포넌트
+│   │   ├── lib/          # 유틸리티 함수
+│   │   └── hooks/        # React 훅
+│   └── pipeline/         # 데이터 분석 파이프라인
+│       ├── scripts/      # 분석 스크립트
+│       ├── docs/         # 분석 가이드
+│       └── claudedocs/   # Claude 분석 문서
+├── packages/
+│   └── database/         # 공유 데이터베이스 스키마 및 타입
+└── package.json          # Workspace 루트
+```
+
+## 🚀 빠른 시작
+
+### 설치
+```bash
+npm install
+```
+
+### 웹 애플리케이션 실행
+```bash
+# 개발 서버
+npm run dev
+
+# 프로덕션 빌드
+npm run build
+
+# 프로덕션 서버
+npm start
+```
+
+### 파이프라인 스크립트 실행
+```bash
+# 갈라디아서 분석 검증
+npm run verify -w pipeline
+
+# NIV 텍스트 가져오기
+npm run import-niv -w pipeline
+```
 
 ## 주요 기능
 
@@ -10,77 +57,70 @@
 - 문맥적 배경 설명 (역사적/신학적/문학적 통합)
 - 한국어 번역 제공
 
-## 기술 스택
+## 📦 Workspace 구성
 
-- **데이터베이스**: PostgreSQL (로컬 개발용)
-- **백엔드**: Node.js
-- **AI 분석**: Claude API 연동
-- **병렬 처리**: Sub Agent 활용 시스템
+### apps/web
+- **기술 스택**: Next.js 14, React 18, TypeScript
+- **UI 라이브러리**: Radix UI, Tailwind CSS
+- **데이터베이스**: Supabase
+- **배포**: Vercel
 
-## 프로젝트 구조
+### apps/pipeline
+- **목적**: 성경 구절 분석 및 데이터 생성
+- **언어**: TypeScript
+- **도구**: ts-node, Claude Code
 
-```
-📁 bible-transcription-site/
-├── 📁 agents/                    # 분석 엔진
-├── 📁 database/                  # DB 스키마 및 스크립트
-├── 📁 docs/                      # 문서화
-│   ├── 📁 analysis/              # 분석 표준 및 품질 문서
-│   ├── 📁 plans/                 # 계획 및 전략 문서
-│   └── 📁 reports/               # 처리 결과 보고서
-├── 📁 scripts/                   # 유틸리티 스크립트
-│   └── 📁 analysis/              # 분석용 Python 스크립트
-├── 📁 temp/                      # 임시 파일
-├── CLAUDE.md                     # 프로젝트 규칙 및 표준
-├── SUB_AGENT_UTILIZATION_RULES.md # Sub Agent 활용 규칙
-└── README.md                     # 프로젝트 소개
-```
+### packages/database
+- **목적**: DB 스키마 및 타입 공유
+- **내용**: Supabase 타입 정의
 
-## 핵심 문서
+## 🔧 개발 스크립트
 
-- **SUB_AGENT_UTILIZATION_RULES.md**: Sub Agent 병렬 처리 표준
-- **docs/analysis/ANALYSIS_OUTPUT_STANDARD.md**: 분석 출력 형식 v2
-- **docs/plans/**: 병렬 처리 전략 및 계획
-- **docs/reports/**: 처리 완료 보고서
-
-## 설치 및 실행
-
+### 루트 명령어
 ```bash
-# Docker로 PostgreSQL 실행
-docker-compose up -d
-
-# 데이터베이스 상태 확인
-./database/db_summary.sh
-
-# 단일 구절 분석
-cd agents
-node single_verse_analyzer.js
-
-# 전체 장 병렬 처리 (권장)
-# SUB_AGENT_UTILIZATION_RULES.md 참조
+npm run dev              # 웹 앱 개발 서버 실행
+npm run build            # 웹 앱 빌드
+npm run test             # 웹 앱 테스트 실행
+npm run lint             # 웹 앱 린트 검사
 ```
 
-## 현재 상태
+### Workspace별 명령어
+```bash
+# Web App
+npm run dev -w web
+npm run build -w web
+npm run test -w web
 
-- ✅ **빌립보서 1장**: 30개 구절 완료 (100%)
-- ✅ **빌립보서 3장**: 21개 구절 완료 (100%)
-- ⚠️ **빌립보서 2장**: 11개 구절 완료 (37% - 복구 필요)
-- ⚠️ **빌립보서 4장**: 2개 구절 완료 (9% - 복구 필요)
+# Pipeline
+npm run verify -w pipeline
+npm run import-niv -w pipeline
+```
 
-## 다음 단계
+## 🌐 배포
 
-1. 누락 구절 복구 (빌립보서 2,4장)
-2. 데이터 무결성 검증 시스템 강화
-3. 다른 성경책 확장 (갈라디아서, 로마서)
-4. Supabase 마이그레이션
-5. 웹 애플리케이션 개발
+### Vercel 설정
+- `vercel.json`에서 `apps/web`만 배포하도록 설정됨
+- 파이프라인 파일은 배포에서 제외됨
 
-## Sub Agent 활용 규칙
+### 환경 변수
+`.env.example` 파일을 `.env`로 복사하고 다음 값을 설정하세요:
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `SUPABASE_SERVICE_KEY`
 
-⚠️ **중요**: 모든 콘텐츠 확장 작업은 다음 규칙을 준수해야 합니다:
+## 📚 문서
 
-1. **데이터 완결성 최우선**: 완료 선언 전 반드시 모든 구절의 DB 저장 검증
-2. **Sub Agent 병렬 처리**: 6개 이상 구절은 병렬 처리 필수
-3. **의미 단위 그룹핑**: 신학적 주제별 Agent 작업 분배
-4. **품질 보장**: Schema v2 형식 준수 및 자동 검증
+- [분석 가이드](apps/pipeline/docs/CLAUDE_CODE_ANALYSIS_GUIDE.md)
+- [갈라디아서 분석 계획](apps/pipeline/docs/GALATIANS_ANALYSIS_PLAN.md)
+- [자동 분석 워크플로우](apps/pipeline/docs/AUTO_ANALYZE_NEW_TESTAMENT.md)
 
-자세한 내용은 `SUB_AGENT_UTILIZATION_RULES.md` 참조.
+## 🤝 기여
+
+이 프로젝트는 Monorepo 구조를 사용합니다:
+1. 웹 앱 변경사항은 `apps/web/`에서 작업
+2. 분석 스크립트는 `apps/pipeline/`에서 작업
+3. DB 타입 변경은 `packages/database/`에서 작업
+
+## 📄 라이선스
+
+MIT

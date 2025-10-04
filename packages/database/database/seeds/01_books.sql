@@ -1,0 +1,82 @@
+-- Initial Bible Books Data
+-- Total: 66 books (39 Old Testament, 27 New Testament)
+
+INSERT INTO books (name_english, name_korean, abbreviation, testament, order_number, total_chapters) VALUES
+-- Old Testament (구약)
+('Genesis', '창세기', 'Gen', 1, 1, 50),
+('Exodus', '출애굽기', 'Exod', 1, 2, 40),
+('Leviticus', '레위기', 'Lev', 1, 3, 27),
+('Numbers', '민수기', 'Num', 1, 4, 36),
+('Deuteronomy', '신명기', 'Deut', 1, 5, 34),
+('Joshua', '여호수아', 'Josh', 1, 6, 24),
+('Judges', '사사기', 'Judg', 1, 7, 21),
+('Ruth', '룻기', 'Ruth', 1, 8, 4),
+('1 Samuel', '사무엘상', '1Sam', 1, 9, 31),
+('2 Samuel', '사무엘하', '2Sam', 1, 10, 24),
+('1 Kings', '열왕기상', '1Kgs', 1, 11, 22),
+('2 Kings', '열왕기하', '2Kgs', 1, 12, 25),
+('1 Chronicles', '역대상', '1Chr', 1, 13, 29),
+('2 Chronicles', '역대하', '2Chr', 1, 14, 36),
+('Ezra', '에스라', 'Ezra', 1, 15, 10),
+('Nehemiah', '느헤미야', 'Neh', 1, 16, 13),
+('Esther', '에스더', 'Esth', 1, 17, 10),
+('Job', '욥기', 'Job', 1, 18, 42),
+('Psalms', '시편', 'Ps', 1, 19, 150),
+('Proverbs', '잠언', 'Prov', 1, 20, 31),
+('Ecclesiastes', '전도서', 'Eccl', 1, 21, 12),
+('Song of Songs', '아가', 'Song', 1, 22, 8),
+('Isaiah', '이사야', 'Isa', 1, 23, 66),
+('Jeremiah', '예레미야', 'Jer', 1, 24, 52),
+('Lamentations', '예레미야애가', 'Lam', 1, 25, 5),
+('Ezekiel', '에스겔', 'Ezek', 1, 26, 48),
+('Daniel', '다니엘', 'Dan', 1, 27, 12),
+('Hosea', '호세아', 'Hos', 1, 28, 14),
+('Joel', '요엘', 'Joel', 1, 29, 3),
+('Amos', '아모스', 'Amos', 1, 30, 9),
+('Obadiah', '오바댜', 'Obad', 1, 31, 1),
+('Jonah', '요나', 'Jonah', 1, 32, 4),
+('Micah', '미가', 'Mic', 1, 33, 7),
+('Nahum', '나훔', 'Nah', 1, 34, 3),
+('Habakkuk', '하박국', 'Hab', 1, 35, 3),
+('Zephaniah', '스바냐', 'Zeph', 1, 36, 3),
+('Haggai', '학개', 'Hag', 1, 37, 2),
+('Zechariah', '스가랴', 'Zech', 1, 38, 14),
+('Malachi', '말라기', 'Mal', 1, 39, 4),
+
+-- New Testament (신약)
+('Matthew', '마태복음', 'Matt', 2, 40, 28),
+('Mark', '마가복음', 'Mark', 2, 41, 16),
+('Luke', '누가복음', 'Luke', 2, 42, 24),
+('John', '요한복음', 'John', 2, 43, 21),
+('Acts', '사도행전', 'Acts', 2, 44, 28),
+('Romans', '로마서', 'Rom', 2, 45, 16),
+('1 Corinthians', '고린도전서', '1Cor', 2, 46, 16),
+('2 Corinthians', '고린도후서', '2Cor', 2, 47, 13),
+('Galatians', '갈라디아서', 'Gal', 2, 48, 6),
+('Ephesians', '에베소서', 'Eph', 2, 49, 6),
+('Philippians', '빌립보서', 'Phil', 2, 50, 4),
+('Colossians', '골로새서', 'Col', 2, 51, 4),
+('1 Thessalonians', '데살로니가전서', '1Thess', 2, 52, 5),
+('2 Thessalonians', '데살로니가후서', '2Thess', 2, 53, 3),
+('1 Timothy', '디모데전서', '1Tim', 2, 54, 6),
+('2 Timothy', '디모데후서', '2Tim', 2, 55, 4),
+('Titus', '디도서', 'Titus', 2, 56, 3),
+('Philemon', '빌레몬서', 'Phlm', 2, 57, 1),
+('Hebrews', '히브리서', 'Heb', 2, 58, 13),
+('James', '야고보서', 'Jas', 2, 59, 5),
+('1 Peter', '베드로전서', '1Pet', 2, 60, 5),
+('2 Peter', '베드로후서', '2Pet', 2, 61, 3),
+('1 John', '요한일서', '1John', 2, 62, 5),
+('2 John', '요한이서', '2John', 2, 63, 1),
+('3 John', '요한삼서', '3John', 2, 64, 1),
+('Jude', '유다서', 'Jude', 2, 65, 1),
+('Revelation', '요한계시록', 'Rev', 2, 66, 22);
+
+-- Generate chapters for each book
+INSERT INTO chapters (book_id, chapter_number, total_verses)
+SELECT
+    b.id,
+    chapter_num,
+    30 -- Default 30 verses per chapter (will be updated with actual counts)
+FROM books b
+CROSS JOIN generate_series(1, b.total_chapters) AS chapter_num;

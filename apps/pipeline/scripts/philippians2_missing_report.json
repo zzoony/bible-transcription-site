@@ -1,0 +1,702 @@
+{
+  "chapter": "Philippians 2",
+  "total_verses": 30,
+  "complete_count": 11,
+  "missing_count": 19,
+  "results": [
+    {
+      "reference": "Philippians 2:1",
+      "verse_number": 1,
+      "niv_text": "Therefore if you have any encouragement from being united with Christ, if any comfort from his love, if any common sharing in the Spirit, if any tenderness and compassion,",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 4,
+      "status": "COMPLETE",
+      "sentences": [
+        "Therefore if you have any encouragement from being united with Christ, if any comfort from his love, if any common sharing in the Spirit, if any tenderness and compassion,"
+      ],
+      "stored_structures": [
+        {
+          "sequence": 1,
+          "classification": "조건절의 시작",
+          "text": "Therefore if you have any encouragement from being united with Christ"
+        },
+        {
+          "sequence": 2,
+          "classification": "병렬 조건절",
+          "text": "if any comfort from his love"
+        },
+        {
+          "sequence": 3,
+          "classification": "병렬 조건절",
+          "text": "if any common sharing in the Spirit"
+        },
+        {
+          "sequence": 4,
+          "classification": "병렬 조건절",
+          "text": "if any tenderness and compassion"
+        }
+      ]
+    },
+    {
+      "reference": "Philippians 2:2",
+      "verse_number": 2,
+      "niv_text": "then make my joy complete by being like-minded, having the same love, being one in spirit and of one mind.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 2,
+      "status": "COMPLETE",
+      "sentences": [
+        "then make my joy complete by being like-minded, having the same love, being one in spirit and of one mind"
+      ],
+      "stored_structures": [
+        {
+          "sequence": 1,
+          "classification": "조건적 결론 및 권면",
+          "text": "then make my joy complete"
+        },
+        {
+          "sequence": 2,
+          "classification": "방법 제시",
+          "text": "by being like-minded, having the same love, being one in spirit and of one mind"
+        }
+      ]
+    },
+    {
+      "reference": "Philippians 2:3",
+      "verse_number": 3,
+      "niv_text": "Do nothing out of selfish ambition or vain conceit. Rather, in humility value others above yourselves,",
+      "expected_sentence_count": 2,
+      "stored_structure_count": 2,
+      "status": "COMPLETE",
+      "sentences": [
+        "Do nothing out of selfish ambition or vain conceit",
+        "Rather, in humility value others above yourselves,"
+      ],
+      "stored_structures": [
+        {
+          "sequence": 1,
+          "classification": "금지 명령",
+          "text": "Do nothing out of selfish ambition or vain conceit"
+        },
+        {
+          "sequence": 2,
+          "classification": "긍정적 권면",
+          "text": "Rather, in humility value others above yourselves"
+        }
+      ]
+    },
+    {
+      "reference": "Philippians 2:4",
+      "verse_number": 4,
+      "niv_text": "not looking to your own interests but each of you to the interests of the others.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 2,
+      "status": "COMPLETE",
+      "sentences": [
+        "not looking to your own interests but each of you to the interests of the others"
+      ],
+      "stored_structures": [
+        {
+          "sequence": 1,
+          "classification": "윤리적 권면",
+          "text": "not looking to your own interests"
+        },
+        {
+          "sequence": 2,
+          "classification": "긍정적 권면",
+          "text": "but each of you to the interests of the others"
+        }
+      ]
+    },
+    {
+      "reference": "Philippians 2:5",
+      "verse_number": 5,
+      "niv_text": "In your relationships with one another, have the same mindset as Christ Jesus:",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 2,
+      "status": "COMPLETE",
+      "sentences": [
+        "In your relationships with one another, have the same mindset as Christ Jesus:"
+      ],
+      "stored_structures": [
+        {
+          "sequence": 1,
+          "classification": "권면적 명령문",
+          "text": "In your relationships with one another, have the same mindset"
+        },
+        {
+          "sequence": 2,
+          "classification": "비교 구문",
+          "text": "as Christ Jesus"
+        }
+      ]
+    },
+    {
+      "reference": "Philippians 2:6",
+      "verse_number": 6,
+      "niv_text": "Who, being in very nature God, did not consider equality with God something to be used to his own advantage;",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 2,
+      "status": "COMPLETE",
+      "sentences": [
+        "Who, being in very nature God, did not consider equality with God something to be used to his own advantage;"
+      ],
+      "stored_structures": [
+        {
+          "sequence": 1,
+          "classification": "관계절 (신성 묘사)",
+          "text": "Who, being in very nature God"
+        },
+        {
+          "sequence": 2,
+          "classification": "부정 구문 (겸손의 선택)",
+          "text": "did not consider equality with God something to be used to his own advantage"
+        }
+      ]
+    },
+    {
+      "reference": "Philippians 2:7",
+      "verse_number": 7,
+      "niv_text": "rather, he made himself nothing by taking the very nature of a servant, being made in human likeness.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 4,
+      "status": "COMPLETE",
+      "sentences": [
+        "rather, he made himself nothing by taking the very nature of a servant, being made in human likeness"
+      ],
+      "stored_structures": [
+        {
+          "sequence": 1,
+          "classification": "대조 접속구문",
+          "text": "rather"
+        },
+        {
+          "sequence": 2,
+          "classification": "자기 비움의 행동",
+          "text": "he made himself nothing"
+        },
+        {
+          "sequence": 3,
+          "classification": "수단을 나타내는 분사구문",
+          "text": "by taking the very nature of a servant"
+        },
+        {
+          "sequence": 4,
+          "classification": "보완적 분사구문",
+          "text": "being made in human likeness"
+        }
+      ]
+    },
+    {
+      "reference": "Philippians 2:8",
+      "verse_number": 8,
+      "niv_text": "And being found in appearance as a man, he humbled himself by becoming obedient to death—even death on a cross!",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 4,
+      "status": "COMPLETE",
+      "sentences": [
+        "And being found in appearance as a man, he humbled himself by becoming obedient to death—even death on a cross"
+      ],
+      "stored_structures": [
+        {
+          "sequence": 1,
+          "classification": "연결 분사구문",
+          "text": "And being found in appearance as a man"
+        },
+        {
+          "sequence": 2,
+          "classification": "겸손의 행동",
+          "text": "he humbled himself"
+        },
+        {
+          "sequence": 3,
+          "classification": "순종의 구체적 내용",
+          "text": "by becoming obedient to death"
+        },
+        {
+          "sequence": 4,
+          "classification": "강조 구문",
+          "text": "even death on a cross"
+        }
+      ]
+    },
+    {
+      "reference": "Philippians 2:9",
+      "verse_number": 9,
+      "niv_text": "Therefore God exalted him to the highest place and gave him the name that is above every name,",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 4,
+      "status": "COMPLETE",
+      "sentences": [
+        "Therefore God exalted him to the highest place and gave him the name that is above every name,"
+      ],
+      "stored_structures": [
+        {
+          "sequence": 1,
+          "classification": "결과 접속사",
+          "text": "Therefore"
+        },
+        {
+          "sequence": 2,
+          "classification": "하나님의 응답",
+          "text": "God exalted him to the highest place"
+        },
+        {
+          "sequence": 3,
+          "classification": "수여 동사구문",
+          "text": "and gave him the name"
+        },
+        {
+          "sequence": 4,
+          "classification": "최상급 표현",
+          "text": "that is above every name"
+        }
+      ]
+    },
+    {
+      "reference": "Philippians 2:10",
+      "verse_number": 10,
+      "niv_text": "that at the name of Jesus every knee should bow, in heaven and on earth and under the earth,",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 3,
+      "status": "COMPLETE",
+      "sentences": [
+        "that at the name of Jesus every knee should bow, in heaven and on earth and under the earth,"
+      ],
+      "stored_structures": [
+        {
+          "sequence": 1,
+          "classification": "목적절",
+          "text": "that at the name of Jesus"
+        },
+        {
+          "sequence": 2,
+          "classification": "보편적 경배",
+          "text": "every knee should bow"
+        },
+        {
+          "sequence": 3,
+          "classification": "우주적 범위",
+          "text": "in heaven and on earth and under the earth"
+        }
+      ]
+    },
+    {
+      "reference": "Philippians 2:11",
+      "verse_number": 11,
+      "niv_text": "and every tongue acknowledge that Jesus Christ is Lord, to the glory of God the Father.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 3,
+      "status": "COMPLETE",
+      "sentences": [
+        "and every tongue acknowledge that Jesus Christ is Lord, to the glory of God the Father"
+      ],
+      "stored_structures": [
+        {
+          "sequence": 1,
+          "classification": "병렬 구문",
+          "text": "and every tongue acknowledge"
+        },
+        {
+          "sequence": 2,
+          "classification": "신앙고백 내용",
+          "text": "that Jesus Christ is Lord"
+        },
+        {
+          "sequence": 3,
+          "classification": "목적절",
+          "text": "to the glory of God the Father"
+        }
+      ]
+    },
+    {
+      "reference": "Philippians 2:12",
+      "verse_number": 12,
+      "niv_text": "Therefore, my dear friends, as you have always obeyed—not only in my presence, but now much more in my absence—continue to work out your salvation with fear and trembling,",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "Therefore, my dear friends, as you have always obeyed—not only in my presence, but now much more in my absence—continue to work out your salvation with fear and trembling,"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:13",
+      "verse_number": 13,
+      "niv_text": "for it is God who works in you to will and to act in order to fulfill his good purpose.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "for it is God who works in you to will and to act in order to fulfill his good purpose"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:14",
+      "verse_number": 14,
+      "niv_text": "Do everything without grumbling or arguing,",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "Do everything without grumbling or arguing,"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:15",
+      "verse_number": 15,
+      "niv_text": "so that you may become blameless and pure, 'children of God without fault in a warped and crooked generation.' Then you will shine among them like stars in the sky",
+      "expected_sentence_count": 2,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "so that you may become blameless and pure, 'children of God without fault in a warped and crooked generation",
+        "' Then you will shine among them like stars in the sky"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:16",
+      "verse_number": 16,
+      "niv_text": "as you hold firmly to the word of life. And then I will be able to boast on the day of Christ that I did not run or labor in vain.",
+      "expected_sentence_count": 2,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "as you hold firmly to the word of life",
+        "And then I will be able to boast on the day of Christ that I did not run or labor in vain"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:17",
+      "verse_number": 17,
+      "niv_text": "But even if I am being poured out like a drink offering on the sacrifice and service coming from your faith, I am glad and rejoice with all of you.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "But even if I am being poured out like a drink offering on the sacrifice and service coming from your faith, I am glad and rejoice with all of you"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:18",
+      "verse_number": 18,
+      "niv_text": "So you too should be glad and rejoice with me.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "So you too should be glad and rejoice with me"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:19",
+      "verse_number": 19,
+      "niv_text": "I hope in the Lord Jesus to send Timothy to you soon, that I also may be cheered when I receive news about you.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "I hope in the Lord Jesus to send Timothy to you soon, that I also may be cheered when I receive news about you"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:20",
+      "verse_number": 20,
+      "niv_text": "I have no one else like him, who will show genuine concern for your welfare.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "I have no one else like him, who will show genuine concern for your welfare"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:21",
+      "verse_number": 21,
+      "niv_text": "For everyone looks out for their own interests, not those of Jesus Christ.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "For everyone looks out for their own interests, not those of Jesus Christ"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:22",
+      "verse_number": 22,
+      "niv_text": "But you know that Timothy has proved himself, because as a son with his father he has served with me in the work of the gospel.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "But you know that Timothy has proved himself, because as a son with his father he has served with me in the work of the gospel"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:23",
+      "verse_number": 23,
+      "niv_text": "I hope, therefore, to send him as soon as I see how things go with me.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "I hope, therefore, to send him as soon as I see how things go with me"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:24",
+      "verse_number": 24,
+      "niv_text": "And I am confident in the Lord that I myself will come soon.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "And I am confident in the Lord that I myself will come soon"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:25",
+      "verse_number": 25,
+      "niv_text": "But I think it is necessary to send back to you Epaphroditus, my brother, co-worker and fellow soldier, who is also your messenger, whom you sent to take care of my needs.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "But I think it is necessary to send back to you Epaphroditus, my brother, co-worker and fellow soldier, who is also your messenger, whom you sent to take care of my needs"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:26",
+      "verse_number": 26,
+      "niv_text": "For he longs for all of you and is distressed because you heard he was ill.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "For he longs for all of you and is distressed because you heard he was ill"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:27",
+      "verse_number": 27,
+      "niv_text": "Indeed he was ill, and almost died. But God had mercy on him, and not on him only but also on me, to spare me sorrow upon sorrow.",
+      "expected_sentence_count": 2,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "Indeed he was ill, and almost died",
+        "But God had mercy on him, and not on him only but also on me, to spare me sorrow upon sorrow"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:28",
+      "verse_number": 28,
+      "niv_text": "Therefore I am all the more eager to send him, so that when you see him again you may be glad and I may have less anxiety.",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "Therefore I am all the more eager to send him, so that when you see him again you may be glad and I may have less anxiety"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:29",
+      "verse_number": 29,
+      "niv_text": "So then, welcome him in the Lord with great joy, and honor people like him,",
+      "expected_sentence_count": 1,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "So then, welcome him in the Lord with great joy, and honor people like him,"
+      ],
+      "stored_structures": []
+    },
+    {
+      "reference": "Philippians 2:30",
+      "verse_number": 30,
+      "niv_text": "because he almost died for the work of Christ. He risked his life to make up for the help you yourselves could not give me.",
+      "expected_sentence_count": 2,
+      "stored_structure_count": 0,
+      "status": "MISSING",
+      "sentences": [
+        "because he almost died for the work of Christ",
+        "He risked his life to make up for the help you yourselves could not give me"
+      ],
+      "stored_structures": []
+    }
+  ],
+  "missing_verses": [
+    {
+      "reference": "Philippians 2:12",
+      "verse_number": 12,
+      "sentence_count": 1,
+      "sentences": [
+        "Therefore, my dear friends, as you have always obeyed—not only in my presence, but now much more in my absence—continue to work out your salvation with fear and trembling,"
+      ]
+    },
+    {
+      "reference": "Philippians 2:13",
+      "verse_number": 13,
+      "sentence_count": 1,
+      "sentences": [
+        "for it is God who works in you to will and to act in order to fulfill his good purpose"
+      ]
+    },
+    {
+      "reference": "Philippians 2:14",
+      "verse_number": 14,
+      "sentence_count": 1,
+      "sentences": [
+        "Do everything without grumbling or arguing,"
+      ]
+    },
+    {
+      "reference": "Philippians 2:15",
+      "verse_number": 15,
+      "sentence_count": 2,
+      "sentences": [
+        "so that you may become blameless and pure, 'children of God without fault in a warped and crooked generation",
+        "' Then you will shine among them like stars in the sky"
+      ]
+    },
+    {
+      "reference": "Philippians 2:16",
+      "verse_number": 16,
+      "sentence_count": 2,
+      "sentences": [
+        "as you hold firmly to the word of life",
+        "And then I will be able to boast on the day of Christ that I did not run or labor in vain"
+      ]
+    },
+    {
+      "reference": "Philippians 2:17",
+      "verse_number": 17,
+      "sentence_count": 1,
+      "sentences": [
+        "But even if I am being poured out like a drink offering on the sacrifice and service coming from your faith, I am glad and rejoice with all of you"
+      ]
+    },
+    {
+      "reference": "Philippians 2:18",
+      "verse_number": 18,
+      "sentence_count": 1,
+      "sentences": [
+        "So you too should be glad and rejoice with me"
+      ]
+    },
+    {
+      "reference": "Philippians 2:19",
+      "verse_number": 19,
+      "sentence_count": 1,
+      "sentences": [
+        "I hope in the Lord Jesus to send Timothy to you soon, that I also may be cheered when I receive news about you"
+      ]
+    },
+    {
+      "reference": "Philippians 2:20",
+      "verse_number": 20,
+      "sentence_count": 1,
+      "sentences": [
+        "I have no one else like him, who will show genuine concern for your welfare"
+      ]
+    },
+    {
+      "reference": "Philippians 2:21",
+      "verse_number": 21,
+      "sentence_count": 1,
+      "sentences": [
+        "For everyone looks out for their own interests, not those of Jesus Christ"
+      ]
+    },
+    {
+      "reference": "Philippians 2:22",
+      "verse_number": 22,
+      "sentence_count": 1,
+      "sentences": [
+        "But you know that Timothy has proved himself, because as a son with his father he has served with me in the work of the gospel"
+      ]
+    },
+    {
+      "reference": "Philippians 2:23",
+      "verse_number": 23,
+      "sentence_count": 1,
+      "sentences": [
+        "I hope, therefore, to send him as soon as I see how things go with me"
+      ]
+    },
+    {
+      "reference": "Philippians 2:24",
+      "verse_number": 24,
+      "sentence_count": 1,
+      "sentences": [
+        "And I am confident in the Lord that I myself will come soon"
+      ]
+    },
+    {
+      "reference": "Philippians 2:25",
+      "verse_number": 25,
+      "sentence_count": 1,
+      "sentences": [
+        "But I think it is necessary to send back to you Epaphroditus, my brother, co-worker and fellow soldier, who is also your messenger, whom you sent to take care of my needs"
+      ]
+    },
+    {
+      "reference": "Philippians 2:26",
+      "verse_number": 26,
+      "sentence_count": 1,
+      "sentences": [
+        "For he longs for all of you and is distressed because you heard he was ill"
+      ]
+    },
+    {
+      "reference": "Philippians 2:27",
+      "verse_number": 27,
+      "sentence_count": 2,
+      "sentences": [
+        "Indeed he was ill, and almost died",
+        "But God had mercy on him, and not on him only but also on me, to spare me sorrow upon sorrow"
+      ]
+    },
+    {
+      "reference": "Philippians 2:28",
+      "verse_number": 28,
+      "sentence_count": 1,
+      "sentences": [
+        "Therefore I am all the more eager to send him, so that when you see him again you may be glad and I may have less anxiety"
+      ]
+    },
+    {
+      "reference": "Philippians 2:29",
+      "verse_number": 29,
+      "sentence_count": 1,
+      "sentences": [
+        "So then, welcome him in the Lord with great joy, and honor people like him,"
+      ]
+    },
+    {
+      "reference": "Philippians 2:30",
+      "verse_number": 30,
+      "sentence_count": 2,
+      "sentences": [
+        "because he almost died for the work of Christ",
+        "He risked his life to make up for the help you yourselves could not give me"
+      ]
+    }
+  ]
+}
