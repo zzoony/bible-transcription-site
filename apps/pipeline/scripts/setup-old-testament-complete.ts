@@ -2,10 +2,16 @@ import { createClient } from '@supabase/supabase-js'
 import * as fs from 'fs'
 import * as path from 'path'
 
-const supabase = createClient(
-  'https://kmbndafjfxzbyokzqgno.supabase.co',
-  '***REMOVED***'
-)
+const supabaseUrl = process.env.SUPABASE_URL
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+if (!supabaseUrl || !supabaseKey) {
+  console.error('❌ 환경변수가 설정되지 않았습니다.')
+  console.error('SUPABASE_URL과 SUPABASE_SERVICE_ROLE_KEY를 .env 파일에 설정해주세요.')
+  process.exit(1)
+}
+
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 // 구약 39권 정의 (성경 순서대로)
 const OLD_TESTAMENT_BOOKS = [

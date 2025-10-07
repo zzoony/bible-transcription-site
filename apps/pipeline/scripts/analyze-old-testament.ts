@@ -1,10 +1,16 @@
 import { createClient } from '@supabase/supabase-js'
 import { saveAnalysisToDb, AnalysisData } from './save-analysis-to-db'
 
-const supabase = createClient(
-  'https://kmbndafjfxzbyokzqgno.supabase.co',
-  '***REMOVED***'
-)
+const supabaseUrl = process.env.SUPABASE_URL
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+if (!supabaseUrl || !supabaseKey) {
+  console.error('❌ 환경변수가 설정되지 않았습니다.')
+  console.error('SUPABASE_URL과 SUPABASE_SERVICE_ROLE_KEY를 .env 파일에 설정해주세요.')
+  process.exit(1)
+}
+
+const supabase = createClient(supabaseUrl, supabaseKey)
 
 // 구약 문맥에 맞춘 고품질 분석 생성 함수
 function generateOldTestamentAnalysis(reference: string, text: string): AnalysisData {
