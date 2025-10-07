@@ -38,12 +38,7 @@ async function checkDuplicates() {
 
   const verses = allVerses
 
-  if (error) {
-    console.error('❌ 조회 오류:', error)
-    return
-  }
-
-  const refCounts: { [key: string]: number } = {}
+  const refCounts: { [key: string]: number} = {}
   verses?.forEach((v: any) => {
     refCounts[v.reference] = (refCounts[v.reference] || 0) + 1
   })

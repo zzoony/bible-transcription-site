@@ -3,21 +3,29 @@
 
 export interface VerseAnalysisData {
   sentence_structures?: Array<{
-    text: string;
-    classification: string;
-    description?: string;
-  }>;
-  key_words?: Array<{
-    word: string;
-    pronunciation?: {
-      ipa?: string;
-      korean?: string;
-    };
-    meaning?: string;
-  }>;
-  context?: string;
-  korean_translation?: string;
-  special_notes?: string;
+    sequence_order: number
+    semantic_classification: string
+    original_text: string
+    korean_translation: string
+    grammatical_explanation?: string
+  }>
+  vocabulary?: Array<{
+    word: string
+    ipa_pronunciation?: string
+    korean_pronunciation?: string
+    part_of_speech?: string
+    definition_korean?: string
+    usage_note?: string
+  }>
+  contextual_explanation?: {
+    integrated_explanation: string
+    cross_references?: string[]
+  }
+  korean_translation?: {
+    natural_translation: string
+    translation_notes?: string
+  }
+  special_explanation?: Record<string, unknown>
   [key: string]: unknown; // 확장 가능하도록 추가 필드 허용
 }
 
