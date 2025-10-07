@@ -1,8 +1,11 @@
 import { createClient } from '@supabase/supabase-js'
 import * as dotenv from 'dotenv'
 import * as fs from 'fs'
+import * as path from 'path'
 
-dotenv.config()
+// Load from apps/pipeline/.env
+const envPath = path.resolve(__dirname, '../.env')
+dotenv.config({ path: envPath })
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -68,7 +71,7 @@ async function saveAnalysisToDb(data: AnalysisData) {
     // 2. 기존 데이터 삭제 (중복 방지)
     await supabase.from('sentence_structures').delete().eq('verse_id', verseId)
     await supabase.from('vocabulary').delete().eq('verse_id', verseId)
-    await supabase.from('context_explanation').delete().eq('verse_id', verseId)
+    await supabase.from('contextual_explanations').delete().eq('verse_id', verseId)
     await supabase.from('korean_translations').delete().eq('verse_id', verseId)
     await supabase.from('special_explanations').delete().eq('verse_id', verseId)
 
@@ -111,7 +114,7 @@ async function saveAnalysisToDb(data: AnalysisData) {
     // 5. 문맥 설명 저장
     if (data.contextual_explanation) {
       const { error: contextError } = await supabase
-        .from('context_explanation')
+        .from('contextual_explanations')
         .insert({
           verse_id: verseId,
           ...data.contextual_explanation
@@ -156,6 +159,17 @@ async function saveAnalysisToDb(data: AnalysisData) {
       console.log(`  ✅ 특별설명 저장`)
     }
 
+    // 8. analysis_completed 플래그 업데이트
+    const { error: updateError } = await supabase
+      .from('verses')
+      .update({ analysis_completed: true })
+      .eq('id', verseId)
+
+    if (updateError) {
+      console.error('❌ analysis_completed 업데이트 실패:', updateError)
+      return false
+    }
+
     console.log(`✅ ${data.reference} 저장 완료\n`)
     return true
   } catch (error) {
@@ -198,7 +212,10 @@ async function main() {
   process.exit(success ? 0 : 1)
 }
 
-main()
+// Only run main if this file is executed directly
+if (require.main === module) {
+  main()
+}
 
 export { saveAnalysisToDb }
 export type { AnalysisData }

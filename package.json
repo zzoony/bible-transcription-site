@@ -17,6 +17,7 @@
     "test:e2e": "npm run test:e2e -w web",
     "web:dev": "npm run dev -w web",
     "web:build": "npm run build -w web",
+    "verify:completeness": "npm run verify:completeness -w pipeline",
     "pipeline:verify": "npm run verify -w pipeline",
     "pipeline:import": "npm run import-niv -w pipeline"
   },

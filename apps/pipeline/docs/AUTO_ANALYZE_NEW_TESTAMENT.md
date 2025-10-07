@@ -3,6 +3,26 @@
 ## 🎯 목표
 신약 성경 전체 27권 중 빌립보서와 갈라디아서를 제외한 25권을 Claude Code로 완전 자동 분석하여 Supabase에 업로드합니다.
 
+## ⚙️ 중요: Monorepo 환경 설정
+
+### 작업 디렉토리
+```bash
+cd /Users/peter/Dev/bible-transcription-site/apps/pipeline
+```
+**모든 스크립트는 apps/pipeline 디렉토리에서 실행해야 합니다!**
+
+### 환경변수 확인
+`apps/pipeline/.env` 파일에 다음 변수가 있어야 합니다:
+```
+NEXT_PUBLIC_SUPABASE_URL=https://kmbndafjfxzbyokzqgno.supabase.co
+SUPABASE_SERVICE_KEY=<service_role_key>
+```
+
+### 핵심 스크립트 (모두 apps/pipeline/scripts/)
+- `save-analysis-to-db.ts` - 분석 결과 DB 저장 (⚠️ 테이블명 수정됨: contextual_explanations)
+- `fetch-verse.ts` - 구절 조회
+- `verify-completeness.ts` - 완성도 검증
+
 ---
 
 ## 🚀 **시작 프롬프트 (여기부터 복사하세요)**
@@ -12,14 +32,18 @@
 
 ## 작업 지시사항
 
-**중요: 이 작업은 완전 자동 무인 모드입니다. 10일간 사용자가 돌아올 수 없으므로:**
+**중요: 이 작업은 완전 자동 무인 모드입니다. 사용자 개입 없이 완료해야 합니다:**
 - 단 한 번도 확인 요청하지 말 것
 - 모든 결정을 스스로 판단하여 실행
 - 오류 발생 시 자동으로 3회 재시도 후 다음으로 진행
 - 중단 없이 끝까지 완료할 것
 
+### 작업 디렉토리
+**필수**: 모든 작업은 `/Users/peter/Dev/bible-transcription-site/apps/pipeline` 디렉토리에서 실행
+
 ### 작업 대상
-빌립보서와 갈라디아서를 제외한 신약 성경 25권 (약 7,157구절)
+빌립보서, 갈라디아서를 제외한 신약 성경 25권 (약 7,157구절)
+**참고**: Philemon 1:1은 테스트로 이미 완료되었으나 전체(1:2-25) 작업 필요
 
 ### 실행 전략
 
@@ -31,44 +55,79 @@
 2. TodoWrite로 전체 책 목록 작업 생성
 3. 예상 소요 시간 계산 및 표시
 
-#### 2단계: NIV 텍스트 확보
-각 권마다:
-1. Supabase에서 해당 책의 NIV 텍스트가 있는지 확인
-2. 없으면 웹 검색 또는 외부 API로 수집
-3. verses 테이블에 일괄 삽입
-4. 삽입 성공 여부 검증
+#### 2단계: NIV 텍스트 데이터베이스 임포트 (1회만 실행)
+
+**전제조건**: 프로젝트 루트에 `NIV_Bible.json` 파일 존재 (GitHub에서 다운로드)
+
+```bash
+cd apps/pipeline
+npx tsx scripts/import-niv-to-db.ts
+```
+
+- 신약 27권 전체(약 7,957구절)를 verses 테이블에 자동 삽입
+- 중복 확인 자동 수행
+- 구조: reference (예: "Matthew 1:1"), niv_text
+- 소요 시간: 약 5-10분
+
+**검증**:
+```bash
+# 특정 책 확인
+npx tsx scripts/fetch-verse.ts "Matthew 1:1"
+
+# 전체 구절 수 확인
+npx tsx scripts/count-verses.ts
+```
 
 #### 3단계: 책별 순차 분석 (Claude Code 대화형)
 **각 책마다 반복:**
 
 1. **준비**
+   ```bash
+   cd apps/pipeline
+   npx tsx scripts/fetch-verse.ts "<BookName> 1:1"
+   ```
    - 해당 책의 모든 구절 목록 조회
-   - 이미 분석된 구절 확인 (재분석 방지)
+   - 이미 분석된 구절 확인 (analysis_completed=true)
    - 분석 필요한 구절만 필터링
 
-2. **배치 분석 (10구절씩)**
-   - 10구절을 한 번에 분석 (효율성)
+2. **배치 분석 (5-10구절씩)**
+   - CLAUDE.md 규칙에 따라 각 구절 분석
    - 각 구절마다:
-     * NIV 원문 읽기
-     * CLAUDE.md 규칙에 따라 분석
-     * JSON 형식으로 변환
-     * save-analysis-to-db.ts로 즉시 저장
-   - 배치 완료 후 TodoWrite 업데이트
+     * NIV 원문 확인
+     * 문장 구조 분석 (의미적 분류 + 문법 설명)
+     * 주요 단어 추출 (IPA + 한국어 발음)
+     * 문맥 설명 (통합된 배경)
+     * 한국어 번역 (자연스러운 번역)
+     * 특별 설명 (문법/해석 특이점)
+     * JSON으로 변환
 
-3. **검증 및 품질 확인**
-   - verify-completeness.ts 실행
+3. **즉시 DB 저장**
+   ```bash
+   npx tsx scripts/save-analysis-to-db.ts '<JSON>'
+   ```
+   - 저장 성공 후 analysis_completed=true 업데이트
+   ```bash
+   npx tsx scripts/mark-complete.ts "<Reference>"
+   ```
+
+4. **검증 및 품질 확인**
+   ```bash
+   npx tsx scripts/verify-<bookname>.ts
+   ```
+   - sentence_structures 개수 확인 (최소 1개)
+   - vocabulary 개수 확인 (최소 3개)
    - 누락 구절 확인
-   - 중복 데이터 확인 및 제거
-   - 데이터 품질 검사
+   - 중복 데이터 확인
 
-4. **재시도 메커니즘**
-   - 실패한 구절 목록 생성
+5. **재시도 메커니즘**
+   - 실패한 구절은 별도 JSON 파일에 저장
    - 3회까지 자동 재시도
-   - 3회 실패 시 별도 로그에 기록 후 다음으로 진행
+   - 3회 실패 시 `logs/failed_<bookname>.json`에 기록
+   - 다음 구절로 진행
 
-5. **다음 책으로 진행**
-   - 현재 책 완료 상태 기록
-   - logs/[bookname]_completion.json 생성
+6. **다음 책으로 진행**
+   - 완료 상태를 `logs/<bookname>_completion.json`에 저장
+   - TodoWrite 업데이트
    - 다음 책 시작
 
 #### 4단계: 대형 책 특별 처리
@@ -101,22 +160,57 @@
 
 ### 데이터 저장 방식
 
-**Claude Code 분석 → JSON 변환 → save-analysis-to-db.ts 실행**
+**Claude Code 분석 → JSON 변환 → save-analysis-to-db.ts 실행 → analysis_completed 업데이트**
 
 ```typescript
 // 각 구절 분석 후
 const analysisData = {
   reference: "Romans 1:1",
-  sentence_structures: [...],
-  vocabulary: [...],
-  contextual_explanation: {...},
-  korean_translation: {...},
-  special_explanation: {...}
+  sentence_structures: [
+    {
+      sequence_order: 1,
+      semantic_classification: "발신자 소개",
+      original_text: "Paul, a servant...",
+      korean_translation: "바울은 종...",
+      grammatical_explanation: "명사구 동격 구조"
+    }
+  ],
+  vocabulary: [
+    {
+      word: "servant",
+      ipa_pronunciation: "/ˈsɜːrvənt/",
+      korean_pronunciation: "서번트",
+      part_of_speech: "명사",
+      definition_korean: "종, 하인",
+      usage_note: "그리스도의 종"
+    }
+  ],
+  contextual_explanation: {
+    integrated_explanation: "바울은 로마 교회에..."
+  },
+  korean_translation: {
+    natural_translation: "그리스도 예수의 종 바울은..."
+  },
+  special_explanation: {
+    explanation_type: "문법적 특징",
+    content: "동격 명사구를 사용하여..."
+  }
 }
 
 // 즉시 저장
-npx tsx scripts/save-analysis-to-db.ts <JSON>
+cd apps/pipeline
+npx tsx scripts/save-analysis-to-db.ts '<JSON>'
+
+// analysis_completed 업데이트 (⚠️ 필수!)
+npx tsx scripts/mark-complete.ts "Romans 1:1"
 ```
+
+### ⚠️ 중요 주의사항
+
+1. **테이블명 수정됨**: `context_explanation` → `contextual_explanations`
+2. **analysis_completed 업데이트 필수**: 저장 후 반드시 true로 변경해야 웹에서 검색 가능
+3. **작업 디렉토리**: 모든 스크립트는 `apps/pipeline`에서 실행
+4. **환경변수**: `apps/pipeline/.env` 파일 필수
 
 ### 예상 소요 시간
 
@@ -143,7 +237,7 @@ npx tsx scripts/save-analysis-to-db.ts <JSON>
 ## 📋 작업 대상 (25권, 약 7,157구절)
 
 ### 소형 책 (1-100구절) - 11권, 우선 처리
-1. Philemon (빌레몬서) - 25구절 ⭐ 가장 먼저
+1. Philemon (빌레몬서) - 25구절 ⭐ 가장 먼저 (1:1 완료, 1:2-25 필요)
 2. 3 John (요한3서) - 14구절
 3. 2 John (요한2서) - 13구절
 4. Jude (유다서) - 25구절
@@ -155,7 +249,7 @@ npx tsx scripts/save-analysis-to-db.ts <JSON>
 10. Colossians (골로새서) - 95구절
 11. 1 Peter (베드로전서) - 105구절
 
-**소계: 약 603구절**
+**소계: 약 603구절 (Philemon 1:1 제외 시 602구절)**
 
 ### 중형 책 (101-500구절) - 10권
 12. 1 John (요한1서) - 105구절

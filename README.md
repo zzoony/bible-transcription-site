@@ -4,7 +4,7 @@
 
 ## 📁 프로젝트 구조 (Monorepo)
 
-```
+```text
 bible-transcription-site/
 ├── apps/
 │   ├── web/              # Next.js 웹 애플리케이션
