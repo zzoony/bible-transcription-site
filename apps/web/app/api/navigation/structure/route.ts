@@ -171,6 +171,9 @@ export async function GET(request: NextRequest) {
       .select('id, book_id, chapter_number, total_verses')
       .order('book_id')
       .order('chapter_number')
+      .returns<
+        { id: number; book_id: number; chapter_number: number; total_verses: number }[]
+      >()
 
     if (chaptersError) {
       console.error('Chapters 조회 오류:', chaptersError)
@@ -186,6 +189,7 @@ export async function GET(request: NextRequest) {
       .select('chapter_id, verse_number')
       .order('chapter_id')
       .order('verse_number')
+      .returns<{ chapter_id: number; verse_number: number }[]>()
 
     if (versesError) {
       console.error('Verses 조회 오류:', versesError)
