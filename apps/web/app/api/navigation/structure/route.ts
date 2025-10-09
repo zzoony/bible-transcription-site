@@ -144,184 +144,99 @@ export async function GET(request: NextRequest) {
   try {
     const supabase = createServerClient()
 
-    // 모든 구절 조회
-    const { data: verses, error: versesError } = await supabase
-      .from('verses')
-      .select('id, reference, verse_number')
-      .order('reference')
-      .returns<{ id: number; reference: string; verse_number: number }[]>()
+    // books 테이블에서 모든 책 정보 가져오기 (order_number 순서로)
+    const { data: books, error: booksError } = await supabase
+      .from('books')
+      .select('id, name_english, name_korean, order_number, testament')
+      .order('order_number')
 
-    if (versesError) {
-      console.error('DB 조회 오류:', versesError)
+    if (booksError) {
+      console.error('Books 조회 오류:', booksError)
       return NextResponse.json(
         { error: '데이터베이스 조회 중 오류가 발생했습니다' },
         { status: 500 }
       )
     }
 
-    if (!verses || verses.length === 0) {
+    if (!books || books.length === 0) {
       return NextResponse.json(
-        { error: '구절 데이터가 없습니다' },
+        { error: '책 데이터가 없습니다' },
         { status: 404 }
       )
     }
 
-    // 책별로 데이터 그룹화
-    const booksMap = new Map<
-      string,
-      {
-        id: number
-        name: string
-        chapters: Map<number, { verses: number[] }>
+    // chapters와 verses를 한번에 가져오기
+    const { data: chaptersData, error: chaptersError } = await supabase
+      .from('chapters')
+      .select('id, book_id, chapter_number, total_verses')
+      .order('book_id')
+      .order('chapter_number')
+
+    if (chaptersError) {
+      console.error('Chapters 조회 오류:', chaptersError)
+      return NextResponse.json(
+        { error: '데이터베이스 조회 중 오류가 발생했습니다' },
+        { status: 500 }
+      )
+    }
+
+    // verses를 chapter별로 그룹화하기 위해 조회
+    const { data: versesData, error: versesError } = await supabase
+      .from('verses')
+      .select('chapter_id, verse_number')
+      .order('chapter_id')
+      .order('verse_number')
+
+    if (versesError) {
+      console.error('Verses 조회 오류:', versesError)
+      return NextResponse.json(
+        { error: '데이터베이스 조회 중 오류가 발생했습니다' },
+        { status: 500 }
+      )
+    }
+
+    // verses를 chapter_id로 그룹화
+    const versesByChapter = new Map<number, number[]>()
+    versesData?.forEach((verse) => {
+      if (!versesByChapter.has(verse.chapter_id)) {
+        versesByChapter.set(verse.chapter_id, [])
       }
-    >()
-
-    verses.forEach((verse) => {
-      const parsed = parseReference(verse.reference)
-      if (!parsed) {
-        console.warn(`잘못된 reference 형식: ${verse.reference}`)
-        return
-      }
-
-      const { book, chapter, verse: verseNum } = parsed
-
-      if (!booksMap.has(book)) {
-        booksMap.set(book, {
-          id: verse.id, // 첫 번째 구절의 ID를 책 ID로 사용
-          name: book,
-          chapters: new Map(),
-        })
-      }
-
-      const bookData = booksMap.get(book)!
-      if (!bookData.chapters.has(chapter)) {
-        bookData.chapters.set(chapter, { verses: [] })
-      }
-
-      bookData.chapters.get(chapter)!.verses.push(verseNum)
+      versesByChapter.get(verse.chapter_id)!.push(verse.verse_number)
     })
 
-    // BookStructure 배열 생성
-    const books: BookStructure[] = Array.from(booksMap.entries()).map(
-      ([bookName, bookData]) => {
-        // 장 번호 정렬
-        const sortedChapters = Array.from(bookData.chapters.entries()).sort(
-          ([a], [b]) => a - b
-        )
+    // chapters를 book_id로 그룹화
+    const chaptersByBook = new Map<number, typeof chaptersData>()
+    chaptersData?.forEach((chapter) => {
+      if (!chaptersByBook.has(chapter.book_id)) {
+        chaptersByBook.set(chapter.book_id, [])
+      }
+      chaptersByBook.get(chapter.book_id)!.push(chapter)
+    })
 
-        const chapters: ChapterStructure[] = sortedChapters.map(
-          ([chapterNum, chapterData]) => {
-            // 구절 번호 정렬
-            const sortedVerses = chapterData.verses.sort((a, b) => a - b)
+    // 최종 BookStructure 배열 생성
+    const booksStructure: BookStructure[] = books.map((book) => {
+      const bookChapters = chaptersByBook.get(book.id) || []
 
-            return {
-              number: chapterNum,
-              totalVerses: sortedVerses.length,
-              availableVerses: sortedVerses,
-            }
-          }
-        )
+      const chapters: ChapterStructure[] = bookChapters.map((chapter) => {
+        const verses = versesByChapter.get(chapter.id) || []
 
         return {
-          id: bookData.id,
-          name: bookName,
-          nameKorean: getKoreanBookName(bookName),
-          chapters,
+          number: chapter.chapter_number,
+          totalVerses: chapter.total_verses,
+          availableVerses: verses,
         }
+      })
+
+      return {
+        id: book.id,
+        name: book.name_english,
+        nameKorean: book.name_korean,
+        chapters,
       }
-    )
-
-    // 책 이름으로 정렬 (전체 66권 성경 순서)
-    const bookOrder = [
-      // Old Testament (구약 39권)
-      'Genesis',
-      'Exodus',
-      'Leviticus',
-      'Numbers',
-      'Deuteronomy',
-      'Joshua',
-      'Judges',
-      'Ruth',
-      '1 Samuel',
-      '2 Samuel',
-      '1 Kings',
-      '2 Kings',
-      '1 Chronicles',
-      '2 Chronicles',
-      'Ezra',
-      'Nehemiah',
-      'Esther',
-      'Job',
-      'Psalms',
-      'Proverbs',
-      'Ecclesiastes',
-      'Song of Solomon',
-      'Isaiah',
-      'Jeremiah',
-      'Lamentations',
-      'Ezekiel',
-      'Daniel',
-      'Hosea',
-      'Joel',
-      'Amos',
-      'Obadiah',
-      'Jonah',
-      'Micah',
-      'Nahum',
-      'Habakkuk',
-      'Zephaniah',
-      'Haggai',
-      'Zechariah',
-      'Malachi',
-      // New Testament (신약 27권)
-      'Matthew',
-      'Mark',
-      'Luke',
-      'John',
-      'Acts',
-      'Romans',
-      '1 Corinthians',
-      '2 Corinthians',
-      'Galatians',
-      'Ephesians',
-      'Philippians',
-      'Colossians',
-      '1 Thessalonians',
-      '2 Thessalonians',
-      '1 Timothy',
-      '2 Timothy',
-      'Titus',
-      'Philemon',
-      'Hebrews',
-      'James',
-      '1 Peter',
-      '2 Peter',
-      '1 John',
-      '2 John',
-      '3 John',
-      'Jude',
-      'Revelation',
-    ]
-
-    books.sort((a, b) => {
-      const indexA = bookOrder.indexOf(a.name)
-      const indexB = bookOrder.indexOf(b.name)
-
-      // 둘 다 bookOrder에 있으면 순서대로
-      if (indexA !== -1 && indexB !== -1) {
-        return indexA - indexB
-      }
-
-      // 하나만 있으면 그것을 먼저
-      if (indexA !== -1) return -1
-      if (indexB !== -1) return 1
-
-      // 둘 다 없으면 알파벳 순
-      return a.name.localeCompare(b.name)
     })
 
     const response: BibleStructureResponse = {
-      books,
+      books: booksStructure,
     }
 
     return NextResponse.json(response, {
