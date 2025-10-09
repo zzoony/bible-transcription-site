@@ -1,0 +1,38 @@
+{
+  "total_verses": 231,
+  "total_batches": 5,
+  "batch_size": 50,
+  "exported_at": "2025-10-06T07:19:22.672Z",
+  "batches": [
+    {
+      "batch_number": 1,
+      "first_verse": "Hebrews 1:2",
+      "last_verse": "Hebrews 6:6",
+      "verses_count": 50
+    },
+    {
+      "batch_number": 2,
+      "first_verse": "Hebrews 6:7",
+      "last_verse": "Hebrews 9:18",
+      "verses_count": 50
+    },
+    {
+      "batch_number": 3,
+      "first_verse": "Hebrews 9:19",
+      "last_verse": "Hebrews 11:13",
+      "verses_count": 50
+    },
+    {
+      "batch_number": 4,
+      "first_verse": "Hebrews 11:14",
+      "last_verse": "Hebrews 12:23",
+      "verses_count": 50
+    },
+    {
+      "batch_number": 5,
+      "first_verse": "Hebrews 12:24",
+      "last_verse": "Hebrews 13:25",
+      "verses_count": 31
+    }
+  ]
+}

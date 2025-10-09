@@ -1,0 +1,491 @@
+[
+  {
+    "reference": "Romans 1:3",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "예수의 인성 - 육신적 혈통",
+        "original_text": "regarding his Son",
+        "korean_translation": "그의 아들에 관한 것으로",
+        "grammatical_explanation": "전치사구로 복음의 내용을 소개. 'regarding'은 '~에 관하여'를 의미"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "육신적 출생 - 다윗 왕조 계승",
+        "original_text": "who as to his earthly life was a descendant of David",
+        "korean_translation": "육신으로는 다윗의 후손으로 나셨고",
+        "grammatical_explanation": "관계대명사절. 'as to'는 '~에 관하여'를 의미하며, 예수의 인간적 측면을 강조"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "descendant",
+        "ipa_pronunciation": "/dɪˈsendənt/",
+        "korean_pronunciation": "디센던트",
+        "part_of_speech": "명사",
+        "definition_korean": "후손, 자손",
+        "usage_note": "메시아가 다윗 왕조에서 나온다는 구약 예언의 성취를 나타냄"
+      },
+      {
+        "word": "earthly life",
+        "ipa_pronunciation": "/ˈɜːrθli laɪf/",
+        "korean_pronunciation": "어슬리 라이프",
+        "part_of_speech": "명사구",
+        "definition_korean": "육신, 지상 생활",
+        "usage_note": "NIV의 의역. 그리스어 원문은 'kata sarka'(육신을 따라)"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "바울은 복음의 핵심 내용이 하나님의 아들 예수 그리스도라고 선언합니다. 이 구절은 예수의 두 가지 본성 중 인성에 초점을 맞춥니다. '육신으로는'이라는 표현은 예수께서 진정한 인간이셨음을 강조하며, '다윗의 후손'이라는 표현은 구약의 메시아 예언 성취를 나타냅니다. 다윗과 맺은 하나님의 언약(2 Samuel 7:12-16)에서 약속된 영원한 왕국의 왕이 예수님임을 암시합니다.",
+      "cross_references": ["2 Samuel 7:12-16", "Isaiah 11:1", "Matthew 1:1", "Acts 2:30"]
+    },
+    "korean_translation": {
+      "natural_translation": "이 복음은 하나님의 아들에 관한 것입니다. 그분은 육신으로는 다윗의 후손으로 태어나셨고",
+      "translation_notes": "다음 절과 대조를 이루는 구조 (육신으로는 vs 성령으로는)"
+    },
+    "special_explanation": {
+      "explanation_type": "기독론적 균형",
+      "content": "'육신으로는'(kata sarka)이라는 표현은 예수의 완전한 인성을 나타내지만, 그것이 전부가 아님을 암시합니다. 4절의 '성령으로는'과 대조를 이루어 예수의 두 가지 본성(인성과 신성)을 균형 있게 제시합니다. 다윗의 후손이라는 점은 단순한 혈통이 아니라 메시아적 정체성의 핵심 요소입니다."
+    }
+  },
+  {
+    "reference": "Romans 1:4",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "예수의 신성 - 성령을 통한 선포",
+        "original_text": "and who through the Spirit of holiness",
+        "korean_translation": "성결의 영으로는",
+        "grammatical_explanation": "전치사구. 'through'는 수단을 나타냄. 'Spirit of holiness'는 성령을 가리킴"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "권능의 선포 - 부활을 통한 입증",
+        "original_text": "was appointed the Son of God in power",
+        "korean_translation": "권능으로 하나님의 아들로 선포되셨으니",
+        "grammatical_explanation": "'appointed'는 '선포되다, 확립되다'를 의미. 'in power'는 '권능으로' 또는 '권능 있게'"
+      },
+      {
+        "sequence_order": 3,
+        "semantic_classification": "결정적 사건 - 부활",
+        "original_text": "by his resurrection from the dead",
+        "korean_translation": "죽은 자들 가운데서 부활하심으로",
+        "grammatical_explanation": "전치사구로 선포의 수단/근거를 나타냄. 'from the dead'는 '죽은 자들로부터'"
+      },
+      {
+        "sequence_order": 4,
+        "semantic_classification": "정체성 확정 - 예수 그리스도",
+        "original_text": "Jesus Christ our Lord",
+        "korean_translation": "곧 우리 주 예수 그리스도이십니다",
+        "grammatical_explanation": "동격 표현. 앞의 '하나님의 아들'이 누구인지 명확히 밝힘"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "appointed",
+        "ipa_pronunciation": "/əˈpɔɪntɪd/",
+        "korean_pronunciation": "어포인티드",
+        "part_of_speech": "동사 (과거분사)",
+        "definition_korean": "선포되다, 확립되다 (그리스어 horizo - 정하다, 선언하다)",
+        "usage_note": "예수가 아들이 '된' 것이 아니라, 아들이심이 공적으로 '선포된' 것을 의미"
+      },
+      {
+        "word": "Spirit of holiness",
+        "ipa_pronunciation": "/ˈspɪrɪt ʌv ˈhoʊlinəs/",
+        "korean_pronunciation": "스피릿 오브 홀리니스",
+        "part_of_speech": "명사구",
+        "definition_korean": "성결의 영, 성령 (그리스어 pneuma hagiōsynēs)",
+        "usage_note": "히브리적 표현으로 '거룩한 영' 즉 성령을 가리킴"
+      },
+      {
+        "word": "resurrection",
+        "ipa_pronunciation": "/ˌrezəˈrekʃən/",
+        "korean_pronunciation": "레저렉션",
+        "part_of_speech": "명사",
+        "definition_korean": "부활 (그리스어 anastasis - 일어남)",
+        "usage_note": "예수의 신적 권능을 입증하는 결정적 사건"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "이 구절은 3절과 대조를 이루며 예수의 신성을 강조합니다. '성결의 영'은 성령을 가리키며, 예수의 영적/신적 측면을 나타냅니다. '권능으로 선포되셨다'는 표현은 예수께서 부활을 통해 하나님의 아들이심이 강력하게 입증되었음을 의미합니다. 부활은 단순한 기적이 아니라 예수의 정체성을 확증하는 결정적 사건입니다. '우리 주'라는 표현은 예수께 대한 개인적 신앙고백과 충성을 나타냅니다.",
+      "cross_references": ["Acts 2:36", "Acts 13:33", "Philippians 2:9-11", "1 Corinthians 15:20"]
+    },
+    "korean_translation": {
+      "natural_translation": "성령으로는 죽은 자들 가운데서 부활하심으로 권능으로 하나님의 아들로 확증되신 우리 주 예수 그리스도이십니다.",
+      "translation_notes": "'appointed'는 '선포되다, 확증되다'로 번역하여 예수가 아들이 된 것이 아니라 아들이심이 입증된 것임을 명확히 함"
+    },
+    "special_explanation": {
+      "explanation_type": "기독론적 대조 구조",
+      "content": "3절과 4절은 정교한 대조 구조를 형성합니다: (1) 육신 vs 성령, (2) 다윗의 후손 vs 하나님의 아들, (3) 태어남 vs 부활. 이는 예수의 두 본성(인성과 신성)을 균형 있게 제시하는 초대교회의 고백입니다. 'appointed'(horizo)는 '아들이 되다'가 아니라 '아들이심이 선포/확증되다'를 의미하여, 양자론(adoptionism) 이단을 배제합니다. 부활은 예수의 신성을 입증하는 결정적 증거이며, 복음의 핵심입니다."
+    }
+  },
+  {
+    "reference": "Romans 1:5",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "은혜의 수령 - 사도직의 기원",
+        "original_text": "Through him we received grace and apostleship",
+        "korean_translation": "그를 통하여 우리가 은혜와 사도의 직분을 받았으니",
+        "grammatical_explanation": "'Through him'은 예수를 통한 매개를 나타냄. 'grace and apostleship'은 함께 받은 선물"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "사명의 목적 - 만민에게 순종 이끌기",
+        "original_text": "to call all the Gentiles to the obedience that comes from faith",
+        "korean_translation": "모든 이방인 중에서 믿음의 순종을 이루게 하려는 것입니다",
+        "grammatical_explanation": "부정사구로 목적을 나타냄. 'obedience that comes from faith'는 믿음에서 나오는 순종"
+      },
+      {
+        "sequence_order": 3,
+        "semantic_classification": "목적의 최종점 - 하나님의 영광",
+        "original_text": "for his name's sake",
+        "korean_translation": "그의 이름을 위하여",
+        "grammatical_explanation": "'for'는 목적을 나타냄. 최종 목표는 하나님의 이름(명성, 영광)을 높이는 것"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "grace",
+        "ipa_pronunciation": "/ɡreɪs/",
+        "korean_pronunciation": "그레이스",
+        "part_of_speech": "명사",
+        "definition_korean": "은혜 (그리스어 charis - 거저 주시는 호의)",
+        "usage_note": "로마서의 핵심 주제. 하나님의 값없이 주시는 구원의 선물"
+      },
+      {
+        "word": "apostleship",
+        "ipa_pronunciation": "/əˈpɑːsəlʃɪp/",
+        "korean_pronunciation": "어파슬십",
+        "part_of_speech": "명사",
+        "definition_korean": "사도의 직분, 사도직",
+        "usage_note": "바울의 특별한 부르심과 권위를 나타냄"
+      },
+      {
+        "word": "obedience",
+        "ipa_pronunciation": "/oʊˈbiːdiəns/",
+        "korean_pronunciation": "오비디언스",
+        "part_of_speech": "명사",
+        "definition_korean": "순종 (그리스어 hypakoē - 듣고 따름)",
+        "usage_note": "믿음의 결과로 나타나는 실천적 순종"
+      },
+      {
+        "word": "Gentiles",
+        "ipa_pronunciation": "/ˈdʒentaɪlz/",
+        "korean_pronunciation": "젠타일스",
+        "part_of_speech": "명사 (복수)",
+        "definition_korean": "이방인들 (그리스어 ethnē - 민족들)",
+        "usage_note": "유대인이 아닌 모든 민족을 가리킴. 바울의 주요 선교 대상"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "바울은 자신의 사도직이 예수 그리스도를 통해 받은 은혜의 선물임을 강조합니다. '은혜와 사도직'을 함께 언급함으로써, 사도직 자체가 은혜라는 것을 나타냅니다. 바울의 사명은 '이방인의 사도'(Galatians 2:8)로서 모든 민족에게 복음을 전하는 것입니다. '믿음의 순종'이라는 표현은 로마서의 핵심 주제를 예고합니다 - 믿음은 단순한 지적 동의가 아니라 삶의 순종으로 나타나야 합니다. 최종 목표는 하나님의 이름, 즉 그분의 영광이 모든 민족 가운데 높아지는 것입니다.",
+      "cross_references": ["Acts 9:15", "Galatians 2:7-9", "Romans 16:26", "Ephesians 3:7-8"]
+    },
+    "korean_translation": {
+      "natural_translation": "우리는 그분을 통하여 은혜와 사도의 직분을 받았습니다. 이는 그분의 이름을 위하여 모든 이방인 가운데서 믿음에서 나오는 순종을 이루게 하려는 것입니다.",
+      "translation_notes": "'obedience that comes from faith'는 '믿음의 순종' 또는 '믿음에서 나오는 순종'으로 번역"
+    },
+    "special_explanation": {
+      "explanation_type": "신학적 통합",
+      "content": "이 구절은 은혜, 믿음, 순종의 관계를 보여줍니다. 순종은 믿음의 결과이며, 믿음과 순종은 모두 은혜의 산물입니다. '믿음의 순종'(obedience of faith)이라는 표현은 genitive of source(기원의 속격)로 해석될 수 있어, 믿음이 순종의 원천임을 나타냅니다. 또는 genitive of apposition(동격의 속격)으로 보아 믿음 자체가 순종임을 의미할 수도 있습니다. 바울의 사도직은 개인의 영광이 아니라 '그의 이름을 위하여', 즉 하나님의 영광을 위한 것입니다."
+    }
+  },
+  {
+    "reference": "Romans 1:6",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "포함의 선언 - 로마 성도들의 정체성",
+        "original_text": "And you also are among those Gentiles",
+        "korean_translation": "여러분도 그 이방인들 가운데 있습니다",
+        "grammatical_explanation": "'also'는 로마 성도들을 다른 이방인 신자들과 연결. 'among'은 소속을 나타냄"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "부르심의 확인 - 그리스도께 속함",
+        "original_text": "who are called to belong to Jesus Christ",
+        "korean_translation": "예수 그리스도께 속하도록 부르심을 받은 자들입니다",
+        "grammatical_explanation": "관계대명사절. 'called to belong'은 부르심의 목적을 나타냄. 소유권 개념"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "called",
+        "ipa_pronunciation": "/kɔːld/",
+        "korean_pronunciation": "콜드",
+        "part_of_speech": "동사 (과거분사)",
+        "definition_korean": "부르심을 받다 (그리스어 klētos - 초청받은)",
+        "usage_note": "하나님의 주권적이고 효과적인 부르심을 나타냄"
+      },
+      {
+        "word": "belong",
+        "ipa_pronunciation": "/bɪˈlɔːŋ/",
+        "korean_pronunciation": "빌롱",
+        "part_of_speech": "동사",
+        "definition_korean": "속하다, 소유되다",
+        "usage_note": "단순한 소속이 아니라 소유권과 관계의 친밀함을 나타냄"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "바울은 로마 교회 성도들을 자신의 사역 대상인 이방인들 가운데 포함시킵니다. 비록 로마가 제국의 수도이지만, 로마 교회 대부분은 유대인이 아닌 이방인 신자들이었습니다. '부르심을 받은'이라는 표현은 그들의 신앙이 인간적 결정이 아니라 하나님의 주권적 부르심의 결과임을 강조합니다. '예수 그리스도께 속하도록'이라는 표현은 소유권 개념으로, 그들이 이제 그리스도의 소유가 되었으며 그분과 특별한 관계에 있음을 나타냅니다.",
+      "cross_references": ["1 Corinthians 1:2", "1 Corinthians 6:19-20", "Romans 8:30"]
+    },
+    "korean_translation": {
+      "natural_translation": "여러분도 예수 그리스도께 속하도록 부르심을 받은 이방인들 가운데 있습니다.",
+      "translation_notes": "로마 교회 성도들에게 직접 말하는 부분이 시작됨"
+    },
+    "special_explanation": {
+      "explanation_type": "목회적 적용",
+      "content": "이 구절은 바울이 로마 교회와 직접적인 관계를 맺지 못했음에도, 그들을 자신의 사도적 사역 범위 안에 포함시키는 것을 정당화합니다. '부르심을 받은'(klētos)이라는 단어는 1절에서 바울 자신에게 적용된 같은 단어로, 바울과 로마 성도들이 동일한 하나님의 부르심을 받았음을 강조합니다. 이는 바울과 로마 교회 사이의 연대감과 정당성을 확립하는 효과가 있습니다."
+    }
+  },
+  {
+    "reference": "Romans 1:7",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "수신자 지정 - 로마의 모든 성도",
+        "original_text": "To all in Rome",
+        "korean_translation": "로마에 있는 모든 이들에게",
+        "grammatical_explanation": "전치사구. 서신의 수신자를 명시. 'all'은 포괄성을 강조"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "정체성 확인 - 하나님의 사랑받는 자",
+        "original_text": "who are loved by God",
+        "korean_translation": "하나님께 사랑받는 자들",
+        "grammatical_explanation": "관계대명사절. 수동태로 하나님의 주도적 사랑을 강조"
+      },
+      {
+        "sequence_order": 3,
+        "semantic_classification": "부르심의 결과 - 거룩한 백성",
+        "original_text": "and called to be his holy people",
+        "korean_translation": "그의 거룩한 백성이 되도록 부르심을 받은 자들",
+        "grammatical_explanation": "'called to be'는 부르심의 목적. 'holy people'은 구약의 '거룩한 백성' 개념"
+      },
+      {
+        "sequence_order": 4,
+        "semantic_classification": "인사 - 은혜와 평강의 축복",
+        "original_text": "Grace and peace to you from God our Father and from the Lord Jesus Christ",
+        "korean_translation": "하나님 우리 아버지와 주 예수 그리스도로부터 은혜와 평강이 있기를 빕니다",
+        "grammatical_explanation": "전형적인 바울 서신의 인사. 은혜(charis)와 평강(eirēnē)은 그리스와 히브리 인사의 결합"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "loved",
+        "ipa_pronunciation": "/lʌvd/",
+        "korean_pronunciation": "러브드",
+        "part_of_speech": "동사 (과거분사)",
+        "definition_korean": "사랑받다 (그리스어 agapaō - 무조건적 사랑)",
+        "usage_note": "하나님의 주도적이고 무조건적인 사랑을 나타냄"
+      },
+      {
+        "word": "holy people",
+        "ipa_pronunciation": "/ˈhoʊli ˈpiːpl/",
+        "korean_pronunciation": "홀리 피플",
+        "part_of_speech": "명사구",
+        "definition_korean": "거룩한 백성, 성도들 (그리스어 hagioi - 성도들, 구별된 자들)",
+        "usage_note": "구약의 '거룩한 백성' 개념을 신약 교회에 적용"
+      },
+      {
+        "word": "peace",
+        "ipa_pronunciation": "/piːs/",
+        "korean_pronunciation": "피스",
+        "part_of_speech": "명사",
+        "definition_korean": "평강, 평화 (그리스어 eirēnē, 히브리어 shalom)",
+        "usage_note": "단순한 평화가 아니라 하나님과의 관계에서 오는 총체적 안녕"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "이 구절은 고대 서신의 전형적인 인사 형식을 따르면서도 신학적 의미로 가득합니다. 로마의 성도들을 '하나님께 사랑받는 자'로 부르는 것은 그들의 정체성이 하나님의 사랑에 근거함을 나타냅니다. '부르심을 받은 성도'라는 표현은 구약에서 이스라엘에게 적용되던 '거룩한 백성' 개념이 신약 교회에게 전이되었음을 보여줍니다. '은혜와 평강'이라는 인사는 그리스식 인사(charis/은혜)와 히브리식 인사(shalom/평강)를 결합한 것으로, 유대인과 이방인을 아우르는 복음의 보편성을 반영합니다. 이 축복이 '하나님 우리 아버지와 주 예수 그리스도'로부터 온다는 것은 성부와 성자의 동등성을 암시합니다.",
+      "cross_references": ["Exodus 19:6", "1 Peter 2:9", "Deuteronomy 7:6", "Ephesians 1:4-5"]
+    },
+    "korean_translation": {
+      "natural_translation": "로마에 있는 하나님의 사랑을 받으며 성도로 부르심을 받은 모든 사람에게, 하나님 우리 아버지와 주 예수 그리스도로부터 은혜와 평강이 있기를 빕니다.",
+      "translation_notes": "'holy people'은 '성도들'로 번역하여 구약의 거룩한 백성 개념을 반영"
+    },
+    "special_explanation": {
+      "explanation_type": "서신 형식과 신학",
+      "content": "고대 서신은 보통 '발신자가 수신자에게 인사하노라'(A to B, greetings) 형식을 따릅니다. 바울은 이 형식을 따르되, 단순한 인사를 신학적 선언으로 확장합니다. 1-7절은 하나의 긴 문장으로, 발신자 소개(1-6절)와 수신자 지정 및 인사(7절)를 포함합니다. '부르심을 받은'(klētos)이라는 단어가 바울(1절), 이방인들(6절), 로마 성도들(7절) 모두에게 적용되어, 모든 신자가 하나님의 동일한 부르심을 받았다는 연대감을 형성합니다. 하나님을 '우리 아버지'로 부르는 것은 신자들과 하나님의 친밀한 관계를 나타냅니다."
+    }
+  },
+  {
+    "reference": "Romans 1:10",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "기도의 지속성 - 항상 기도함",
+        "original_text": "in my prayers at all times",
+        "korean_translation": "항상 내 기도에",
+        "grammatical_explanation": "전치사구. 'at all times'는 지속성과 일관성을 강조"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "기도 내용 - 방문 길이 열리기를",
+        "original_text": "and I pray that now at last by God's will the way may be opened for me to come to you",
+        "korean_translation": "이제 마침내 하나님의 뜻으로 여러분에게 가는 길이 열리기를 간구합니다",
+        "grammatical_explanation": "종속절. 'that'절은 기도 내용. 'by God's will'은 하나님의 주권 인정. 'may be opened'는 가정법 형태"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "at all times",
+        "ipa_pronunciation": "/æt ɔːl taɪmz/",
+        "korean_pronunciation": "앳 올 타임스",
+        "part_of_speech": "부사구",
+        "definition_korean": "항상, 언제나",
+        "usage_note": "지속적이고 일관된 기도의 자세를 나타냄"
+      },
+      {
+        "word": "at last",
+        "ipa_pronunciation": "/æt læst/",
+        "korean_pronunciation": "앳 래스트",
+        "part_of_speech": "부사구",
+        "definition_korean": "마침내, 드디어",
+        "usage_note": "오랜 기다림과 간절함을 나타냄"
+      },
+      {
+        "word": "will",
+        "ipa_pronunciation": "/wɪl/",
+        "korean_pronunciation": "윌",
+        "part_of_speech": "명사",
+        "definition_korean": "뜻, 의지 (그리스어 thelēma)",
+        "usage_note": "하나님의 주권적 계획과 의도"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "바울은 로마 교회를 위해 지속적으로 기도해왔음을 밝힙니다. '항상 내 기도에'라는 표현은 로마 교회에 대한 바울의 깊은 관심과 애정을 나타냅니다. '이제 마침내'라는 표현은 바울이 오랫동안 로마 방문을 소망해왔지만 지금까지 여건이 허락되지 않았음을 암시합니다. '하나님의 뜻으로'라는 표현은 바울이 자신의 계획보다 하나님의 주권을 우선시하는 태도를 보여줍니다. 실제로 바울은 로마서를 쓴 후 몇 년 뒤에 로마에 도착하지만, 계획했던 자유로운 방문이 아니라 죄수의 신분으로 가게 됩니다(Acts 28).",
+      "cross_references": ["Acts 19:21", "Romans 15:22-24", "Acts 28:14-16"]
+    },
+    "korean_translation": {
+      "natural_translation": "항상 나의 기도에 여러분을 기억하며, 이제 마침내 하나님의 뜻 가운데 여러분에게 갈 수 있는 길이 열리기를 간구합니다.",
+      "translation_notes": "8-9절과 연결되는 문장. 바울의 기도와 선교 열망을 나타냄"
+    },
+    "special_explanation": {
+      "explanation_type": "목회적 지혜",
+      "content": "이 구절은 바울의 선교 계획과 하나님의 주권에 대한 태도를 보여줍니다. 바울은 분명한 선교 계획을 가지고 있었지만, 항상 '하나님의 뜻으로'라는 전제 아래 두었습니다(참조: James 4:15). 'the way may be opened'(수동태)라는 표현은 길을 여는 주체가 자신이 아니라 하나님임을 인정합니다. 이는 적극적 계획과 겸손한 순종의 균형을 보여줍니다."
+    }
+  },
+  {
+    "reference": "Romans 1:11",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "간절한 소망 - 만나기를 원함",
+        "original_text": "I long to see you",
+        "korean_translation": "나는 여러분을 만나기를 간절히 원합니다",
+        "grammatical_explanation": "'long to'는 강한 욕망을 나타내는 표현. 'see'는 단순한 보는 것이 아니라 만남과 교제를 의미"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "방문 목적 - 은사 나누어주기",
+        "original_text": "so that I may impart to you some spiritual gift",
+        "korean_translation": "여러분에게 어떤 신령한 은사를 나누어 주어",
+        "grammatical_explanation": "'so that'은 목적절. 'impart'는 나누어주다, 전달하다. 'some'은 특정하지 않은 은사"
+      },
+      {
+        "sequence_order": 3,
+        "semantic_classification": "궁극적 목적 - 강건케 함",
+        "original_text": "to make you strong",
+        "korean_translation": "여러분을 강건하게 하려는 것입니다",
+        "grammatical_explanation": "부정사구로 최종 목적을 나타냄. 'strong'은 영적 성숙과 견고함"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "long",
+        "ipa_pronunciation": "/lɔːŋ/",
+        "korean_pronunciation": "롱",
+        "part_of_speech": "동사",
+        "definition_korean": "갈망하다, 간절히 원하다 (그리스어 epipotheo - 강렬히 소망하다)",
+        "usage_note": "단순한 원함이 아니라 깊은 열망을 나타냄"
+      },
+      {
+        "word": "impart",
+        "ipa_pronunciation": "/ɪmˈpɑːrt/",
+        "korean_pronunciation": "임파트",
+        "part_of_speech": "동사",
+        "definition_korean": "나누어주다, 전달하다 (그리스어 metadidōmi - 함께 나누다)",
+        "usage_note": "일방적 전달이 아니라 나눔의 개념"
+      },
+      {
+        "word": "spiritual gift",
+        "ipa_pronunciation": "/ˈspɪrɪtʃuəl ɡɪft/",
+        "korean_pronunciation": "스피리츄얼 기프트",
+        "part_of_speech": "명사구",
+        "definition_korean": "신령한 은사 (그리스어 charisma pneumatikon)",
+        "usage_note": "여기서는 특정 은사가 아니라 영적 유익을 가져오는 것 전반을 의미"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "바울은 로마 방문을 간절히 원하는 이유를 밝힙니다. '간절히 원합니다'(long)라는 표현은 단순한 희망이 아니라 깊은 열망을 나타냅니다. '신령한 은사를 나누어주다'는 표현에서 '은사'(charisma)는 12장에 나오는 특정 은사들이 아니라, 바울의 가르침과 사역을 통해 전달될 영적 유익 전반을 의미합니다. 바울의 목적은 로마 교회를 '강건하게' 하는 것입니다. 이는 영적 성숙, 믿음의 견고함, 진리에 대한 더 깊은 이해를 포함합니다. 바울은 자신이 로마 교회에 줄 것이 있다고 확신하지만, 동시에 겸손하게 '어떤'(some) 은사라고 표현합니다.",
+      "cross_references": ["1 Corinthians 12:1-11", "1 Thessalonians 3:2", "Romans 15:29"]
+    },
+    "korean_translation": {
+      "natural_translation": "나는 여러분을 만나기를 간절히 원합니다. 그것은 여러분에게 어떤 영적인 은사를 나누어 주어 여러분을 강건하게 하려는 것입니다.",
+      "translation_notes": "'spiritual gift'은 특정 은사가 아니라 영적 유익 전반을 의미"
+    },
+    "special_explanation": {
+      "explanation_type": "목회적 균형",
+      "content": "바울은 자신이 줄 것이 있다는 확신과 겸손한 태도를 균형 있게 보여줍니다. 'some spiritual gift'에서 'some'(어떤)이라는 표현은 겸손을 나타내며, 다음 절(12절)에서 상호 격려로 이어집니다. 'impart'(나누어주다)라는 동사는 일방적 전달이 아니라 나눔의 개념을 담고 있습니다. 바울의 최종 목적은 자신의 명성이 아니라 로마 교회의 영적 성장('make you strong')입니다."
+    }
+  },
+  {
+    "reference": "Romans 1:12",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "겸손한 수정 - 상호 격려",
+        "original_text": "that is",
+        "korean_translation": "다시 말하면",
+        "grammatical_explanation": "앞의 말을 부연 설명하거나 수정하는 표현"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "상호성의 강조 - 함께 격려받음",
+        "original_text": "that you and I may be mutually encouraged",
+        "korean_translation": "여러분과 내가 서로 격려를 받는 것입니다",
+        "grammatical_explanation": "'mutually'는 상호성을 강조. 수동태로 서로에게서 격려를 받는 것"
+      },
+      {
+        "sequence_order": 3,
+        "semantic_classification": "격려의 근거 - 서로의 믿음",
+        "original_text": "by each other's faith",
+        "korean_translation": "서로의 믿음으로",
+        "grammatical_explanation": "전치사구. 'each other's faith'는 상호 격려의 수단이자 근거"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "mutually",
+        "ipa_pronunciation": "/ˈmjuːtʃuəli/",
+        "korean_pronunciation": "뮤츄얼리",
+        "part_of_speech": "부사",
+        "definition_korean": "서로, 상호간에",
+        "usage_note": "쌍방향적이고 균형 잡힌 관계를 나타냄"
+      },
+      {
+        "word": "encouraged",
+        "ipa_pronunciation": "/ɪnˈkʌrɪdʒd/",
+        "korean_pronunciation": "인커리지드",
+        "part_of_speech": "동사 (과거분사)",
+        "definition_korean": "격려받다, 위로받다 (그리스어 symparakaleō - 함께 격려하다)",
+        "usage_note": "위로, 격려, 권면의 의미를 모두 포함"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "바울은 11절에서 자신이 로마 교회에 줄 것이 있다고 말한 직후, 겸손하게 그 표현을 수정합니다. '다시 말하면'(that is)이라는 표현은 앞의 말을 보완하거나 재해석함을 나타냅니다. 바울은 일방적으로 주는 관계가 아니라 '상호 격려'의 관계를 강조합니다. '서로 격려받는'이라는 수동태 표현은 격려가 자연스럽게 일어나는 것임을 나타냅니다. 이 격려의 근거는 '서로의 믿음'입니다. 바울은 위대한 사도이지만, 로마 교회 성도들의 믿음에서도 격려를 받을 것을 기대합니다. 이는 그리스도의 몸 안에서 모든 지체가 중요하며, 계급적이지 않은 관계를 보여줍니다.",
+      "cross_references": ["1 Thessalonians 3:7", "Philippians 1:5", "1 Corinthians 12:21-26"]
+    },
+    "korean_translation": {
+      "natural_translation": "다시 말하면, 여러분과 내가 서로의 믿음으로 함께 격려를 받는 것입니다.",
+      "translation_notes": "11절의 일방적 표현을 상호적 관계로 수정함"
+    },
+    "special_explanation": {
+      "explanation_type": "목회적 겸손",
+      "content": "이 구절은 바울의 목회적 지혜와 겸손을 보여줍니다. 사도로서 권위를 가진 바울이지만, 자신도 평신도들의 믿음에서 격려를 받을 것을 인정합니다. 이는 교만을 피하고 진정한 형제애를 확립합니다. 'mutually encouraged'(상호 격려)라는 표현은 그리스어 'symparakaleō'의 번역으로, '함께'(syn)와 '격려하다'(parakaleō)의 합성어입니다. 이는 일방적 가르침이 아니라 쌍방향적 교제를 강조합니다. 바울은 자신의 권위를 유지하면서도(사도직), 형제애적 평등을 표현하는 균형을 보여줍니다."
+    }
+  }
+]

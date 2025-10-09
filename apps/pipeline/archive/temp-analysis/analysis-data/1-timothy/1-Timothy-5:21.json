@@ -1,0 +1,73 @@
+{
+  "reference": "1 Timothy 5:21",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "엄숙한 명령",
+      "original_text": "I charge you, in the sight of God and Christ Jesus and the elect angels, to keep these instructions without partiality",
+      "korean_translation": "하나님과 그리스도 예수와 택하심을 받은 천사들 앞에서 내가 네게 엄히 명하노니, 이 교훈들을 편견 없이 지키라",
+      "grammatical_explanation": "엄숙한 명령 - 삼중 증인 앞에서의 맹세"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "공정성 요구",
+      "original_text": "and to do nothing out of favoritism",
+      "korean_translation": "그리고 편파적으로 행하지 말라",
+      "grammatical_explanation": "병렬 명령 - 편애 금지"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "charge",
+      "ipa_pronunciation": "/tʃɑrdʒ/",
+      "korean_pronunciation": "차지",
+      "part_of_speech": "동사",
+      "definition_korean": "명하다, 엄히 경고하다",
+      "usage_note": "그리스어 diamarturomai - 엄숙히 증언하다, 명령하다"
+    },
+    {
+      "word": "elect angels",
+      "ipa_pronunciation": "/ɪˈlɛkt ˈeɪndʒəlz/",
+      "korean_pronunciation": "일렉트 에인절즈",
+      "part_of_speech": "명사구",
+      "definition_korean": "택하심을 받은 천사들",
+      "usage_note": "타락하지 않고 하나님께 충성하는 천사들"
+    },
+    {
+      "word": "partiality",
+      "ipa_pronunciation": "/ˌpɑrʃiˈæləti/",
+      "korean_pronunciation": "파셜리티",
+      "part_of_speech": "명사",
+      "definition_korean": "편견, 편파성",
+      "usage_note": "그리스어 prokrima - 선입견, 편견"
+    },
+    {
+      "word": "favoritism",
+      "ipa_pronunciation": "/ˈfeɪvərɪˌtɪzəm/",
+      "korean_pronunciation": "페이버리티즘",
+      "part_of_speech": "명사",
+      "definition_korean": "편애, 편파",
+      "usage_note": "그리스어 prosklisis - 한쪽으로 기울어짐"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 5:17-20의 교훈(장로에 대한 존경, 고발 절차, 공개 책망)을 지키도록 디모데에게 엄숙히 명령합니다. '하나님과 그리스도 예수와 택하심을 받은 천사들' 앞에서 명령하는 것은 이 교훈의 심각성을 강조합니다. 이 삼중 증인은 모든 것을 보시는 하나님의 임재를 상기시키며, 디모데의 행동이 단순히 인간 앞에서만이 아니라 하늘의 법정 앞에서 평가됨을 의미합니다. '편견 없이'와 '편파적으로 하지 말라'는 교회 권징과 지도자 평가에서 공정성을 요구합니다. 디모데는 개인적 친분, 사회적 지위, 경제적 영향력에 좌우되지 않고, 오직 진리와 정의에 따라 판단해야 합니다. 이는 야고보서 2:1-9의 '사람을 외모로 취하지 말라'는 경고와 일치합니다.",
+    "cross_references": [
+      "2 Timothy 4:1 (하나님과 그리스도 앞에서의 명령)",
+      "James 2:1-9 (편견 없이 대하라)",
+      "1 Peter 1:17 (공평하게 판단하시는 하나님)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "하나님과 그리스도 예수와 택하심을 받은 천사들 앞에서 내가 네게 엄히 명합니다. 이 교훈들을 편견 없이 지키고, 편파적으로 행하지 마십시오.",
+    "translation_notes": "엄숙함과 공정성 요구를 명확히 표현"
+  },
+  "special_explanation": {
+    "explanation_type": "공정한 교회 권징",
+    "content": "이 구절은 교회 지도자 평가와 권징에서 공정성의 중요성을 강조합니다. '하나님과 그리스도 예수와 택하심을 받은 천사들' 앞에서의 명령은 이것이 인간적 판단이 아니라 하나님의 정의를 실행하는 일임을 상기시킵니다. 디모데는 장로들을 다룰 때 개인적 친분이나 감정에 좌우되지 않고, 증거와 진리에 따라 공정하게 판단해야 합니다. 이는 또한 가난한 자든 부자든, 권력자든 약자든 모두에게 동일한 기준을 적용해야 함을 의미합니다. 교회 권징의 실패는 종종 편파성에서 비롯되며, 공정성은 교회의 신뢰와 순결을 지키는 핵심입니다.",
+    "examples": [
+      "교회 권징은 하나님의 정의 실행",
+      "공정성은 개인 감정과 사회적 압력을 초월"
+    ]
+  }
+}

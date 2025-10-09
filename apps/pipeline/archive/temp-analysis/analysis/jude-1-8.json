@@ -1,0 +1,55 @@
+{
+  "reference": "Jude 1:8",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "현재 거짓 교사들의 유사한 행위",
+      "original_text": "In the very same way, on the strength of their dreams these ungodly people pollute their own bodies, reject authority and heap abuse on celestial beings",
+      "korean_translation": "그와 같이 이 사람들도 그들의 꿈으로 말미암아 육체를 더럽히며 권위를 업신여기며 영광을 비방하는도다",
+      "grammatical_explanation": "세 개의 병렬 동사구(pollute, reject, heap abuse). on the strength of는 근거를 나타냄"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "dreams",
+      "ipa_pronunciation": "/driːmz/",
+      "korean_pronunciation": "드림스",
+      "part_of_speech": "명사",
+      "definition_korean": "꿈, 환상",
+      "usage_note": "거짓 선지자들의 주관적 계시나 환상을 가리킴"
+    },
+    {
+      "word": "pollute",
+      "ipa_pronunciation": "/pəˈluːt/",
+      "korean_pronunciation": "폴루트",
+      "part_of_speech": "동사",
+      "definition_korean": "더럽히다, 오염시키다",
+      "usage_note": "성적 부도덕으로 몸을 더럽힘"
+    },
+    {
+      "word": "celestial beings",
+      "ipa_pronunciation": "/səˈlestiəl ˈbiːɪŋz/",
+      "korean_pronunciation": "셀레스티얼 비잉스",
+      "part_of_speech": "명사구",
+      "definition_korean": "천상의 존재들, 영광",
+      "usage_note": "헬라어 '독사스(δόξας)'로, 천사들이나 권세들을 의미"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "유다는 거짓 교사들을 3가지 예(이스라엘, 천사, 소돔)와 직접 연결합니다. '그들의 꿈'은 주관적이고 검증되지 않은 계시 주장을 가리킵니다. 그들의 세 가지 죄는 (1) 육체를 더럽힘(성적 부도덕), (2) 권위 거부(하나님과 교회 지도자), (3) 천상 존재 비방(천사나 하나님의 영광 모독)입니다. 이는 소돔의 죄와 평행합니다.",
+    "cross_references": [
+      "2 Peter 2:10-11",
+      "Colossians 2:18",
+      "1 Timothy 4:1-2"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "그와 같이 이 꿈꾸는 자들도 그들의 환상으로 말미암아 육체를 더럽히며 권위를 업신여기며 영광을 비방하는도다",
+    "translation_notes": "세 가지 병렬 행위를 한국어로 자연스럽게 연결"
+  },
+  "special_explanation": {
+    "explanation_type": "해석적",
+    "content": "'꿈을 꾸는 자들'(dreamers)은 영지주의자들의 신비 체험 주장을 가리킬 수 있습니다. '권위를 거부함'(reject authority)은 교회 지도자와 사도적 가르침에 대한 반역입니다. '영광을 비방함'(heap abuse on celestial beings)의 '영광'(δόξας)은 천사들, 특히 선한 천사들을 의미하거나, 하나님의 영광 그 자체를 가리킬 수 있습니다.",
+    "examples": []
+  }
+}

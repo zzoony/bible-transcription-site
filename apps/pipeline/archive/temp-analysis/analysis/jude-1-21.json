@@ -1,0 +1,64 @@
+{
+  "reference": "Jude 1:21",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "하나님의 사랑 안에 자신을 지킴",
+      "original_text": "keep yourselves in God's love",
+      "korean_translation": "하나님의 사랑 안에서 자신을 지키며",
+      "grammatical_explanation": "명령문 + 전치사구 (in God's love)"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "주님의 긍휼을 기다림",
+      "original_text": "as you wait for the mercy of our Lord Jesus Christ to bring you to eternal life",
+      "korean_translation": "영생에 이르도록 우리 주 예수 그리스도의 긍휼을 기다리라",
+      "grammatical_explanation": "as절 (시간/방법) + wait for + 목적어 + to부정사 (목적)"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "keep",
+      "ipa_pronunciation": "/kiːp/",
+      "korean_pronunciation": "킵",
+      "part_of_speech": "동사",
+      "definition_korean": "지키다, 보존하다",
+      "usage_note": "1절의 'kept for Jesus Christ'와 대조. 하나님이 지키시지만 우리도 지켜야 함"
+    },
+    {
+      "word": "wait for",
+      "ipa_pronunciation": "/weɪt fɔːr/",
+      "korean_pronunciation": "웨이트 포",
+      "part_of_speech": "동사구",
+      "definition_korean": "기다리다",
+      "usage_note": "헬라어 '프로스데코마이(προσδέχομαι)'로, 간절히 기대하며 기다림"
+    },
+    {
+      "word": "eternal life",
+      "ipa_pronunciation": "/ɪˈtɜːrnl laɪf/",
+      "korean_pronunciation": "이터널 라이프",
+      "part_of_speech": "명사구",
+      "definition_korean": "영생",
+      "usage_note": "미래의 완전한 구원과 영광을 의미"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "네 가지 권면의 세 번째와 네 번째입니다. (3) 하나님의 사랑 안에 자신을 지킴: 1절에서 하나님이 우리를 '지키신다'(kept)고 했지만, 여기서는 우리가 능동적으로 하나님의 사랑 안에 거해야 함을 명령합니다. 이는 하나님의 주권과 인간의 책임의 균형을 보여줍니다. (4) 주님의 긍휼을 기다림: 그리스도의 재림 때 완성될 영생을 간절히 기대하며 기다립니다. '긍휼'(mercy)은 2절의 축복과 연결되며, 우리의 공로가 아닌 은혜로 영생을 얻음을 강조합니다.",
+    "cross_references": [
+      "John 15:9-10",
+      "1 John 4:16",
+      "Titus 2:13",
+      "Philippians 3:20",
+      "Romans 8:18-25"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "하나님의 사랑 안에서 자신을 지키며 영생에 이르도록 우리 주 예수 그리스도의 긍휼을 기다리라",
+    "translation_notes": "네 가지 권면(20-21절)을 자연스럽게 연결"
+  },
+  "special_explanation": {
+    "explanation_type": "신학적",
+    "content": "이 구절은 신학적 역설을 포함합니다. 1절에서 신자들은 하나님께 '지킴받는' 수동적 대상이었지만, 여기서는 '자신을 지키라'는 능동적 명령을 받습니다. 이는 하나님의 보존(divine preservation)과 인간의 견인(human perseverance)이 함께 작동함을 보여줍니다. '하나님의 사랑 안에'(in God's love)는 하나님의 사랑을 받는 영역에 계속 머무름을 의미합니다(요한복음 15:9-10). '긍휼을 기다림'은 디도서 2:13의 '복된 소망'과 유사한 종말론적 기대입니다.",
+    "examples": []
+  }
+}

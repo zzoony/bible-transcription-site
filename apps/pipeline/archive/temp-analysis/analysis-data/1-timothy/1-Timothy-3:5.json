@@ -1,0 +1,65 @@
+{
+  "reference": "1 Timothy 3:5",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "조건절 - 가정 관리 실패",
+      "original_text": "If anyone does not know how to manage his own family",
+      "korean_translation": "만약 누군가 자기 가정을 다스릴 줄 모른다면",
+      "grammatical_explanation": "조건절 - 가정 관리 능력의 부재를 가정"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "수사학적 질문 - 논리적 귀결",
+      "original_text": "how can he take care of God's church?",
+      "korean_translation": "어떻게 하나님의 교회를 돌볼 수 있겠습니까?",
+      "grammatical_explanation": "수사학적 의문문 - 불가능성을 강조하는 반어적 질문"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "know how",
+      "ipa_pronunciation": "/noʊ haʊ/",
+      "korean_pronunciation": "노우 하우",
+      "part_of_speech": "동사구",
+      "definition_korean": "~할 줄 알다, ~하는 방법을 알다",
+      "usage_note": "단순한 지식이 아닌 실천적 능력과 경험을 의미"
+    },
+    {
+      "word": "take care of",
+      "ipa_pronunciation": "/teɪk kɛr ʌv/",
+      "korean_pronunciation": "테이크 케어 오브",
+      "part_of_speech": "동사구",
+      "definition_korean": "돌보다, 보살피다",
+      "usage_note": "그리스어 epimeleomai - 목자적 돌봄과 책임을 나타냄"
+    },
+    {
+      "word": "God's church",
+      "ipa_pronunciation": "/ɡɑdz tʃɜrtʃ/",
+      "korean_pronunciation": "갓즈 처치",
+      "part_of_speech": "명사구",
+      "definition_korean": "하나님의 교회",
+      "usage_note": "개인 소유가 아닌 하나님께 속한 거룩한 공동체"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 3:4절에서 제시한 가정 관리 요건을 논리적으로 뒷받침하기 위해 수사학적 질문을 사용합니다. 이 구절은 괄호 안에 삽입된 설명적 논평(parenthetical remark)으로, 가정과 교회 사이의 유비(analogy)를 명확히 합니다. '~할 줄 모른다'는 표현은 단순한 지식 부족이 아니라 실천적 능력과 경험의 결핍을 의미합니다. 바울은 '작은 것(가정)'에 신실하지 못한 사람이 '큰 것(교회)'을 맡을 수 없다는 예수님의 원리(눅 16:10)를 적용하고 있습니다. '돌보다'(take care of)는 그리스어 'epimeleomai'로, 선한 사마리아인의 비유(눅 10:34-35)에서 사용된 단어와 같아서, 자비롭고 헌신적인 목자적 돌봄을 암시합니다. 중요한 것은 교회가 '하나님의' 교회라는 점입니다. 이는 감독이 교회의 소유주나 통치자가 아니라 하나님을 대신하여 섬기는 청지기임을 강조합니다. 가정에서 사랑과 인내로 가족을 이끈 경험이 없다면, 더 복잡하고 다양한 교회 공동체를 돌보기는 불가능합니다.",
+    "cross_references": [
+      "Luke 16:10 (작은 일의 신실함)",
+      "Luke 10:34-35 (선한 사마리아인의 돌봄)",
+      "1 Peter 5:2-3 (하나님의 양 무리를 돌봄)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "(만약 누군가 자기 가정을 다스릴 줄 모른다면, 어떻게 하나님의 교회를 돌볼 수 있겠습니까?)",
+    "translation_notes": "수사학적 질문의 반어적 뉘앙스를 살림"
+  },
+  "special_explanation": {
+    "explanation_type": "유비 논증(Argument from Analogy)",
+    "content": "이 구절은 '가정 → 교회'의 유비 논증을 사용합니다. 바울은 작은 규모의 가정 관리 능력이 큰 규모의 교회 돌봄 능력을 예측하는 지표라고 주장합니다. 이는 단순한 비유가 아니라 실제적 연관성에 기반합니다. 첫째, 둘 다 '관계적 공동체'입니다. 가정과 교회 모두 사랑, 인내, 헌신을 요구하는 관계의 장입니다. 둘째, 둘 다 '다양성 속의 통일'을 추구합니다. 가정은 다른 연령, 성격의 구성원들을 통합하며, 교회도 마찬가지입니다. 셋째, 둘 다 '장기적 헌신'을 요구합니다. 가정 관리는 일시적 프로젝트가 아닌 평생의 책임이며, 교회 사역도 동일합니다. 수사학적 질문 형식은 독자 스스로 답을 도출하게 하여 설득력을 높입니다. '당연히 불가능하다'는 자명한 결론에 도달하게 함으로써, 가정 관리 요건의 필수성을 강력히 입증합니다.",
+    "examples": [
+      "가정은 교회 사역의 '실험실' - 성품과 능력을 검증하는 장",
+      "교회는 '하나님의' 소유 - 감독은 청지기이지 주인이 아님"
+    ]
+  }
+}

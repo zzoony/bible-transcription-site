@@ -1,0 +1,72 @@
+{
+  "reference": "Romans 1:2",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "복음의 기원 - 약속의 연속성",
+      "original_text": "the gospel he promised beforehand",
+      "korean_translation": "그가 미리 약속하신 복음",
+      "grammatical_explanation": "관계대명사 생략 구조. '(which) he promised'에서 which가 생략됨. 'beforehand'는 구약 시대를 가리킴"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "전달 수단 - 선지자들을 통한 계시",
+      "original_text": "through his prophets",
+      "korean_translation": "그의 선지자들을 통하여",
+      "grammatical_explanation": "전치사구. 'through'는 수단/경로를 나타냄. 구약 선지자들이 매개체였음을 표현"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "기록의 장소 - 성경적 근거",
+      "original_text": "in the Holy Scriptures",
+      "korean_translation": "성경에",
+      "grammatical_explanation": "전치사구. 'in'은 위치/장소를 나타내며, 여기서는 기록된 장소를 의미"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "promised",
+      "ipa_pronunciation": "/ˈprɑːmɪst/",
+      "korean_pronunciation": "프라미스트",
+      "part_of_speech": "동사 (과거)",
+      "definition_korean": "약속하다 (그리스어 proepangellomai - 미리 공표하다)",
+      "usage_note": "단순한 약속이 아니라 공식적이고 신적인 선언"
+    },
+    {
+      "word": "beforehand",
+      "ipa_pronunciation": "/bɪˈfɔːrhænd/",
+      "korean_pronunciation": "비포핸드",
+      "part_of_speech": "부사",
+      "definition_korean": "미리, 사전에",
+      "usage_note": "구약 시대를 가리키며, 복음이 갑작스러운 것이 아니라 하나님의 오랜 계획임을 강조"
+    },
+    {
+      "word": "prophets",
+      "ipa_pronunciation": "/ˈprɑːfɪts/",
+      "korean_pronunciation": "프라핏츠",
+      "part_of_speech": "명사 (복수)",
+      "definition_korean": "선지자들 (그리스어 prophetai - 하나님의 말씀을 전하는 자들)",
+      "usage_note": "이사야, 예레미야, 다니엘 등 구약의 선지자들을 총칭"
+    },
+    {
+      "word": "Holy Scriptures",
+      "ipa_pronunciation": "/ˈhoʊli ˈskrɪptʃərz/",
+      "korean_pronunciation": "홀리 스크립처스",
+      "part_of_speech": "명사구",
+      "definition_korean": "성경, 거룩한 기록 (그리스어 graphai hagiai)",
+      "usage_note": "구약 성경을 가리킴. 하나님의 영감으로 쓰인 권위 있는 문서"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 복음이 신약에서 갑자기 등장한 새로운 개념이 아니라, 구약 시대부터 하나님께서 선지자들을 통해 약속하신 것임을 강조합니다. 이는 유대인 독자들에게 복음의 정당성을 입증하는 중요한 논증입니다. '미리 약속하신'(promised beforehand)이라는 표현은 하나님의 구원 계획이 영원 전부터 존재했으며 역사를 통해 점진적으로 계시되어 왔음을 나타냅니다. '선지자들을 통하여'라는 표현은 이사야 53장의 고난받는 종, 예레미야의 새 언약 예언(렘 31:31-34), 다니엘의 메시아 예언 등을 암시합니다. '성경에'라는 표현은 이러한 약속들이 기록되어 보존되었으며, 검증 가능하고 신뢰할 수 있는 하나님의 말씀임을 강조합니다.",
+    "cross_references": ["Isaiah 53:1-12", "Jeremiah 31:31-34", "Genesis 3:15", "2 Timothy 3:15-16"]
+  },
+  "korean_translation": {
+    "natural_translation": "이 복음은 하나님께서 구약의 선지자들을 통하여 성경에 미리 약속하신 것입니다.",
+    "translation_notes": "1절과 연결되어 복음을 더 자세히 설명하는 구조"
+  },
+  "special_explanation": {
+    "explanation_type": "신학적 연속성",
+    "content": "이 구절은 신약과 구약의 신학적 연속성을 확립하는 핵심 구절입니다. 바울은 세 가지 요소를 통해 복음의 권위를 세웁니다: (1) 하나님 자신이 약속의 주체 - 신적 기원, (2) 선지자들이 전달의 매개체 - 구약적 권위, (3) 성경에 기록됨 - 문서적 증거. 'promised beforehand'는 그리스어 'proepangellomai'로, 단순히 약속하는 것을 넘어 공식적으로 선포하고 공표한다는 의미를 담고 있습니다. 이는 복음이 바울의 발명품이 아니라 하나님의 영원한 구원 계획의 성취임을 강조합니다."
+  }
+}

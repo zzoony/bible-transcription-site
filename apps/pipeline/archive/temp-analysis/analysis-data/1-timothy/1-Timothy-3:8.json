@@ -1,0 +1,90 @@
+{
+  "reference": "1 Timothy 3:8",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "전환 - 새로운 직분 소개",
+      "original_text": "In the same way, deacons are to be worthy of respect",
+      "korean_translation": "이와 같이 집사들도 존경받을 만해야 하며",
+      "grammatical_explanation": "전환구를 사용하여 감독 자격 요건에서 집사 자격 요건으로 이동"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "성품 자질 나열",
+      "original_text": "sincere, not indulging in much wine, and not pursuing dishonest gain",
+      "korean_translation": "진실하고, 과도하게 술을 마시지 않으며, 부정한 이득을 탐하지 않아야 합니다",
+      "grammatical_explanation": "병렬 구조의 형용사구와 부정구 - 집사의 필수 자질들"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "deacons",
+      "ipa_pronunciation": "/ˈdikənz/",
+      "korean_pronunciation": "디컨즈",
+      "part_of_speech": "명사",
+      "definition_korean": "집사, 섬기는 자",
+      "usage_note": "그리스어 diakonos (διάκονος) - 섬기는 사람, 봉사자"
+    },
+    {
+      "word": "worthy of respect",
+      "ipa_pronunciation": "/ˈwɜrði ʌv rɪˈspɛkt/",
+      "korean_pronunciation": "워디 오브 리스펙트",
+      "part_of_speech": "형용사구",
+      "definition_korean": "존경받을 만한, 품위 있는",
+      "usage_note": "그리스어 semnos - 엄숙한, 품위 있는, 존경받을 만한"
+    },
+    {
+      "word": "sincere",
+      "ipa_pronunciation": "/sɪnˈsɪr/",
+      "korean_pronunciation": "신시어",
+      "part_of_speech": "형용사",
+      "definition_korean": "진실한, 성실한",
+      "usage_note": "그리스어 dilogos - 이중적이지 않은, 한 입으로 두 말 하지 않는"
+    },
+    {
+      "word": "indulging in",
+      "ipa_pronunciation": "/ɪnˈdʌldʒɪŋ ɪn/",
+      "korean_pronunciation": "인덜징 인",
+      "part_of_speech": "동사구",
+      "definition_korean": "~에 탐닉하다, 빠지다",
+      "usage_note": "통제력을 잃고 과도하게 몰두하는 상태"
+    },
+    {
+      "word": "pursuing",
+      "ipa_pronunciation": "/pərˈsuɪŋ/",
+      "korean_pronunciation": "퍼슈잉",
+      "part_of_speech": "동사",
+      "definition_korean": "추구하다, 탐하다",
+      "usage_note": "적극적으로 좇아가는 행동"
+    },
+    {
+      "word": "dishonest gain",
+      "ipa_pronunciation": "/dɪsˈɑnəst ɡeɪn/",
+      "korean_pronunciation": "디서니스트 게인",
+      "part_of_speech": "명사구",
+      "definition_korean": "부정한 이득, 불의한 이익",
+      "usage_note": "그리스어 aischros kerdos - 수치스러운 이익, 도덕적으로 잘못된 방법으로 얻은 이득"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 '이와 같이'(In the same way)라는 전환구를 사용하여 감독(3:1-7)에서 집사(3:8-13)로 초점을 옮깁니다. 집사(diakonos)는 그리스어로 '섬기는 자'를 의미하며, 사도행전 6:1-6에서 일곱 집사를 선택한 사건에 그 기원이 있습니다. 초대교회에서 집사는 가난한 자들을 돌보고, 교회의 실제적 필요를 충족시키며, 감독들의 목양 사역을 지원하는 역할을 맡았습니다. 첫 번째 자질인 '존경받을 만함'(worthy of respect)은 감독(3:2)과 동일한 요구이며, 그리스어 'semnos'는 엄숙함과 품위를 의미합니다. '진실함'(sincere)은 그리스어 'dilogos'의 부정형으로, 문자적으로 '이중 혀를 가지지 않은'을 의미합니다. 이는 집사가 교회 구성원들과 많은 대화를 나누므로, 한 사람에게는 이렇게 말하고 다른 사람에게는 다르게 말하는 이중성을 피해야 함을 강조합니다. '과도한 술'의 경고는 감독(3:3)보다 완화된 표현이지만, 여전히 절제력을 요구합니다. '부정한 이득'은 집사가 교회 재정과 구제 물품을 다루므로 특히 중요한 자질입니다. 집사는 물질적 유혹에 넘어가지 않고 청렴해야 합니다.",
+    "cross_references": [
+      "Acts 6:1-6 (일곱 집사의 선택)",
+      "Philippians 1:1 (감독들과 집사들)",
+      "1 Peter 4:10-11 (섬김의 은사)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "이와 같이 집사들도 존경받을 만하고, 진실하며, 과도하게 술을 마시지 않고, 부정한 이득을 탐하지 않아야 합니다.",
+    "translation_notes": "네 가지 자질을 병렬 구조로 자연스럽게 연결"
+  },
+  "special_explanation": {
+    "explanation_type": "집사직의 성격과 자격",
+    "content": "집사(diakonos)는 신약성경에서 '섬기는 자'를 가리키는 일반적 용어이지만, 여기서는 교회의 공식적 직분을 의미합니다. 사도행전 6장에서 일곱 집사가 선택된 이유는 과부들의 구제가 공정하게 이루어지도록 하기 위함이었습니다. 이는 집사가 실제적, 물질적 필요를 다루는 역할임을 보여줍니다. '진실함'(sincere)의 원어 'dilogos'는 '이중 혀'를 의미하며, 집사가 여러 사람과 접촉하면서 일관된 말과 행동을 유지해야 함을 강조합니다. 소문을 퍼뜨리거나 편파적으로 행동하는 것은 집사직과 양립할 수 없습니다. '부정한 이득을 탐하지 않음'은 집사가 교회 재정, 구제 물품, 헌금 등을 다루므로 청렴성이 필수적임을 나타냅니다. 현대 교회에서도 집사는 교회의 실제적 운영과 성도들의 물질적 필요를 돌보는 중요한 역할을 맡고 있으며, 이 자격 요건들은 여전히 유효합니다.",
+    "examples": [
+      "집사는 '섬기는 자' - 감독과 함께 교회를 섬기는 보조 지도자",
+      "진실함은 일관된 말과 행동을 의미 - 이중성 배제",
+      "청렴성은 재정 관리의 핵심 - 교회 신뢰의 기반"
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+[
+  {
+    "reference": "Romans 1:8",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "감사의 시작 - 하나님께 감사",
+        "original_text": "First, I thank my God through Jesus Christ for all of you",
+        "korean_translation": "먼저 나는 여러분 모두를 위하여 예수 그리스도를 통해 내 하나님께 감사합니다",
+        "grammatical_explanation": "'First'는 서신 본문의 시작. 'through Jesus Christ'는 중보자를 통한 감사"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "감사의 이유 - 믿음이 널리 알려짐",
+        "original_text": "because your faith is being reported all over the world",
+        "korean_translation": "왜냐하면 여러분의 믿음이 온 세상에 전파되고 있기 때문입니다",
+        "grammatical_explanation": "'because'는 이유절. 현재 수동 진행형으로 계속 전파되고 있음을 나타냄"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "thank",
+        "ipa_pronunciation": "/θæŋk/",
+        "korean_pronunciation": "땡크",
+        "part_of_speech": "동사",
+        "definition_korean": "감사하다 (그리스어 eucharisteō)",
+        "usage_note": "하나님께 드리는 감사. 'eucharist'(성찬)의 어원"
+      },
+      {
+        "word": "reported",
+        "ipa_pronunciation": "/rɪˈpɔːrtɪd/",
+        "korean_pronunciation": "리포티드",
+        "part_of_speech": "동사 (과거분사)",
+        "definition_korean": "전해지다, 보고되다 (그리스어 katangellō - 선포하다)",
+        "usage_note": "좋은 소문이 널리 퍼짐"
+      },
+      {
+        "word": "faith",
+        "ipa_pronunciation": "/feɪθ/",
+        "korean_pronunciation": "페이스",
+        "part_of_speech": "명사",
+        "definition_korean": "믿음 (그리스어 pistis)",
+        "usage_note": "로마 교회의 믿음과 충성"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "바울은 서신의 인사말(1-7절) 후 본문을 시작하면서 로마 교회에 대한 감사로 시작합니다. 고대 서신 양식에서 '먼저'(First)는 서신 본문의 시작을 나타내는 전형적 표현입니다. 바울은 '예수 그리스도를 통해' 하나님께 감사한다고 말하는데, 이는 예수님이 중보자이심을 나타냅니다. 감사의 이유는 로마 교회의 믿음이 '온 세상에' 전파되고 있다는 것입니다. 로마는 당시 제국의 수도로서 전략적으로 중요한 위치에 있었고, 그곳 교회의 믿음은 널리 알려졌습니다. '전파되고 있다'(is being reported)는 현재 진행형으로, 지속적인 영향력을 나타냅니다.",
+      "cross_references": ["1 Thessalonians 1:8", "Romans 16:19", "Colossians 1:3-6"]
+    },
+    "korean_translation": {
+      "natural_translation": "먼저, 여러분 모두를 위하여 예수 그리스도를 통해 내 하나님께 감사드립니다. 여러분의 믿음이 온 세상에 전파되고 있기 때문입니다.",
+      "translation_notes": "서신 본문의 시작. 감사와 격려로 로마 교회와의 관계를 확립"
+    },
+    "special_explanation": {
+      "explanation_type": "서신 구조와 목회적 지혜",
+      "content": "바울은 아직 방문하지 못한 교회에 쓰면서 긍정적인 감사로 시작합니다. 이는 독자들의 마음을 여는 수사학적 전략이자 진정한 애정 표현입니다. '온 세상에'(en holō tō kosmō)는 과장법일 수 있지만, 로마 교회의 영향력이 제국 전역에 미쳤음을 나타냅니다. '예수 그리스도를 통해'(dia Iēsou Christou)는 바울 신학의 핵심 - 예수님이 하나님께 나아가는 유일한 중보자이심을 보여줍니다."
+    }
+  },
+  {
+    "reference": "Romans 1:9",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "증인으로서의 하나님 - 맹세의 형식",
+        "original_text": "God, whom I serve in my spirit in preaching the gospel of his Son, is my witness",
+        "korean_translation": "내가 그의 아들의 복음을 전하는 일에 내 영으로 섬기는 하나님이 나의 증인이십니다",
+        "grammatical_explanation": "관계절로 하나님을 구체적으로 묘사. 'is my witness'는 맹세 공식"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "증언 내용 - 끊임없는 기억",
+        "original_text": "how constantly I remember you",
+        "korean_translation": "내가 끊임없이 여러분을 기억한다는 것을",
+        "grammatical_explanation": "'how'는 간접의문문. 'constantly'는 지속성 강조"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "serve",
+        "ipa_pronunciation": "/sɜːrv/",
+        "korean_pronunciation": "서브",
+        "part_of_speech": "동사",
+        "definition_korean": "섬기다 (그리스어 latreuō - 예배하다, 섬기다)",
+        "usage_note": "종교적 봉사와 예배. 제사장의 섬김을 연상시킴"
+      },
+      {
+        "word": "spirit",
+        "ipa_pronunciation": "/ˈspɪrɪt/",
+        "korean_pronunciation": "스피릿",
+        "part_of_speech": "명사",
+        "definition_korean": "영 (그리스어 pneuma)",
+        "usage_note": "여기서는 바울의 인간 영을 가리킴. 진심과 헌신의 자리"
+      },
+      {
+        "word": "witness",
+        "ipa_pronunciation": "/ˈwɪtnəs/",
+        "korean_pronunciation": "위트니스",
+        "part_of_speech": "명사",
+        "definition_korean": "증인 (그리스어 martys - 증언자)",
+        "usage_note": "법정 용어. 하나님을 증인으로 부름"
+      },
+      {
+        "word": "constantly",
+        "ipa_pronunciation": "/ˈkɑːnstəntli/",
+        "korean_pronunciation": "칸스턴틀리",
+        "part_of_speech": "부사",
+        "definition_korean": "끊임없이, 항상 (그리스어 adialeiptōs - 쉬지 않고)",
+        "usage_note": "지속적이고 일관된 행동"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "바울은 로마 교회에 대한 자신의 관심이 진정하다는 것을 강조하기 위해 하나님을 증인으로 부릅니다. '증인'(witness)으로 하나님을 부르는 것은 고대 맹세의 형식입니다. 바울은 하나님을 '내가 섬기는 하나님'으로 구체적으로 묘사합니다. '내 영으로 섬긴다'는 표현은 외적 형식이 아니라 내적 진정성으로 섬긴다는 의미입니다. 섬김의 내용은 '그의 아들의 복음을 전하는 것'입니다. 바울의 증언은 자신이 '끊임없이' 로마 교회를 기억한다는 것입니다. 이는 10절의 기도와 연결됩니다. 바울은 아직 만나지 못한 교회를 위해 지속적으로 기도하고 있었습니다.",
+      "cross_references": ["Philippians 1:8", "1 Thessalonians 2:5", "2 Corinthians 1:23"]
+    },
+    "korean_translation": {
+      "natural_translation": "내가 그분의 아들의 복음을 전하는 일에 온 마음으로 섬기는 하나님께서 내 증인이십니다. 내가 얼마나 끊임없이 여러분을 기억하는지를 말입니다.",
+      "translation_notes": "하나님을 증인으로 부르는 진지한 맹세. 로마 교회를 향한 진정한 관심 표현"
+    },
+    "special_explanation": {
+      "explanation_type": "맹세 공식과 진정성",
+      "content": "하나님을 증인으로 부르는 것(God is my witness)은 고대 맹세의 공식적 표현입니다. 이는 자신의 말이 진실임을 가장 강력하게 확증하는 방법입니다. '내 영으로 섬긴다'(latreuō en tō pneumati mou)는 제사장적 용어를 사용하여 복음 전파를 영적 예배로 묘사합니다. 이는 구약의 제사장 봉사를 신약의 복음 사역으로 재해석하는 것입니다. 'constantly'(adialeiptōs)는 '쉬지 않고', '중단 없이'를 의미하여 바울의 지속적인 중보기도를 나타냅니다. 이는 다음 절(10절)의 '항상 내 기도에'와 연결됩니다."
+    }
+  }
+]

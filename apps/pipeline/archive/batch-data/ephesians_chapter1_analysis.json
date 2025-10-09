@@ -1,0 +1,175 @@
+[
+  {
+    "verseId": 14820,
+    "reference": "Ephesians 1:1",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "신분 소개",
+        "original_text": "Paul, an apostle of Christ Jesus by the will of God",
+        "korean_translation": "하나님의 뜻에 따라 그리스도 예수의 사도가 된 바울",
+        "grammatical_explanation": "동격어구(an apostle of Christ Jesus)가 주어 Paul을 보충 설명하며, 전치사구(by the will of God)가 사도직의 출처를 명시하는 구조"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "수신자 지정",
+        "original_text": "To God's holy people in Ephesus, the faithful in Christ Jesus",
+        "korean_translation": "에베소에 있는 하나님의 거룩한 백성, 곧 그리스도 예수 안에서 신실한 자들에게",
+        "grammatical_explanation": "전치사 To가 이끄는 수신자 표현으로, 동격어구(the faithful in Christ Jesus)가 God's holy people을 재서술"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "apostle",
+        "ipa_pronunciation": "/əˈpɑː.səl/",
+        "korean_pronunciation": "어파슬",
+        "part_of_speech": "명사",
+        "definition_korean": "사도, 파송된 자",
+        "usage_note": "그리스어 apostolos(보냄을 받은 자)에서 유래"
+      },
+      {
+        "word": "will",
+        "ipa_pronunciation": "/wɪl/",
+        "korean_pronunciation": "윌",
+        "part_of_speech": "명사",
+        "definition_korean": "의지, 뜻",
+        "usage_note": "하나님의 주권적 계획을 가리킴"
+      },
+      {
+        "word": "holy",
+        "ipa_pronunciation": "/ˈhoʊ.li/",
+        "korean_pronunciation": "호울리",
+        "part_of_speech": "형용사",
+        "definition_korean": "거룩한, 성스러운",
+        "usage_note": "구별되고 하나님께 속한 상태"
+      },
+      {
+        "word": "faithful",
+        "ipa_pronunciation": "/ˈfeɪθ.fəl/",
+        "korean_pronunciation": "페이쓰펄",
+        "part_of_speech": "형용사",
+        "definition_korean": "신실한, 충성된",
+        "usage_note": "믿음 있는(believing)과 신뢰할 수 있는(trustworthy)의 이중 의미"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "바울은 에베소 교회에 보내는 편지를 시작하며 자신의 사도직이 인간의 선택이 아닌 하나님의 뜻에 근거함을 강조합니다. 에베소는 소아시아의 중요한 항구 도시로, 바울이 3년간 사역했던 곳입니다(행 19장). '거룩한 백성'이라는 표현은 구약의 이스라엘 백성을 가리키던 용어를 그리스도 안의 신자들에게 적용한 것으로, 교회의 정체성을 보여줍니다. '그리스도 예수 안에서 신실한 자들'이라는 표현은 믿음으로 그리스도와 연합된 상태를 나타냅니다.",
+      "cross_references": ["행 19:1-10", "고전 1:1-2", "골 1:1-2"]
+    },
+    "korean_translation": {
+      "natural_translation": "하나님의 뜻으로 그리스도 예수의 사도 된 바울은 에베소에 있는 성도 곧 그리스도 예수 안에서 신실한 자들에게 편지하노니",
+      "translation_notes": "신약성경의 전형적인 서신 서두 형식을 따름"
+    },
+    "special_explanation": {
+      "explanation_type": "문법적",
+      "content": "이 구절은 고대 서신의 전형적인 형식을 따릅니다: 발신자(Paul) + 신분/자격(an apostle) + 수신자(To God's holy people). 'by the will of God'는 바울의 사도직 권위가 자기 주장이 아닌 하나님의 부르심에서 나옴을 강조하는 중요한 수식어구입니다.",
+      "examples": []
+    }
+  },
+  {
+    "verseId": 14821,
+    "reference": "Ephesians 1:2",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "인사와 축복",
+        "original_text": "Grace and peace to you from God our Father and the Lord Jesus Christ",
+        "korean_translation": "하나님 우리 아버지와 주 예수 그리스도로부터 은혜와 평강이 너희에게 있을지어다",
+        "grammatical_explanation": "명사구(Grace and peace)가 주어이며, 전치사구(to you, from...)가 방향과 출처를 나타내는 전형적인 축복 선언문 구조"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "grace",
+        "ipa_pronunciation": "/ɡreɪs/",
+        "korean_pronunciation": "그레이스",
+        "part_of_speech": "명사",
+        "definition_korean": "은혜, 은총",
+        "usage_note": "그리스어 charis, 하나님의 무조건적인 호의와 능력"
+      },
+      {
+        "word": "peace",
+        "ipa_pronunciation": "/piːs/",
+        "korean_pronunciation": "피스",
+        "part_of_speech": "명사",
+        "definition_korean": "평강, 평화",
+        "usage_note": "히브리어 shalom에 대응하며, 단순한 전쟁 부재가 아닌 온전한 번영과 안녕을 의미"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "바울의 모든 서신에 나타나는 전형적인 인사말로, 유대교의 '평강(shalom)'과 헬라 문화의 '은혜(charis)'를 결합한 독특한 기독교적 인사입니다. '은혜'는 구원의 근거이자 기독교 생활의 원동력이며, '평강'은 그 결과로 누리는 하나님과의, 그리고 사람들과의 화평을 의미합니다. 하나님 아버지와 예수 그리스도를 동등하게 축복의 근원으로 제시함으로써 그리스도의 신성을 암시합니다.",
+      "cross_references": ["롬 1:7", "고전 1:3", "갈 1:3", "엡 6:23"]
+    },
+    "korean_translation": {
+      "natural_translation": "하나님 우리 아버지와 주 예수 그리스도로부터 은혜와 평강이 여러분에게 있기를 빕니다",
+      "translation_notes": "바울 서신의 표준 인사 공식"
+    }
+  },
+  {
+    "verseId": 14822,
+    "reference": "Ephesians 1:3",
+    "sentence_structures": [
+      {
+        "sequence_order": 1,
+        "semantic_classification": "찬양 선언",
+        "original_text": "Praise be to the God and Father of our Lord Jesus Christ",
+        "korean_translation": "찬송하리로다 우리 주 예수 그리스도의 하나님이시며 아버지이신 분을",
+        "grammatical_explanation": "수동태 명령문(Praise be)으로 시작하는 송영 형식, 전치사구가 찬양의 대상을 명시"
+      },
+      {
+        "sequence_order": 2,
+        "semantic_classification": "찬양의 이유",
+        "original_text": "who has blessed us in the heavenly realms with every spiritual blessing in Christ",
+        "korean_translation": "그분이 그리스도 안에서 하늘의 영역에 있는 모든 영적 복으로 우리를 축복하셨도다",
+        "grammatical_explanation": "관계대명사절(who has blessed...)이 앞의 God and Father를 수식하며, 현재완료 시제가 과거에 완성되어 현재까지 지속되는 축복을 나타냄"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "praise",
+        "ipa_pronunciation": "/preɪz/",
+        "korean_pronunciation": "프레이즈",
+        "part_of_speech": "명사/동사",
+        "definition_korean": "찬양, 찬송",
+        "usage_note": "그리스어 eulogetos(축복받으신)의 번역"
+      },
+      {
+        "word": "blessed",
+        "ipa_pronunciation": "/blest/",
+        "korean_pronunciation": "블레스트",
+        "part_of_speech": "동사(과거분사)",
+        "definition_korean": "축복하다",
+        "usage_note": "그리스어 eulogeo(좋은 말을 하다, 축복하다)"
+      },
+      {
+        "word": "heavenly realms",
+        "ipa_pronunciation": "/ˈhev.ən.li riːlmz/",
+        "korean_pronunciation": "헤븐리 렐름즈",
+        "part_of_speech": "명사구",
+        "definition_korean": "하늘의 영역, 천상의 처소",
+        "usage_note": "그리스어 epouranios, 에베소서에서 6회 사용되며 영적 실재의 영역을 가리킴"
+      },
+      {
+        "word": "spiritual",
+        "ipa_pronunciation": "/ˈspɪr.ɪ.tʃu.əl/",
+        "korean_pronunciation": "스피리추얼",
+        "part_of_speech": "형용사",
+        "definition_korean": "영적인, 성령의",
+        "usage_note": "물질적이 아닌 영적 차원의 복을 강조"
+      }
+    ],
+    "contextual_explanation": {
+      "integrated_explanation": "에베소서의 본문은 이 장엄한 송영으로 시작됩니다(3-14절은 그리스어 원문에서 하나의 긴 문장). 하나님이 '우리 주 예수 그리스도의 하나님이시며 아버지'라는 표현은 삼위일체 관계를 암시합니다. '하늘의 영역'(헬라어 epouranios)은 에베소서의 핵심 개념으로, 그리스도인들이 이미 그리스도와 함께 앉아 있는 영적 차원을 가리킵니다(2:6). '모든 영적 복'은 구체적으로 4-14절에서 전개됩니다: 선택(4절), 예정(5절), 구속(7절), 인침(13절) 등. 이 복들은 '그리스도 안에서'(in Christ) 주어지는데, 이는 에베소서에서 30회 이상 반복되는 핵심 개념입니다.",
+      "cross_references": ["엡 2:6", "골 1:5", "벧전 1:3-4", "고후 1:3"]
+    },
+    "korean_translation": {
+      "natural_translation": "찬송합니다! 우리 주 예수 그리스도의 하나님이시며 아버지이신 분을. 그분께서 그리스도 안에서 하늘에 속한 모든 영적 복으로 우리를 축복하셨습니다",
+      "translation_notes": "장엄한 송영의 시작, 3-14절은 원문에서 하나의 긴 문장을 구성"
+    },
+    "special_explanation": {
+      "explanation_type": "신학적",
+      "content": "'하늘의 영역'(heavenly realms)은 에베소서의 독특한 신학적 개념입니다. 이는 단순히 사후 천국이 아니라, 그리스도인들이 현재 그리스도와 함께 참여하고 있는 영적 실재의 차원을 가리킵니다(엡 2:6 '함께 앉히셨으니'). 이 영역은 축복의 원천이지만(1:3), 동시에 영적 전쟁의 장소이기도 합니다(6:12).",
+      "examples": []
+    }
+  }
+]

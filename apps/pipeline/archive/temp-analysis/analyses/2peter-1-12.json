@@ -1,0 +1,49 @@
+{
+  "reference": "2 Peter 1:12",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "저자의 의도 선언",
+      "original_text": "So I will always remind you of these things",
+      "korean_translation": "그러므로 내가 이것을 너희에게 항상 기억하게 하리라",
+      "grammatical_explanation": "'will always remind'는 계속적 상기의 의도"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "수신자 상태 인정",
+      "original_text": "even though you know them and are firmly established in the truth you now have",
+      "korean_translation": "너희가 이것을 알고 이미 있는 진리에 서 있으나",
+      "grammatical_explanation": "양보절 'even though'로 수신자의 현재 상태 인정. 'firmly established'는 확고한 기초"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "remind",
+      "ipa_pronunciation": "/rɪˈmaɪnd/",
+      "korean_pronunciation": "리마인드",
+      "part_of_speech": "동사",
+      "definition_korean": "상기시키다, 기억나게 하다",
+      "usage_note": "반복적 교육과 경고"
+    },
+    {
+      "word": "firmly established",
+      "ipa_pronunciation": "/ˈfɜːrmli ɪˈstæblɪʃt/",
+      "korean_pronunciation": "펌리 이스태블리쉬트",
+      "part_of_speech": "형용사구",
+      "definition_korean": "굳게 서다, 확고히 세워지다",
+      "usage_note": "진리 안에 견고히 뿌리내림"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "베드로는 독자들이 이미 진리를 알고 있음에도 계속 상기시킬 것임을 밝힙니다. 이는 반복 교육의 중요성을 보여줍니다. 신자는 새로운 정보보다 이미 아는 진리를 계속 기억하고 실천하는 것이 필요합니다. 베드로의 이러한 태도는 목회적 지혜를 나타내며, 거짓 교사들이 '새롭고 비밀스러운 지식'을 강조한 것과 대조됩니다. 참된 영적 성장은 기본적 진리에 대한 계속적 상기와 실천에서 옵니다.",
+    "cross_references": [
+      "Philippians 3:1 (같은 말을 쓰는 것이 내게는 수고로움이 없고)",
+      "2 Peter 3:1 (생각나게 하여 너희의 순전한 마음을 일깨우려 함)",
+      "Jude 1:5 (너희가 본래 모든 사실을 알고 있으나)",
+      "Romans 15:15 (너희로 다시 생각나게 하려고)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "그러므로 너희가 이것을 알고 이미 있는 진리에 서 있으나 내가 항상 너희로 생각하게 하려 하노라."
+  }
+}

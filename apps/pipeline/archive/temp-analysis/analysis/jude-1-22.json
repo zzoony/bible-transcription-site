@@ -1,0 +1,48 @@
+{
+  "reference": "Jude 1:22",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "의심하는 자들에 대한 긍휼",
+      "original_text": "Be merciful to those who doubt",
+      "korean_translation": "의심하는 자들을 긍휼히 여기라",
+      "grammatical_explanation": "명령문 + to 전치사구 + 관계절"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "merciful",
+      "ipa_pronunciation": "/ˈmɜːrsɪfl/",
+      "korean_pronunciation": "머시풀",
+      "part_of_speech": "형용사",
+      "definition_korean": "긍휼히 여기는",
+      "usage_note": "헬라어 '엘레아테(ἐλεᾶτε)'로, 자비와 연민을 베풂"
+    },
+    {
+      "word": "doubt",
+      "ipa_pronunciation": "/daʊt/",
+      "korean_pronunciation": "다우트",
+      "part_of_speech": "동사",
+      "definition_korean": "의심하다",
+      "usage_note": "헬라어 '디아크리노메노이스(διακρινομένοις)'로, 두 마음을 가진, 갈등하는"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "유다는 교회가 세 종류의 사람들을 다르게 대해야 한다고 권면합니다. 첫 번째는 '의심하는 자들'(those who doubt)로, 거짓 교사들의 영향으로 믿음이 흔들리는 신자들입니다. 이들에게는 긍휼과 인내로 대해야 하며, 그들의 의심을 이해하고 진리로 인도해야 합니다. 이는 지나치게 가혹한 판단이나 정죄가 아닌 사랑과 이해를 요구합니다.",
+    "cross_references": [
+      "Matthew 9:13",
+      "Galatians 6:1",
+      "2 Timothy 2:24-26",
+      "James 5:19-20"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "의심하는 자들을 긍휼히 여기라",
+    "translation_notes": "간결하고 명확한 명령문 형태 유지"
+  },
+  "special_explanation": {
+    "explanation_type": "목회적",
+    "content": "22-23절은 본문 비평에서 이견이 있는 구절입니다. 일부 사본에서는 두 그룹, 다른 사본에서는 세 그룹으로 나뉩니다. 대부분의 현대 번역은 세 그룹을 따릅니다. '의심하는 자들'은 거짓 교사들은 아니지만 그들의 영향으로 갈등하는 신자들입니다. 그들에게는 정죄가 아닌 긍휼이 필요합니다. 이는 유다가 거짓 교사들에게는 엄격했지만, 약한 신자들에게는 자비로움을 보여줍니다.",
+    "examples": []
+  }
+}

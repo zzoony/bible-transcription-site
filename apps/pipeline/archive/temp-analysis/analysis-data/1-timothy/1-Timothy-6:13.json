@@ -1,0 +1,80 @@
+{
+  "reference": "1 Timothy 6:13",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "엄숙한 명령 - 하나님 앞에서",
+      "original_text": "In the sight of God, who gives life to everything",
+      "korean_translation": "만물에게 생명을 주시는 하나님 앞에서",
+      "grammatical_explanation": "서론 - 하나님의 임재"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "엄숙한 명령 - 그리스도 앞에서",
+      "original_text": "and of Christ Jesus, who while testifying before Pontius Pilate made the good confession",
+      "korean_translation": "또한 본디오 빌라도 앞에서 증언하시며 선한 고백을 하신 그리스도 예수 앞에서",
+      "grammatical_explanation": "병렬 서론 - 그리스도의 고백"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "명령의 핵심",
+      "original_text": "I charge you",
+      "korean_translation": "내가 네게 명하노니",
+      "grammatical_explanation": "주절 - 엄숙한 명령"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "in the sight of",
+      "ipa_pronunciation": "/ɪn ðə saɪt ʌv/",
+      "korean_pronunciation": "인 더 사이트 오브",
+      "part_of_speech": "전치사구",
+      "definition_korean": "~앞에서, ~보시는 가운데",
+      "usage_note": "그리스어 enopion - 면전에서"
+    },
+    {
+      "word": "gives life to",
+      "ipa_pronunciation": "/ɡɪvz laɪf tu/",
+      "korean_pronunciation": "기브즈 라이프 투",
+      "part_of_speech": "동사구",
+      "definition_korean": "생명을 주다",
+      "usage_note": "그리스어 zoopoieo - 살리다, 생명을 주다"
+    },
+    {
+      "word": "testifying",
+      "ipa_pronunciation": "/ˈtɛstɪˌfaɪɪŋ/",
+      "korean_pronunciation": "테스티파잉",
+      "part_of_speech": "동사(현재분사)",
+      "definition_korean": "증언하다, 증거하다",
+      "usage_note": "그리스어 martureo - 증언하다"
+    },
+    {
+      "word": "charge",
+      "ipa_pronunciation": "/tʃɑrdʒ/",
+      "korean_pronunciation": "차지",
+      "part_of_speech": "동사",
+      "definition_korean": "명하다, 엄히 경고하다",
+      "usage_note": "그리스어 parangello - 엄숙히 명령하다"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 디모데에게 엄숙한 명령을 하기 전에 두 증인을 제시합니다. 첫째, '만물에게 생명을 주시는 하나님'입니다. 하나님은 창조주이시며 모든 생명의 근원이십니다. 이는 디모데가 하나님의 주권 아래 있음을 상기시킵니다. 둘째, '본디오 빌라도 앞에서 선한 고백을 하신 그리스도 예수'입니다. 예수님은 빌라도 앞에서 심문받을 때 '내가 왕이다', '진리에 대하여 증언하러 왔다'고 고백하셨습니다(요 18:33-37). 이 고백은 목숨을 걸었으며, 결국 십자가로 이어졌습니다. 디모데의 '선한 고백'(6:12)은 그리스도의 고백과 연결되며, 디모데도 그리스도처럼 담대하고 신실하게 신앙을 고백해야 합니다. '하나님과 그리스도 앞에서' 명령하는 것은 5:21과 유사하며, 이 명령의 엄중함을 강조합니다.",
+    "cross_references": [
+      "John 18:33-37 (빌라도 앞에서의 예수님 증언)",
+      "1 Timothy 5:21 (하나님과 그리스도 앞에서의 명령)",
+      "2 Timothy 4:1 (하나님과 그리스도 앞에서의 엄숙한 명령)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "만물에게 생명을 주시는 하나님과, 본디오 빌라도 앞에서 증언하시며 선한 고백을 하신 그리스도 예수 앞에서 내가 네게 명합니다.",
+    "translation_notes": "두 증인을 명확히 제시하고 명령으로 연결"
+  },
+  "special_explanation": {
+    "explanation_type": "그리스도의 모범적 고백",
+    "content": "이 구절은 그리스도의 고백을 디모데의 모범으로 제시합니다. 예수님은 빌라도 앞에서 '내가 왕이다', '진리에 대하여 증언하러 왔다'고 고백하셨습니다(요 18:33-37). 이 고백은 목숨을 걸었으며, 십자가로 이어졌습니다. 디모데도 그리스도처럼 담대하고 신실하게 신앙을 고백해야 합니다. '하나님과 그리스도 앞에서' 명령하는 것은 이 명령의 엄중함과 영원한 중요성을 강조합니다.",
+    "examples": [
+      "그리스도의 고백 = 디모데의 모범",
+      "목숨을 건 신앙고백의 중요성"
+    ]
+  }
+}

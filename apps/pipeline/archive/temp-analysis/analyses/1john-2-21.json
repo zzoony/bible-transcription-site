@@ -1,0 +1,77 @@
+{
+  "reference": "1 John 2:21",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "부정적 전제 부인",
+      "original_text": "I do not write to you because you do not know the truth",
+      "korean_translation": "내가 너희에게 쓰는 것은 너희가 진리를 알지 못하기 때문이 아니라",
+      "grammatical_explanation": "부정문 + 이유절. 'because' 절은 부정되는 이유를 나타냄"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "긍정적 이유 제시",
+      "original_text": "but because you do know it",
+      "korean_translation": "너희가 진리를 알기 때문이며",
+      "grammatical_explanation": "'but' 대조 접속사 + 긍정 이유절. 앞 문장과 대비되는 실제 이유"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "진리의 본질 설명",
+      "original_text": "and because no lie comes from the truth",
+      "korean_translation": "거짓은 진리에서 나오지 않는다는 것을 알기 때문이다",
+      "grammatical_explanation": "'and because' 추가 이유절. 'no lie comes from truth'는 진리의 본질적 특성을 설명"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "write",
+      "ipa_pronunciation": "/raɪt/",
+      "korean_pronunciation": "라이트",
+      "part_of_speech": "동사",
+      "definition_korean": "쓰다, 편지를 쓰다",
+      "usage_note": "요한이 독자들에게 편지를 쓰는 행위"
+    },
+    {
+      "word": "truth",
+      "ipa_pronunciation": "/truːθ/",
+      "korean_pronunciation": "트루스",
+      "part_of_speech": "명사",
+      "definition_korean": "진리, 진실",
+      "usage_note": "요한서신에서 핵심 개념. 예수 그리스도와 복음의 진리를 의미"
+    },
+    {
+      "word": "lie",
+      "ipa_pronunciation": "/laɪ/",
+      "korean_pronunciation": "라이",
+      "part_of_speech": "명사",
+      "definition_korean": "거짓말, 거짓",
+      "usage_note": "진리와 대립되는 개념. 영지주의적 거짓 가르침을 암시"
+    },
+    {
+      "word": "comes from",
+      "ipa_pronunciation": "/kʌmz frɒm/",
+      "korean_pronunciation": "컴스 프롬",
+      "part_of_speech": "구동사",
+      "definition_korean": "~에서 나오다, ~로부터 유래하다",
+      "usage_note": "출처나 근원을 나타냄"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "요한은 이 서신을 쓰는 목적을 명확히 한다. 그는 독자들이 진리를 모르기 때문이 아니라 오히려 진리를 알고 있기 때문에 쓴다고 말한다. 이는 독자들이 이미 복음의 기본 진리를 이해하고 있으며, 요한의 편지는 그들의 지식을 확인하고 강화하기 위한 것임을 시사한다. 당시 교회는 영지주의와 같은 거짓 가르침의 위협을 받고 있었다. 요한은 '거짓은 진리에서 나오지 않는다'는 명제를 통해 진리와 거짓의 근본적 양립불가능성을 강조한다. 이는 독자들이 거짓 교사들의 주장을 분별할 수 있도록 돕기 위한 것이다. 진리를 아는 자들은 거짓을 식별할 수 있는 능력이 있다는 확신을 준다.",
+    "cross_references": [
+      "John 8:32 (진리가 너희를 자유롭게 하리라)",
+      "1 John 1:6 (거짓말하는 자와 진리를 행하지 않는 자)",
+      "2 John 1:1-2 (진리 안에 거하는 자들에게)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "내가 너희에게 쓰는 것은 너희가 진리를 알지 못해서가 아니라, 너희가 진리를 알고 있고 또한 거짓은 진리에서 나오지 않는다는 것을 알기 때문이다.",
+    "translation_notes": "요한의 저술 의도를 강조하는 번역. '~알지 못해서가 아니라'와 '~알기 때문이다'의 대조를 명확히 함"
+  },
+  "special_explanation": {
+    "explanation_type": "수사학적",
+    "content": "요한은 이중 부정 구조(not because... but because)를 사용하여 자신의 저술 목적을 강조한다. 이는 독자들을 격려하고 그들이 이미 가지고 있는 지식을 확인시켜주는 수사적 기법이다. '거짓은 진리에서 나오지 않는다'는 진술은 단순한 논리적 명제를 넘어서, 진리와 거짓의 근원적 차이를 강조한다. 이는 영지주의자들이 기독교 진리에 자신들의 거짓 가르침을 혼합하려는 시도를 반박하는 신학적 선언이다.",
+    "examples": []
+  }
+}

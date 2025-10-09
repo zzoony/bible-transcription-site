@@ -1,0 +1,49 @@
+{
+  "reference": "2 Peter 1:14",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "이유 설명 (죽음 임박)",
+      "original_text": "because I know that I will soon put it aside",
+      "korean_translation": "이는 내가 이 장막을 벗어날 것이 임박한 줄 앎이라",
+      "grammatical_explanation": "이유절 'because'로 앞 절의 근거 제시. 'put it aside'는 장막(육체)을 벗는 것, 즉 죽음"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "계시의 근거",
+      "original_text": "as our Lord Jesus Christ has made clear to me",
+      "korean_translation": "우리 주 예수 그리스도께서 내게 지시하신 것 같으니라",
+      "grammatical_explanation": "양태절 'as'로 알게 된 방법 설명. 'has made clear'는 예수님의 직접적 계시"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "put aside",
+      "ipa_pronunciation": "/pʊt əˈsaɪd/",
+      "korean_pronunciation": "풋 어사이드",
+      "part_of_speech": "동사구",
+      "definition_korean": "벗다, 제거하다, 내려놓다",
+      "usage_note": "장막(육체)을 벗는 것, 완곡한 죽음 표현"
+    },
+    {
+      "word": "made clear",
+      "ipa_pronunciation": "/meɪd klɪər/",
+      "korean_pronunciation": "메이드 클리어",
+      "part_of_speech": "동사구",
+      "definition_korean": "분명히 하다, 지시하다",
+      "usage_note": "예수님의 직접적이고 명확한 계시"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "베드로는 자신의 죽음이 임박했음을 압니다. '우리 주 예수 그리스도께서 내게 지시하신 것'은 요한복음 21:18-19에 기록된 예수님의 예언을 가리킬 수 있습니다. 예수님은 부활 후 베드로에게 그가 어떻게 죽을 것인지 암시하셨습니다. 전통에 따르면 베드로는 AD 64-67년경 로마에서 순교했다고 합니다. 베드로는 이 사실을 알고 있었기에 자신의 편지를 더욱 긴급하고 중요하게 여겼습니다. 이는 베드로후서가 그의 영적 유언과 같은 성격을 띠는 이유입니다.",
+    "cross_references": [
+      "John 21:18-19 (네가 늙어서는 네 팔을 벌리리니)",
+      "2 Timothy 4:6 (나의 떠날 시각이 가까우니)",
+      "Acts 20:25 (다시 내 얼굴을 보지 못할 줄 아노라)",
+      "Philippians 1:23 (세상을 떠나서 그리스도와 함께 있을 욕망)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "이는 우리 주 예수 그리스도께서 내게 지시하신 것 같이 나도 나의 장막을 벗어날 것이 임박한 줄 앎이라."
+  }
+}

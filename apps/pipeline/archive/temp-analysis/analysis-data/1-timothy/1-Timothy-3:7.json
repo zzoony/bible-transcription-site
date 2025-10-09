@@ -1,0 +1,89 @@
+{
+  "reference": "1 Timothy 3:7",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "대외적 평판 요구",
+      "original_text": "He must also have a good reputation with outsiders",
+      "korean_translation": "그는 또한 밖에 있는 사람들에게도 좋은 평판을 받아야 합니다",
+      "grammatical_explanation": "must 조동사로 필수 요건을 제시, also로 추가 자격을 나타냄"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "목적절 - 수치 방지",
+      "original_text": "so that he will not fall into disgrace",
+      "korean_translation": "그래야 욕을 받지 않고",
+      "grammatical_explanation": "so that 목적절 - 좋은 평판의 목적을 설명"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "최종 결과 - 영적 위험 회피",
+      "original_text": "and into the devil's trap",
+      "korean_translation": "마귀의 올무에 빠지지 않을 것입니다",
+      "grammatical_explanation": "병렬절 - 수치와 영적 함정을 연결"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "reputation",
+      "ipa_pronunciation": "/ˌrɛpjəˈteɪʃən/",
+      "korean_pronunciation": "레퓨테이션",
+      "part_of_speech": "명사",
+      "definition_korean": "평판, 명성",
+      "usage_note": "그리스어 martyria - 증언, 증거, 공적 평가"
+    },
+    {
+      "word": "outsiders",
+      "ipa_pronunciation": "/ˌaʊtˈsaɪdərz/",
+      "korean_pronunciation": "아웃사이더즈",
+      "part_of_speech": "명사",
+      "definition_korean": "밖에 있는 사람들, 비신자들",
+      "usage_note": "교회 공동체 밖의 사람들, 불신자 사회"
+    },
+    {
+      "word": "disgrace",
+      "ipa_pronunciation": "/dɪsˈɡreɪs/",
+      "korean_pronunciation": "디스그레이스",
+      "part_of_speech": "명사",
+      "definition_korean": "욕됨, 수치, 불명예",
+      "usage_note": "그리스어 oneidismos - 모욕, 비난, 평판 손상"
+    },
+    {
+      "word": "trap",
+      "ipa_pronunciation": "/træp/",
+      "korean_pronunciation": "트랩",
+      "part_of_speech": "명사",
+      "definition_korean": "올무, 덫, 함정",
+      "usage_note": "그리스어 pagis - 사냥꾼의 덫, 영적 유혹과 파멸의 도구"
+    },
+    {
+      "word": "devil",
+      "ipa_pronunciation": "/ˈdɛvəl/",
+      "korean_pronunciation": "데블",
+      "part_of_speech": "명사",
+      "definition_korean": "마귀, 사탄",
+      "usage_note": "신자들을 넘어뜨리고 교회를 파괴하려는 영적 적대자"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 감독 자격 요건의 마지막 항목으로 '대외적 평판'을 제시합니다. 이는 교회 내부 자질뿐 아니라 불신자 사회에서의 공적 증언도 중요함을 강조합니다. '밖에 있는 사람들'(outsiders)은 교회 공동체 밖의 비신자들을 의미하며, 바울은 골로새서 4:5와 데살로니가전서 4:12에서도 불신자들을 향한 성도들의 행실을 강조합니다. 좋은 평판은 개인의 명예를 위한 것이 아니라 복음의 증거를 위한 것입니다. 감독이 불신자들에게 나쁜 평판을 받으면, 두 가지 위험에 빠집니다. 첫째, '욕됨'(disgrace)은 개인적 수치뿐 아니라 교회 전체와 복음의 이름이 훼손되는 것을 의미합니다. 둘째, '마귀의 올무'는 사탄이 감독의 과거나 평판을 이용하여 비난하고 공격할 기회를 얻게 되는 것을 의미합니다. 그리스어 'pagis'(올무)는 사냥꾼이 동물을 잡는 덫으로, 사탄이 의도적으로 계획한 영적 함정을 묘사합니다. 에베소는 다양한 종교와 문화가 공존하던 국제 도시였으므로, 감독의 대외적 평판은 복음 전파에 직접적 영향을 미쳤습니다.",
+    "cross_references": [
+      "Colossians 4:5 (밖에 있는 자들에 대한 지혜로운 행동)",
+      "1 Thessalonians 4:12 (밖에 있는 자들을 대하여 단정히 행함)",
+      "2 Timothy 2:26 (마귀의 올무에서 벗어남)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "또한 그는 밖에 있는 사람들에게도 좋은 평판을 받아야 합니다. 그래야 욕을 받거나 마귀의 올무에 빠지지 않을 것입니다.",
+    "translation_notes": "목적절과 결과절을 자연스럽게 연결"
+  },
+  "special_explanation": {
+    "explanation_type": "복음 증거와 대외적 평판",
+    "content": "이 구절은 교회 지도자의 '이중적 책임'을 보여줍니다. 내부적으로는 교회를 가르치고 돌보며, 외부적으로는 복음의 신뢰성을 입증해야 합니다. '좋은 평판'은 불신자들이 감독의 정직함, 신실함, 도덕적 성실성을 인정하는 것을 의미합니다. 이는 단순히 인기나 호감이 아니라, 삶의 일관성에서 나오는 존경입니다. 과거에 사기, 불의, 부도덕한 행위로 알려진 사람이 회심 후에도 여전히 그런 평판을 받는다면, 복음의 변화시키는 능력에 대한 증거가 약화됩니다. '마귀의 올무'는 사탄이 감독의 과거나 약점을 이용하여 교회를 공격하는 전략을 의미합니다. 불신자들 사이에서 나쁜 평판은 사탄에게 '참소의 근거'를 제공하며, 이는 교회 전체의 신뢰도를 떨어뜨립니다. 따라서 감독 선출 시 과거 삶에 대한 신중한 고려가 필요하며, 회심 후 충분한 시간이 지나 새로운 평판이 확립되었는지 확인해야 합니다.",
+    "examples": [
+      "감독의 평판은 복음의 신뢰성을 좌우함",
+      "과거의 나쁜 평판은 현재 사역에도 영향을 미칠 수 있음",
+      "사탄은 지도자의 약점을 이용하여 교회를 공격함"
+    ]
+  }
+}

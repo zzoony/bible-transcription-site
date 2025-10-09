@@ -1,0 +1,80 @@
+{
+  "reference": "2 Peter 2:1",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "과거 선례 (거짓 선지자)",
+      "original_text": "But there were also false prophets among the people",
+      "korean_translation": "그러나 민간에 또한 거짓 선지자들이 일어났었나니",
+      "grammatical_explanation": "대조 접속사 'But'으로 진리에서 거짓으로 전환. 과거 시제로 구약 시대 언급"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "미래 경고 (거짓 교사)",
+      "original_text": "just as there will be false teachers among you",
+      "korean_translation": "이와 같이 너희 중에도 거짓 교사들이 있으리니",
+      "grammatical_explanation": "비교절 'just as'로 과거와 현재/미래 연결. 미래 시제로 교회 내 위협 경고"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "거짓 교사의 행위 (이단 도입)",
+      "original_text": "They will secretly introduce destructive heresies, even denying the sovereign Lord who bought them",
+      "korean_translation": "그들은 멸망하게 할 이단을 가만히 끌어들여 자기들을 사신 주를 부인하고",
+      "grammatical_explanation": "'secretly introduce'는 은밀한 침투. 'destructive heresies'는 파괴적 이단. 'denying'은 배교의 극치"
+    },
+    {
+      "sequence_order": 4,
+      "semantic_classification": "결과 경고 (신속한 멸망)",
+      "original_text": "bringing swift destruction on themselves",
+      "korean_translation": "임박한 멸망을 스스로 취하는 자들이라",
+      "grammatical_explanation": "분사구로 자초한 결과. 'swift'는 피할 수 없는 신속한 심판"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "false prophets",
+      "ipa_pronunciation": "/fɔːls ˈprɒfɪts/",
+      "korean_pronunciation": "폴스 프라피츠",
+      "part_of_speech": "명사구",
+      "definition_korean": "거짓 선지자 (구약의 거짓 예언자들)",
+      "usage_note": "하나님의 참된 말씀이 아닌 것을 전함"
+    },
+    {
+      "word": "destructive heresies",
+      "ipa_pronunciation": "/dɪˈstrʌktɪv ˈherəsiz/",
+      "korean_pronunciation": "디스트럭티브 헤러시즈",
+      "part_of_speech": "명사구",
+      "definition_korean": "멸망하게 할 이단 (파괴적인 거짓 가르침)",
+      "usage_note": "구원의 진리를 왜곡하여 영혼을 파멸로 이끄는 교리"
+    },
+    {
+      "word": "sovereign Lord",
+      "ipa_pronunciation": "/ˈsɒvrɪn lɔːrd/",
+      "korean_pronunciation": "써브린 로드",
+      "part_of_speech": "명사구",
+      "definition_korean": "주권자 되신 주, 절대 통치자 (헬라어 despotes)",
+      "usage_note": "그리스도의 절대적 주권과 소유권"
+    },
+    {
+      "word": "bought",
+      "ipa_pronunciation": "/bɔːt/",
+      "korean_pronunciation": "봇",
+      "part_of_speech": "동사 (과거형)",
+      "definition_korean": "사다, 속량하다 (헬라어 agorazo - 값을 치르고 사다)",
+      "usage_note": "그리스도의 십자가 대속"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "2장 전체는 거짓 교사들에 대한 경고입니다. 베드로는 구약의 거짓 선지자들(예: 발람, 거짓 예언자들)처럼 교회 안에도 거짓 교사들이 일어날 것임을 경고합니다. '가만히'(secretly)는 은밀하고 점진적인 침투를 의미하며, 처음에는 정통처럼 보이지만 점차 진리를 왜곡합니다. '멸망하게 할 이단'(destructive heresies)은 구원의 핵심 교리를 부인하는 가르침들입니다. 특히 심각한 것은 '자기들을 사신 주를 부인'하는 것인데, 이는 그리스도의 대속과 주권을 거부하는 것입니다. '사신'(bought)은 그리스도께서 십자가에서 값을 치르고 우리를 구속하신 것을 가리킵니다. 이들은 외면적으로는 그리스도인으로 보였지만 실제로는 구원받지 못한 자들로, 스스로 멸망을 자초합니다.",
+    "cross_references": [
+      "Jude 1:4 (가만히 들어온 사람들)",
+      "Matthew 7:15 (양의 옷을 입은 거짓 선지자)",
+      "Acts 20:29-30 (사나운 이리가 들어와)",
+      "1 Corinthians 6:20 (값으로 산 것이 되었으니)",
+      "1 Timothy 4:1-2 (후일에 어떤 사람들이 믿음에서 떠나)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "그러나 민간에 또한 거짓 선지자들이 일어났었나니 이와 같이 너희 중에도 거짓 교사들이 있으리라 그들은 멸망하게 할 이단을 가만히 끌어들여 자기들을 사신 주를 부인하고 임박한 멸망을 스스로 취하는 자들이라."
+  }
+}

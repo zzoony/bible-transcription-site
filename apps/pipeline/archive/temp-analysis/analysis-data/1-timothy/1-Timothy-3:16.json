@@ -1,0 +1,118 @@
+{
+  "reference": "1 Timothy 3:16",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "경건의 비밀 선언",
+      "original_text": "Beyond all question, the mystery from which true godliness springs is great",
+      "korean_translation": "의심할 여지없이, 참된 경건에서 나오는 비밀은 위대합니다",
+      "grammatical_explanation": "주절 - 경건의 비밀의 위대함을 선언"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "성육신",
+      "original_text": "He appeared in the flesh",
+      "korean_translation": "그분은 육신으로 나타나셨고",
+      "grammatical_explanation": "찬송시 첫 구절 - 그리스도의 성육신"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "영적 증명",
+      "original_text": "was vindicated by the Spirit",
+      "korean_translation": "성령으로 의롭다 하심을 받으셨으며",
+      "grammatical_explanation": "찬송시 둘째 구절 - 부활을 통한 신성 증명"
+    },
+    {
+      "sequence_order": 4,
+      "semantic_classification": "천사들의 목격",
+      "original_text": "was seen by angels",
+      "korean_translation": "천사들에게 보이셨고",
+      "grammatical_explanation": "찬송시 셋째 구절 - 영적 영역에서의 승리"
+    },
+    {
+      "sequence_order": 5,
+      "semantic_classification": "복음 선포",
+      "original_text": "was preached among the nations",
+      "korean_translation": "만국에 전파되셨으며",
+      "grammatical_explanation": "찬송시 넷째 구절 - 복음의 세계적 확산"
+    },
+    {
+      "sequence_order": 6,
+      "semantic_classification": "믿음의 반응",
+      "original_text": "was believed on in the world",
+      "korean_translation": "세상에서 믿음을 받으셨고",
+      "grammatical_explanation": "찬송시 다섯째 구절 - 복음에 대한 믿음의 반응"
+    },
+    {
+      "sequence_order": 7,
+      "semantic_classification": "승천",
+      "original_text": "was taken up in glory",
+      "korean_translation": "영광 가운데 들림 받으셨습니다",
+      "grammatical_explanation": "찬송시 여섯째 구절 - 승천과 영광"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "beyond all question",
+      "ipa_pronunciation": "/bɪˈjɑnd ɔl ˈkwɛstʃən/",
+      "korean_pronunciation": "비욘드 올 퀘스천",
+      "part_of_speech": "관용구",
+      "definition_korean": "의심할 여지없이, 분명히",
+      "usage_note": "그리스어 homologoumenos - 고백된, 인정된"
+    },
+    {
+      "word": "mystery",
+      "ipa_pronunciation": "/ˈmɪstəri/",
+      "korean_pronunciation": "미스터리",
+      "part_of_speech": "명사",
+      "definition_korean": "비밀, 신비",
+      "usage_note": "그리스어 mysterion - 계시된 하나님의 진리"
+    },
+    {
+      "word": "godliness",
+      "ipa_pronunciation": "/ˈɡɑdlinəs/",
+      "korean_pronunciation": "갓리니스",
+      "part_of_speech": "명사",
+      "definition_korean": "경건, 신실함",
+      "usage_note": "그리스어 eusebeia - 하나님을 경외하는 삶"
+    },
+    {
+      "word": "appeared",
+      "ipa_pronunciation": "/əˈpɪrd/",
+      "korean_pronunciation": "어피어드",
+      "part_of_speech": "동사",
+      "definition_korean": "나타나다, 드러나다",
+      "usage_note": "그리스어 phaneroo - 계시되다, 가시화되다"
+    },
+    {
+      "word": "vindicated",
+      "ipa_pronunciation": "/ˈvɪndɪˌkeɪtɪd/",
+      "korean_pronunciation": "빈디케이티드",
+      "part_of_speech": "동사",
+      "definition_korean": "의롭다 하심을 받다, 증명되다",
+      "usage_note": "그리스어 dikaioo - 의롭다고 선언되다"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "이 구절은 초대교회의 찬송시(hymn) 또는 신앙고백으로, 그리스도의 구속 사역을 여섯 단계로 요약합니다. '경건의 비밀'은 복음의 핵심 진리를 의미하며, 특히 그리스도의 성육신, 죽음, 부활, 승천을 가리킵니다. 찬송시는 대조적 쌍으로 구성되어 있습니다: 육신/영, 천사/만국, 세상/영광. 첫째, '육신으로 나타나심'은 요한복음 1:14의 '말씀이 육신이 되심'과 같은 성육신을 의미합니다. 둘째, '성령으로 의롭다 하심'은 부활을 통해 그리스도의 신성이 증명된 것을 가리킵니다(롬 1:4). 셋째, '천사들에게 보이심'은 승천 시 천사들이 그리스도를 목격한 것 또는 영적 영역에서의 승리를 의미합니다. 넷째, '만국에 전파됨'은 복음이 유대를 넘어 이방 세계로 확산된 것을 나타냅니다. 다섯째, '세상에서 믿음을 받으심'은 복음에 대한 긍정적 반응을 묘사합니다. 여섯째, '영광 가운데 들림 받으심'은 승천을 가리키며, 그리스도의 지상 사역의 완성과 천상의 영광을 의미합니다. 이 찬송시는 3:15의 '진리의 기둥과 터전'인 교회가 보존하고 선포해야 할 핵심 진리를 제시합니다.",
+    "cross_references": [
+      "John 1:14 (말씀이 육신이 되심)",
+      "Romans 1:4 (부활로 하나님의 아들로 선포됨)",
+      "Acts 1:9-11 (승천)",
+      "Philippians 2:6-11 (그리스도 찬송)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "의심할 여지없이, 경건의 비밀은 위대합니다. 그분은 육신으로 나타나셨고, 성령으로 의롭다 하심을 받으셨으며, 천사들에게 보이셨고, 만국에 전파되셨으며, 세상에서 믿음을 받으셨고, 영광 가운데 들림 받으셨습니다.",
+    "translation_notes": "찬송시의 리듬과 병렬 구조를 살려 번역"
+  },
+  "special_explanation": {
+    "explanation_type": "초대교회 찬송시의 구조",
+    "content": "이 구절은 초대교회에서 사용된 찬송시 또는 신앙고백으로 추정됩니다. 그리스어 원문은 대칭적 구조(chiasm)를 이루며, 육신/영, 천사/만국, 세상/영광의 대조를 보여줍니다. 이는 그리스도의 구속 사역이 물질적-영적, 하늘-땅, 굴욕-영광의 전 영역을 포괄함을 강조합니다. '경건의 비밀'은 단순히 신비로운 것이 아니라, 하나님께서 계시하신 복음의 진리입니다. 이 찬송시는 교회가 보존하고 선포해야 할 핵심 교리를 요약하며, 디모데전서 전체의 신학적 기초를 제공합니다.",
+    "examples": [
+      "초대교회 찬송시는 교리 교육의 도구",
+      "대칭 구조는 그리스도 사역의 포괄성 강조",
+      "성육신에서 승천까지 전체 구속 역사 요약"
+    ]
+  }
+}

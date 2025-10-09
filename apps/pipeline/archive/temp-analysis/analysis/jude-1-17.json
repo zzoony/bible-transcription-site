@@ -1,0 +1,47 @@
+{
+  "reference": "Jude 1:17",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "호격과 권면",
+      "original_text": "But, dear friends, remember what the apostles of our Lord Jesus Christ foretold",
+      "korean_translation": "사랑하는 자들아 너희는 우리 주 예수 그리스도의 사도들이 미리 한 말을 기억하라",
+      "grammatical_explanation": "But으로 전환. 호격(dear friends) + 명령문(remember) + what절(목적어)"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "dear friends",
+      "ipa_pronunciation": "/dɪər frendz/",
+      "korean_pronunciation": "디어 프렌즈",
+      "part_of_speech": "명사구 (호격)",
+      "definition_korean": "사랑하는 자들",
+      "usage_note": "헬라어 '아가페토이(ἀγαπητοί)'. 유다서에서 네 번 사용(3, 17, 20, 24절)"
+    },
+    {
+      "word": "foretold",
+      "ipa_pronunciation": "/fɔːrˈtoʊld/",
+      "korean_pronunciation": "포톨드",
+      "part_of_speech": "동사 (과거)",
+      "definition_korean": "미리 말하다, 예언하다"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "유다는 거짓 교사들에 대한 경고에서 성도들에 대한 권면으로 전환합니다. 'But, dear friends'는 대조를 나타내며, 이제 진정한 신자들에게 말합니다. 그들은 사도들의 가르침을 기억해야 합니다. '사도들'은 12사도와 바울을 포함한 사도들을 가리키며, 유다 자신은 사도가 아니라 그들의 권위에 호소합니다. '미리 한 말'은 사도들이 이미 거짓 교사의 출현을 예언했음을 의미합니다.",
+    "cross_references": [
+      "Acts 20:29-30",
+      "1 Timothy 4:1-3",
+      "2 Timothy 3:1-5",
+      "2 Peter 3:2-3"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "사랑하는 자들아, 너희는 우리 주 예수 그리스도의 사도들이 미리 한 말을 기억하라",
+    "translation_notes": "호격과 명령문을 한국어 구조에 맞게 자연스럽게 표현"
+  },
+  "special_explanation": {
+    "explanation_type": "구조적",
+    "content": "17절은 유다서의 전환점입니다. 1-16절은 거짓 교사들에 대한 경고였고, 17-23절은 성도들에 대한 권면입니다. '사랑하는 자들'(dear friends, ἀγαπητοί)은 3절, 17절, 20절에 반복되어 편지의 구조를 형성합니다. 유다는 자신을 사도라 칭하지 않고(1절에서 '종'), 사도들의 권위에 호소함으로써 겸손을 보입니다. '기억하라'(remember)는 현재 명령형으로, 지속적인 기억을 요구합니다.",
+    "examples": []
+  }
+}

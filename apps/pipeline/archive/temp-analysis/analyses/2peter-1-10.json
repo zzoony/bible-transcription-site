@@ -1,0 +1,57 @@
+{
+  "reference": "2 Peter 1:10",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "권면 (확신 추구)",
+      "original_text": "Therefore, my brothers and sisters, make every effort to confirm your calling and election",
+      "korean_translation": "그러므로 형제들아 더욱 힘써 너희 부르심과 택하심을 굳게 하라",
+      "grammatical_explanation": "'Therefore'는 앞 내용의 결론. 명령형 'make every effort'는 최선의 노력 촉구. 'confirm'은 확실하게 만듦"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "조건절 (행위의 결과)",
+      "original_text": "For if you do these things, you will never stumble",
+      "korean_translation": "너희가 이것을 행하면 언제든지 실족하지 아니하리라",
+      "grammatical_explanation": "조건절 'if'로 행위와 결과 연결. 강조 부사 'never'는 확실한 보장"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "calling",
+      "ipa_pronunciation": "/ˈkɔːlɪŋ/",
+      "korean_pronunciation": "콜링",
+      "part_of_speech": "명사",
+      "definition_korean": "부르심, 소명 (헬라어 klesis)",
+      "usage_note": "하나님의 주권적 부르심"
+    },
+    {
+      "word": "election",
+      "ipa_pronunciation": "/ɪˈlekʃən/",
+      "korean_pronunciation": "일렉션",
+      "part_of_speech": "명사",
+      "definition_korean": "택하심, 선택 (헬라어 ekloge)",
+      "usage_note": "하나님의 주권적 선택"
+    },
+    {
+      "word": "stumble",
+      "ipa_pronunciation": "/ˈstʌmbəl/",
+      "korean_pronunciation": "스텀블",
+      "part_of_speech": "동사",
+      "definition_korean": "실족하다, 넘어지다 (헬라어 ptaio)",
+      "usage_note": "영적으로 넘어지거나 실패함"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "베드로는 신자들에게 '부르심과 택하심을 굳게 하라'고 권면합니다. 이는 하나님의 선택이 불확실하다는 의미가 아니라, 우리의 삶을 통해 그것을 확증하고 드러내라는 뜻입니다. 개혁주의 신학에서는 이를 '선택의 확신'으로 이해합니다. 신자는 성품 개발과 선행을 통해 자신의 구원을 확신하게 됩니다(빌 2:12-13 참조). '이것을 행하면 결코 실족하지 않는다'는 약속은 하나님의 지키심과 신자의 순종이 함께 작용하는 보존의 교리를 나타냅니다. 이는 '한 번 구원받으면 영원히 구원받는다'는 교리의 다른 측면으로, 참된 신자는 성품 개발을 통해 구원의 확신을 얻고 끝까지 견딥니다.",
+    "cross_references": [
+      "Philippians 2:12-13 (두렵고 떨림으로 구원을 이루라)",
+      "Romans 8:28-30 (부르심과 예정)",
+      "1 Peter 1:5 (믿음으로 말미암아 보호하심)",
+      "John 10:28-29 (내 손에서 빼앗을 자 없음)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "그러므로 형제들아 더욱 힘써 너희 부르심과 택하심을 굳게 하라 너희가 이것을 행하면 언제든지 실족하지 아니하리라"
+  }
+}

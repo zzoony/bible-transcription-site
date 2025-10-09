@@ -1,0 +1,72 @@
+{
+  "reference": "Romans 1:1",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "자기소개 - 사도적 정체성 선언",
+      "original_text": "Paul, a servant of Christ Jesus",
+      "korean_translation": "바울, 그리스도 예수의 종",
+      "grammatical_explanation": "주어 + 동격 명사구. 'servant'는 그리스어 'doulos'(노예)의 번역으로, 완전한 헌신을 의미"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "소명 선언 - 사도직 부르심",
+      "original_text": "called to be an apostle",
+      "korean_translation": "사도로 부르심을 받은 자",
+      "grammatical_explanation": "과거분사구 'called'는 하나님의 주권적 부르심을 나타냄. 'to be'는 목적을 나타내는 부정사"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "목적 진술 - 복음 전파의 구별됨",
+      "original_text": "and set apart for the gospel of God",
+      "korean_translation": "하나님의 복음을 위해 구별된 자",
+      "grammatical_explanation": "과거분사 'set apart'는 신학적으로 중요한 '구별/성화' 개념. 'for'는 목적을 나타냄"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "servant",
+      "ipa_pronunciation": "/ˈsɜːrvənt/",
+      "korean_pronunciation": "서번트",
+      "part_of_speech": "명사",
+      "definition_korean": "종, 노예 (그리스어 doulos, 완전한 헌신과 복종을 의미)",
+      "usage_note": "단순한 직원이 아닌, 주인에게 전적으로 속한 자를 의미하는 강한 표현"
+    },
+    {
+      "word": "apostle",
+      "ipa_pronunciation": "/əˈpɑːsl/",
+      "korean_pronunciation": "어파슬",
+      "part_of_speech": "명사",
+      "definition_korean": "사도, 파송된 자 (그리스어 apostolos, '보냄을 받은 자')",
+      "usage_note": "예수님께 직접 부르심을 받고 권위를 부여받은 특별한 사명자"
+    },
+    {
+      "word": "set apart",
+      "ipa_pronunciation": "/set əˈpɑːrt/",
+      "korean_pronunciation": "셋 어파트",
+      "part_of_speech": "동사구",
+      "definition_korean": "구별하다, 성별하다 (히브리어 qadash와 유사한 개념)",
+      "usage_note": "특별한 목적을 위해 다른 것들로부터 분리되어 거룩하게 구별됨을 의미"
+    },
+    {
+      "word": "gospel",
+      "ipa_pronunciation": "/ˈɡɑːspəl/",
+      "korean_pronunciation": "가스펄",
+      "part_of_speech": "명사",
+      "definition_korean": "복음, 좋은 소식 (그리스어 euangelion)",
+      "usage_note": "예수 그리스도를 통한 구원의 좋은 소식. 로마서의 핵심 주제"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "로마서는 바울이 아직 방문하지 못한 로마 교회에 보낸 서신입니다. 이 서신의 시작은 당시 서신 양식의 전형적인 구조를 따르고 있지만, 바울은 단순한 인사를 넘어 자신의 사도적 권위를 강조합니다. '종'(servant)이라는 단어는 그리스어 'doulos'로, 단순한 일꾼이 아니라 주인에게 전적으로 속한 노예를 의미합니다. 이는 바울의 완전한 헌신을 나타냅니다. '사도로 부르심을 받은'이라는 표현은 바울의 권위가 인간적 기원이 아니라 하나님의 직접적인 부르심에서 온다는 것을 강조합니다. '구별된'(set apart)이라는 단어는 구약의 거룩 개념(qadash)과 연결되며, 바울이 특별한 목적 즉 복음 전파를 위해 하나님께 성별되었음을 나타냅니다. 로마서 전체의 주제인 '복음'이 이미 첫 절에 등장하여, 이 서신의 중심 주제를 예고합니다.",
+    "cross_references": ["Galatians 1:1", "Acts 9:15", "1 Corinthians 1:1"]
+  },
+  "korean_translation": {
+    "natural_translation": "그리스도 예수의 종이며, 사도로 부르심을 받고 하나님의 복음을 전하기 위해 구별된 바울입니다.",
+    "translation_notes": "원문의 대시(—)는 다음 절로 문장이 계속 이어짐을 나타냄"
+  },
+  "special_explanation": {
+    "explanation_type": "신학적/문법적 특징",
+    "content": "이 구절은 문장이 완결되지 않고 다음 절로 이어지는 구조입니다. 바울은 세 가지 핵심 정체성을 제시합니다: (1) 그리스도의 종 - 완전한 헌신, (2) 부르심 받은 사도 - 하나님의 주권적 선택, (3) 복음을 위해 구별된 자 - 거룩한 사명. 이 세 가지는 점진적으로 심화되는 구조로, 일반적 헌신에서 특정한 사명으로 나아갑니다. 'called'와 'set apart'는 모두 과거분사로, 하나님의 이미 완료된 행위를 나타내며, 바울의 사역이 하나님의 주도권 아래 있음을 강조합니다."
+  }
+}

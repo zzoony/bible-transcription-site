@@ -1,0 +1,55 @@
+{
+  "reference": "Jude 1:20",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "믿음 위에 자신을 건축함",
+      "original_text": "But you, dear friends, by building yourselves up in your most holy faith",
+      "korean_translation": "사랑하는 자들아 너희는 너희 자신을 너희의 지극히 거룩한 믿음 위에 세우며",
+      "grammatical_explanation": "But you (대조) + dear friends (호격) + by -ing (방법)"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "성령 안에서 기도함",
+      "original_text": "and praying in the Holy Spirit",
+      "korean_translation": "성령으로 기도하며",
+      "grammatical_explanation": "and praying (병렬 분사) + in the Holy Spirit (방법)"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "building up",
+      "ipa_pronunciation": "/ˈbɪldɪŋ ʌp/",
+      "korean_pronunciation": "빌딩 업",
+      "part_of_speech": "동사구",
+      "definition_korean": "세우다, 건축하다",
+      "usage_note": "헬라어 '에포이코도메오(ἐποικοδομέω)'로, 기초 위에 계속 쌓아올림"
+    },
+    {
+      "word": "most holy faith",
+      "ipa_pronunciation": "/moʊst ˈhoʊli feɪθ/",
+      "korean_pronunciation": "모스트 홀리 페이스",
+      "part_of_speech": "명사구",
+      "definition_korean": "지극히 거룩한 믿음",
+      "usage_note": "3절의 '단번에 전달된 믿음'과 동일한 객관적 기독교 신앙"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "거짓 교사들과 대조하여, 유다는 진정한 신자들에게 네 가지 권면을 합니다(20-21절). (1) 지극히 거룩한 믿음 위에 자신을 세움: 3절의 '단번에 전달된 믿음', 즉 사도적 가르침 위에 영적 집을 건축함. (2) 성령 안에서 기도함: 19절의 '성령이 없는' 거짓 교사들과 대조. 성령의 능력과 인도하심으로 기도함(로마서 8:26-27, 에베소서 6:18). 이 두 가지는 현재분사로 지속적 행동을 나타냅니다.",
+    "cross_references": [
+      "1 Corinthians 3:10-11",
+      "Ephesians 2:20-22",
+      "Romans 8:26-27",
+      "Ephesians 6:18"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "사랑하는 자들아, 너희는 너희 자신을 너희의 지극히 거룩한 믿음 위에 세우며 성령으로 기도하며",
+    "translation_notes": "두 가지 분사 행위를 '-며'로 자연스럽게 병렬 연결"
+  },
+  "special_explanation": {
+    "explanation_type": "실천적",
+    "content": "유다는 거짓 교사들의 공격에 대한 방어 전략을 제시합니다. '자신을 세움'(building yourselves up)은 능동태로, 신자의 책임을 강조하지만 동시에 하나님의 은혜 안에서 이루어집니다. '지극히 거룩한 믿음'(most holy faith)은 3절의 '단번에 전달된 믿음'과 동일하며, 객관적 기독교 교리를 의미합니다. '성령 안에서 기도'(praying in the Holy Spirit)는 성령의 능력으로, 성령의 인도하심에 따라, 성령을 통해 기도함을 의미합니다.",
+    "examples": []
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "reference": "Jude 1:6",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "타락한 천사들의 죄",
+      "original_text": "And the angels who did not keep their positions of authority but abandoned their proper dwelling",
+      "korean_translation": "그리고 자기 지위를 지키지 아니하고 자기 처소를 떠난 천사들을",
+      "grammatical_explanation": "관계절 2개(who did not keep, but abandoned)로 angels 수식. 병렬구조 not keep A but abandon B"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "하나님의 심판과 보존",
+      "original_text": "these he has kept in darkness, bound with everlasting chains for judgment on the great Day",
+      "korean_translation": "주께서 큰 날의 심판을 위하여 영원한 사슬로 묶어 흑암에 가두어 두셨느니라",
+      "grammatical_explanation": "완료 수동태(has kept). 두 개의 과거분사(bound, for judgment)로 상태 묘사"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "positions of authority",
+      "ipa_pronunciation": "/pəˈzɪʃənz əv ɔːˈθɒrəti/",
+      "korean_pronunciation": "포지션스 오브 어쏘리티",
+      "part_of_speech": "명사구",
+      "definition_korean": "권세, 직분",
+      "usage_note": "헬라어 '아르케(ἀρχή)'로, 천사들에게 주어진 원래 지위와 권한"
+    },
+    {
+      "word": "dwelling",
+      "ipa_pronunciation": "/ˈdwelɪŋ/",
+      "korean_pronunciation": "드웰링",
+      "part_of_speech": "명사",
+      "definition_korean": "거처, 처소",
+      "usage_note": "천사들의 본래 천상의 거처"
+    },
+    {
+      "word": "everlasting chains",
+      "ipa_pronunciation": "/ˌevərˈlæstɪŋ tʃeɪnz/",
+      "korean_pronunciation": "에버래스팅 체인스",
+      "part_of_speech": "명사구",
+      "definition_korean": "영원한 사슬",
+      "usage_note": "문자적 사슬이 아닌 영적 속박과 구금을 상징"
+    },
+    {
+      "word": "the great Day",
+      "ipa_pronunciation": "/ðə ɡreɪt deɪ/",
+      "korean_pronunciation": "더 그레이트 데이",
+      "part_of_speech": "명사구",
+      "definition_korean": "큰 날, 심판의 날",
+      "usage_note": "최후 심판의 날을 가리키는 종말론적 용어"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "두 번째 심판 예는 타락한 천사들입니다. 이는 창세기 6:1-4의 '하나님의 아들들'이 인간 여자들과 결합한 사건을 가리키거나, 사탄의 타락과 그를 따른 천사들(계시록 12:4, 7-9)을 의미할 수 있습니다. 유대 문헌인 에녹서는 이 천사들이 자신들의 하늘 거처를 떠나 인간 세계로 내려왔다고 설명합니다. 하나님은 그들을 '흑암'(Tartarus, 타르타로스)에 가두셨는데, 이는 2베드로 2:4의 표현과 일치합니다. '영원한 사슬'은 영적 구속을 의미하며, 최후 심판 때까지 그들은 이 상태에 갇혀 있습니다.",
+    "cross_references": ["2 Peter 2:4", "Genesis 6:1-4", "Revelation 12:7-9", "Isaiah 24:21-22", "1 Enoch 10:4-6"]
+  },
+  "korean_translation": {
+    "natural_translation": "또한 자기 지위를 지키지 아니하고 자기 처소를 떠난 천사들을 주께서 큰 날의 심판을 위하여 영원한 사슬로 묶어 흑암에 가두어 두셨느니라",
+    "translation_notes": "천사들의 죄와 하나님의 심판을 명확히 대조"
+  },
+  "special_explanation": {
+    "explanation_type": "해석적",
+    "content": "타락한 천사들의 정체에 대해서는 두 가지 주요 해석이 있습니다. (1) 창세기 6:1-4의 '하나님의 아들들'로, 에녹서와 초대 교부들이 지지한 견해. (2) 사탄의 최초 반역 때 그를 따른 천사들(계 12:4). '자기 처소를 떠남'(abandoned their proper dwelling)은 그들이 하나님이 정하신 경계를 넘어 불법적 영역에 침범했음을 의미합니다. 흑암의 구금은 일시적이며, '큰 날'(the great Day)의 최종 심판이 아직 남아 있습니다. 이는 현재 구금되어 있는 악령들과 여전히 활동 중인 악령들(에베소서 6:12)을 구별하게 합니다.",
+    "examples": []
+  }
+}

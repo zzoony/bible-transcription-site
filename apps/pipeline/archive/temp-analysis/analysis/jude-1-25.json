@@ -1,0 +1,71 @@
+{
+  "reference": "Jude 1:25",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "하나님의 정체성",
+      "original_text": "to the only God our Savior",
+      "korean_translation": "우리 구주 홀로 하나이신 하나님께",
+      "grammatical_explanation": "to + 형용사(only) + 명사(God) + 동격(our Savior)"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "송영의 내용",
+      "original_text": "be glory, majesty, power and authority, through Jesus Christ our Lord, before all ages, now and forevermore! Amen",
+      "korean_translation": "우리 주 예수 그리스도로 말미암아 영광과 위엄과 권력과 권세가 영원 전부터 이제와 영원토록 있을지어다 아멘",
+      "grammatical_explanation": "be 가정법 + 네 가지 속성(glory, majesty, power, authority) + through 전치사구 + 시간 표현 세 가지"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "the only God",
+      "ipa_pronunciation": "/ði ˈoʊnli ɡɒd/",
+      "korean_pronunciation": "디 온리 갓",
+      "part_of_speech": "명사구",
+      "definition_korean": "유일하신 하나님",
+      "usage_note": "유일신 신앙의 고백"
+    },
+    {
+      "word": "Savior",
+      "ipa_pronunciation": "/ˈseɪvjər/",
+      "korean_pronunciation": "세이비어",
+      "part_of_speech": "명사",
+      "definition_korean": "구주, 구원자",
+      "usage_note": "구원을 행하시는 하나님"
+    },
+    {
+      "word": "majesty",
+      "ipa_pronunciation": "/ˈmædʒəsti/",
+      "korean_pronunciation": "매제스티",
+      "part_of_speech": "명사",
+      "definition_korean": "위엄, 장엄",
+      "usage_note": "하나님의 왕적 위엄"
+    },
+    {
+      "word": "authority",
+      "ipa_pronunciation": "/ɔːˈθɒrəti/",
+      "korean_pronunciation": "어쏘리티",
+      "part_of_speech": "명사",
+      "definition_korean": "권세, 권위",
+      "usage_note": "하나님의 절대적 통치권"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "유다서는 신약에서 가장 장엄한 송영 중 하나로 끝납니다. (1) 대상: 유일하신 하나님, 우리 구주. (2) 매개: 우리 주 예수 그리스도를 통하여. (3) 속성: 네 가지 신적 속성 - 영광(doxa, 빛나는 광채), 위엄(megalosyne, 왕적 위엄), 권력(kratos, 힘과 능력), 권세(exousia, 통치권). (4) 시간: 영원 전부터, 이제와 영원토록. 이 포괄적 시간 표현은 하나님의 영원성을 강조합니다. '아멘'은 송영에 대한 동의와 확증입니다. 이 송영은 거짓 교사들이 부인한 하나님과 그리스도의 주권을 재확인합니다.",
+    "cross_references": [
+      "Romans 16:27",
+      "1 Timothy 1:17",
+      "Revelation 5:13",
+      "Revelation 7:12"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "우리 구주 홀로 하나이신 하나님께 우리 주 예수 그리스도로 말미암아 영광과 위엄과 권력과 권세가 영원 전부터 이제와 영원토록 있을지어다 아멘",
+    "translation_notes": "송영의 장엄함과 포괄성을 한국어로 자연스럽게 표현"
+  },
+  "special_explanation": {
+    "explanation_type": "신학적",
+    "content": "이 송영은 신약의 가장 완전한 송영 중 하나입니다. '유일하신 하나님'(the only God)은 4절에서 거짓 교사들이 부인한 주권을 재확인합니다. '우리 구주'는 구약의 여호와 칭호를 적용한 것입니다. '우리 주 예수 그리스도로 말미암아'(through Jesus Christ our Lord)는 모든 영광이 그리스도를 통해 하나님께 돌아감을 나타냅니다. 네 가지 속성은 완전수 4로 하나님 영광의 완전성을 상징합니다. 시간 표현(before all ages, now and forevermore)은 하나님의 영원성을 과거-현재-미래로 포괄하여 강조합니다.",
+    "examples": []
+  }
+}

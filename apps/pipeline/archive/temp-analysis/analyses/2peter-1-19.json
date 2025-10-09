@@ -1,0 +1,65 @@
+{
+  "reference": "2 Peter 1:19",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "예언의 확실성",
+      "original_text": "We also have the prophetic message as something completely reliable",
+      "korean_translation": "또 우리에게 더 확실한 예언이 있어",
+      "grammatical_explanation": "'also have'는 추가 증거. 'completely reliable'은 절대적 신뢰성"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "권면 (예언에 주의)",
+      "original_text": "and you will do well to pay attention to it",
+      "korean_translation": "너희가 이것을 주의하는 것이 옳으니",
+      "grammatical_explanation": "미래 시제 'will do well'은 권면의 표현. 'pay attention'은 계속적 주목"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "비유 (어둠 속의 빛)",
+      "original_text": "as to a light shining in a dark place, until the day dawns and the morning star rises in your hearts",
+      "korean_translation": "마치 어두운 데를 비추는 등불과 같으니 날이 새어 샛별이 너희 마음에 떠오르기까지 하라",
+      "grammatical_explanation": "비유절 'as to a light'. 'until'은 시간 한계. 'morning star'는 그리스도 또는 완전한 깨달음"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "prophetic message",
+      "ipa_pronunciation": "/prəˈfetɪk ˈmesɪdʒ/",
+      "korean_pronunciation": "프로페틱 메시지",
+      "part_of_speech": "명사구",
+      "definition_korean": "예언의 말씀, 구약 예언",
+      "usage_note": "구약 선지자들의 메시아에 대한 예언"
+    },
+    {
+      "word": "completely reliable",
+      "ipa_pronunciation": "/kəmˈpliːtli rɪˈlaɪəbəl/",
+      "korean_pronunciation": "컴플릿리 릴라이어블",
+      "part_of_speech": "형용사구",
+      "definition_korean": "완전히 신뢰할 수 있는, 더 확실한",
+      "usage_note": "절대적으로 믿을 수 있음"
+    },
+    {
+      "word": "morning star",
+      "ipa_pronunciation": "/ˈmɔːrnɪŋ stɑːr/",
+      "korean_pronunciation": "모닝 스타",
+      "part_of_speech": "명사구",
+      "definition_korean": "샛별, 새벽별 (금성, 그리스도의 상징)",
+      "usage_note": "계 22:16에서 예수님이 자신을 '새벽별'이라 칭함"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "베드로는 변화산 경험뿐 아니라 '더 확실한 예언의 말씀'을 가지고 있다고 말합니다. 이는 구약 선지자들의 메시아 예언을 가리키며, 이것이 변화산 경험으로 더욱 확증되었습니다. 예언의 말씀은 '어둠 속의 등불'로 비유되는데, 이 세상은 어두운 곳이고 성경 말씀이 유일한 빛입니다. '날이 새어 샛별이 마음에 떠오를 때까지'는 그리스도의 재림 또는 신자가 완전한 깨달음과 영광에 이르는 것을 가리킵니다. '샛별'(morning star)은 계시록 22:16에서 예수님 자신을 가리킵니다. 신자는 그날까지 성경 말씀을 주의 깊게 연구해야 합니다.",
+    "cross_references": [
+      "Psalm 119:105 (주의 말씀은 내 발에 등이요 내 길에 빛)",
+      "Revelation 22:16 (나는 광명한 새벽 별이라)",
+      "Numbers 24:17 (한 별이 야곱에게서 나오며)",
+      "Luke 1:78-79 (돋는 해가 우리에게 임하여)",
+      "2 Corinthians 4:6 (예수 그리스도의 얼굴에 있는 하나님의 영광을 아는 빛)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "우리에게 더 확실한 예언이 있어 이것을 주의하는 것이 옳으니 마치 어두운 데를 비추는 등불과 같으니 날이 새어 샛별이 너희 마음에 떠오르기까지 하라."
+  }
+}

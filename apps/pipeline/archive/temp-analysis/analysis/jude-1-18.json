@@ -1,0 +1,48 @@
+{
+  "reference": "Jude 1:18",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "사도들의 예언 인용",
+      "original_text": "They said to you, 'In the last times there will be scoffers who will follow their own ungodly desires'",
+      "korean_translation": "그들이 너희에게 말하기를 마지막 때에 자기의 경건하지 않은 정욕대로 행하며 조롱하는 자들이 있으리라 하였나니",
+      "grammatical_explanation": "They said + 직접 인용문. 인용문 내에 there will be 구문 + 관계절(who will follow)"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "last times",
+      "ipa_pronunciation": "/læst taɪmz/",
+      "korean_pronunciation": "래스트 타임스",
+      "part_of_speech": "명사구",
+      "definition_korean": "마지막 때",
+      "usage_note": "신약 종말론에서 그리스도의 초림부터 재림까지의 시대"
+    },
+    {
+      "word": "scoffers",
+      "ipa_pronunciation": "/ˈskɒfərz/",
+      "korean_pronunciation": "스코퍼스",
+      "part_of_speech": "명사",
+      "definition_korean": "조롱하는 자들",
+      "usage_note": "헬라어 '엠파익타이(ἐμπαῖκται)'로, 진리를 비웃는 자들"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "유다는 사도들의 예언을 인용합니다. '마지막 때'(last times)는 신약 시대 전체를 가리키며, 그리스도의 초림부터 재림까지의 기간입니다. 따라서 거짓 교사의 출현은 놀라운 일이 아니라 예언된 것입니다. '조롱하는 자들'(scoffers)은 진리와 경건을 비웃는 자들로, 그들의 조롱은 경건하지 않은 정욕에서 비롯됩니다. 이는 베드로후서 3:3의 거의 동일한 표현과 일치합니다.",
+    "cross_references": [
+      "2 Peter 3:3",
+      "1 Timothy 4:1",
+      "2 Timothy 3:1",
+      "1 John 2:18"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "그들이 너희에게 말하기를 마지막 때에 자기의 경건하지 않은 정욕대로 행하며 조롱하는 자들이 있으리라 하였나니",
+    "translation_notes": "인용문을 한국어 구조에 맞게 자연스럽게 표현"
+  },
+  "special_explanation": {
+    "explanation_type": "종말론적",
+    "content": "'마지막 때'(last times)는 신약 종말론의 핵심 개념입니다. 신약 저자들은 그리스도의 초림으로 '마지막 날들'이 이미 시작되었다고 봅니다(히브리서 1:2, 베드로전서 1:20). 따라서 거짓 교사의 출현은 단순히 미래 예언이 아니라 현재 진행 중인 종말론적 현상입니다. 유다는 'they said to you'를 사용하여 사도들의 가르침이 독자들에게 직접 전달되었음을 시사합니다.",
+    "examples": []
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "reference": "1 Timothy 5:24",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "명백한 죄의 특성",
+      "original_text": "The sins of some are obvious, reaching the place of judgment ahead of them",
+      "korean_translation": "어떤 사람들의 죄는 명백하여 심판에 먼저 이르고",
+      "grammatical_explanation": "주절 - 즉각 드러나는 죄"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "숨겨진 죄의 특성",
+      "original_text": "the sins of others trail behind them",
+      "korean_translation": "어떤 사람들의 죄는 그들을 뒤따릅니다",
+      "grammatical_explanation": "대조절 - 나중에 드러나는 죄"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "obvious",
+      "ipa_pronunciation": "/ˈɑbviəs/",
+      "korean_pronunciation": "압비어스",
+      "part_of_speech": "형용사",
+      "definition_korean": "명백한, 분명한",
+      "usage_note": "그리스어 prodelos - 앞서 드러나는"
+    },
+    {
+      "word": "reaching",
+      "ipa_pronunciation": "/ˈritʃɪŋ/",
+      "korean_pronunciation": "리칭",
+      "part_of_speech": "동사(현재분사)",
+      "definition_korean": "도달하는, 이르는",
+      "usage_note": "그리스어 proago - 앞서 가다"
+    },
+    {
+      "word": "judgment",
+      "ipa_pronunciation": "/ˈdʒʌdʒmənt/",
+      "korean_pronunciation": "저지먼트",
+      "part_of_speech": "명사",
+      "definition_korean": "심판, 판결",
+      "usage_note": "그리스어 krisis - 심판, 판단"
+    },
+    {
+      "word": "trail behind",
+      "ipa_pronunciation": "/treɪl bɪˈhaɪnd/",
+      "korean_pronunciation": "트레일 비하인드",
+      "part_of_speech": "동사구",
+      "definition_korean": "뒤따르다, 뒤에 오다",
+      "usage_note": "그리스어 epakoloutheo - 뒤따라 오다"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "이 구절은 5:22의 '경솔하게 안수하지 말라'는 경고와 연결됩니다. 어떤 사람들의 죄는 즉시 명백하여 임명 전에 쉽게 발견되지만, 어떤 사람들의 죄는 숨겨져 있어 나중에 드러납니다. '심판에 먼저 이른다'는 것은 인간의 판단이나 교회의 권징을 의미하며, 궁극적으로는 하나님의 심판을 가리킵니다. 바울은 디모데에게 위로와 경고를 동시에 줍니다. 위로는, 최선을 다해 신중하게 임명해도 나중에 문제가 드러날 수 있다는 것입니다. 경고는, 그러므로 더욱 신중해야 한다는 것입니다. 이는 또한 궁극적 심판이 하나님께 속한다는 것을 상기시키며, 디모데가 모든 것을 알 수 없어도 하나님은 아신다는 확신을 줍니다.",
+    "cross_references": [
+      "Ecclesiastes 12:14 (모든 은밀한 일의 심판)",
+      "Luke 12:2-3 (숨겨진 것이 드러남)",
+      "1 Corinthians 4:5 (주님의 재림 시 모든 것이 드러남)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "어떤 사람들의 죄는 명백하여 심판에 먼저 이르지만, 어떤 사람들의 죄는 그들을 뒤따릅니다.",
+    "translation_notes": "대조를 명확히 표현"
+  },
+  "special_explanation": {
+    "explanation_type": "숨겨진 죄의 드러남",
+    "content": "이 구절은 죄가 결국 드러난다는 원리를 가르칩니다. 어떤 죄는 즉시 명백하지만, 어떤 죄는 시간이 지나야 드러납니다. 이는 디모데에게 두 가지 교훈을 줍니다. 첫째, 최선을 다해 신중하게 임명해도 나중에 문제가 발생할 수 있으므로 실망하지 말라는 위로입니다. 둘째, 그러므로 더욱 신중하게 시간을 두고 검증하라는 경고입니다. 궁극적으로 모든 죄는 하나님의 심판대 앞에 드러날 것이며, 숨겨진 것은 아무것도 없습니다(전 12:14, 눅 12:2-3).",
+    "examples": [
+      "모든 죄는 결국 드러남",
+      "신중한 임명에도 불구하고 나중에 문제가 생길 수 있음"
+    ]
+  }
+}

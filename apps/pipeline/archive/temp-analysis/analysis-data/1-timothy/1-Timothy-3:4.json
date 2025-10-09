@@ -1,0 +1,96 @@
+{
+  "reference": "1 Timothy 3:4",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "가정 관리 요구",
+      "original_text": "He must manage his own family well",
+      "korean_translation": "그는 자기 가정을 잘 다스려야 하며",
+      "grammatical_explanation": "must 조동사를 사용한 강한 의무 표현"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "자녀 양육 기준",
+      "original_text": "and see that his children obey him",
+      "korean_translation": "자녀들이 그에게 순종하도록 해야 하고",
+      "grammatical_explanation": "병렬절 - 가정 관리의 구체적 증거"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "방식의 기준",
+      "original_text": "and he must do so in a manner worthy of full respect",
+      "korean_translation": "이 모든 것을 온전한 존경심을 받을 만한 방식으로 해야 합니다",
+      "grammatical_explanation": "방식을 나타내는 부사구 - 어떻게 관리할지의 질적 기준"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "manage",
+      "ipa_pronunciation": "/ˈmænɪdʒ/",
+      "korean_pronunciation": "매니지",
+      "part_of_speech": "동사",
+      "definition_korean": "다스리다, 관리하다, 이끌다",
+      "usage_note": "그리스어 proistemi - 앞에 서서 이끈다는 의미, 섬기는 리더십"
+    },
+    {
+      "word": "family",
+      "ipa_pronunciation": "/ˈfæməli/",
+      "korean_pronunciation": "패밀리",
+      "part_of_speech": "명사",
+      "definition_korean": "가족, 가정",
+      "usage_note": "그리스어 oikos - 집, 가정, 가족 공동체를 의미"
+    },
+    {
+      "word": "obey",
+      "ipa_pronunciation": "/oʊˈbeɪ/",
+      "korean_pronunciation": "오베이",
+      "part_of_speech": "동사",
+      "definition_korean": "순종하다, 복종하다",
+      "usage_note": "자발적 존중과 따름을 포함하는 개념"
+    },
+    {
+      "word": "manner",
+      "ipa_pronunciation": "/ˈmænər/",
+      "korean_pronunciation": "매너",
+      "part_of_speech": "명사",
+      "definition_korean": "방식, 태도, 방법",
+      "usage_note": "단순한 결과가 아닌 과정의 질을 강조"
+    },
+    {
+      "word": "worthy of",
+      "ipa_pronunciation": "/ˈwɜrði ʌv/",
+      "korean_pronunciation": "워디 오브",
+      "part_of_speech": "형용사구",
+      "definition_korean": "~할 가치가 있는, ~에 합당한",
+      "usage_note": "도덕적, 영적 품격의 적합성을 나타냄"
+    },
+    {
+      "word": "respect",
+      "ipa_pronunciation": "/rɪˈspɛkt/",
+      "korean_pronunciation": "리스펙트",
+      "part_of_speech": "명사",
+      "definition_korean": "존경, 존중",
+      "usage_note": "그리스어 semnotes - 엄숙함, 품위, 존엄성"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 감독의 공적 자격을 평가하는 핵심 기준으로 가정 관리 능력을 제시합니다. 이는 1세기 가부장적 문화에서 자연스러운 비유였지만, 더 깊은 신학적 원리를 담고 있습니다. '자기 가정을 잘 다스림'은 권위적 통제가 아니라 섬기는 리더십을 의미합니다. 그리스어 'proistemi'(관리하다)는 '앞에 서서 이끈다'는 뜻으로, 교회 지도자가 가정에서 먼저 사랑과 헌신의 모범을 보여야 함을 강조합니다. '자녀들의 순종'은 단순한 복종이 아니라, 아버지에 대한 존경과 신뢰에서 나오는 자발적 따름을 의미합니다. 특히 '온전한 존경심을 받을 만한 방식'이라는 구절은 목적이 수단을 정당화하지 않음을 분명히 합니다. 감독은 자녀를 두려움이나 강압으로 다스리는 것이 아니라, 사랑과 품위로 이끌어야 합니다. 이는 3:5절의 논리적 연결고리가 되어, 가정 관리 능력이 없는 사람은 교회를 돌볼 수 없다는 원칙을 뒷받침합니다.",
+    "cross_references": [
+      "Ephesians 6:4 (자녀 양육의 원칙)",
+      "Titus 1:6 (자녀의 믿음과 순종)",
+      "1 Timothy 3:5 (가정과 교회 관리의 연결)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "그는 자기 가정을 잘 다스려서 자녀들이 온전한 순종으로 그를 존경하게 해야 합니다.",
+    "translation_notes": "세 개의 병렬절을 자연스럽게 통합하여 번역"
+  },
+  "special_explanation": {
+    "explanation_type": "가정과 교회의 연결 원리",
+    "content": "이 구절은 가정이 교회 사역의 '훈련장'이자 '시험대'임을 보여줍니다. 감독 후보자의 가정 생활은 그의 영적 리더십 능력을 평가하는 가장 신뢰할 만한 지표입니다. '온전한 존경심을 받을 만한 방식'은 그리스어 'meta pases semnotes'로, 권위주의적 통제가 아닌 품위 있고 존엄한 태도로 가정을 이끌어야 함을 의미합니다. 이는 에베소서 6:4의 '주의 교훈과 훈계로' 자녀를 양육하라는 명령과 일맥상통합니다. 초대교회는 종종 가정집에서 모였으므로(행 2:46, 롬 16:5), 가정 관리 능력은 문자 그대로 교회 공동체를 돌보는 능력과 직결되었습니다. 현대 교회에서도 이 원칙은 여전히 유효합니다. 가정에서 사랑, 인내, 헌신을 실천하지 못하는 사람은 교회에서도 같은 한계를 드러낼 가능성이 높습니다.",
+    "examples": [
+      "가정은 리더십의 시험대 - 공적 사역 이전에 사적 영역에서의 신실함",
+      "자녀의 순종은 두려움이 아닌 존경과 신뢰에서 나와야 함"
+    ]
+  }
+}

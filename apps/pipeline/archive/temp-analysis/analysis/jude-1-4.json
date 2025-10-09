@@ -1,0 +1,74 @@
+{
+  "reference": "Jude 1:4",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "거짓 교사들의 잠입",
+      "original_text": "For certain individuals whose condemnation was written about long ago have secretly slipped in among you",
+      "korean_translation": "이는 오래전에 그 심판이 기록된 어떤 사람들이 너희 가운데 몰래 들어왔기 때문이라",
+      "grammatical_explanation": "For 접속사로 3절의 이유 설명. 관계절(whose condemnation was written)이 individuals 수식"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "거짓 교사들의 특징 묘사",
+      "original_text": "They are ungodly people, who pervert the grace of our God into a license for immorality and deny Jesus Christ our only Sovereign and Lord",
+      "korean_translation": "그들은 경건하지 않은 자들로서 우리 하나님의 은혜를 방탕함의 구실로 바꾸고 유일한 주재이신 예수 그리스도를 부인하는 자들이니라",
+      "grammatical_explanation": "관계절 2개(who pervert, and deny)로 ungodly people의 행위 설명. pervert A into B 구문"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "condemnation",
+      "ipa_pronunciation": "/ˌkɒndəmˈneɪʃn/",
+      "korean_pronunciation": "콘뎀네이션",
+      "part_of_speech": "명사",
+      "definition_korean": "정죄, 심판",
+      "usage_note": "법정 용어로 유죄 선고와 형벌을 의미"
+    },
+    {
+      "word": "slipped in",
+      "ipa_pronunciation": "/slɪpt ɪn/",
+      "korean_pronunciation": "슬립트 인",
+      "part_of_speech": "동사구",
+      "definition_korean": "몰래 들어오다",
+      "usage_note": "헬라어 '파레이스듀오(παρεισδύω)'로, 교활하게 침투함을 의미"
+    },
+    {
+      "word": "pervert",
+      "ipa_pronunciation": "/pərˈvɜːrt/",
+      "korean_pronunciation": "퍼버트",
+      "part_of_speech": "동사",
+      "definition_korean": "왜곡하다, 타락시키다",
+      "usage_note": "원래 의도를 완전히 뒤틀어 정반대로 만드는 행위"
+    },
+    {
+      "word": "license",
+      "ipa_pronunciation": "/ˈlaɪsns/",
+      "korean_pronunciation": "라이선스",
+      "part_of_speech": "명사",
+      "definition_korean": "허가증, 구실",
+      "usage_note": "여기서는 죄를 정당화하는 허가증이나 핑계를 의미"
+    },
+    {
+      "word": "Sovereign",
+      "ipa_pronunciation": "/ˈsɒvrɪn/",
+      "korean_pronunciation": "소브린",
+      "part_of_speech": "명사",
+      "definition_korean": "주권자, 통치자",
+      "usage_note": "헬라어 '데스포테스(δεσπότης)'로, 절대적 권위와 소유권을 가진 주인"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "유다는 편지를 쓴 긴급한 이유를 밝힙니다. 교회 내부에 거짓 교사들이 몰래 침투했는데, 그들의 심판은 이미 구약 성경에 예언되어 있었습니다. 이들은 두 가지 치명적 오류를 범했습니다. 첫째, 하나님의 은혜를 왜곡하여 도덕적 방종의 구실로 삼았습니다. 이는 초대교회의 율법주의에 대한 반동으로 나타난 자유방임주의(antinomianism)를 가리킵니다. 둘째, 예수 그리스도의 주권과 신성을 부인했습니다. '유일한 주재이신 예수 그리스도'라는 표현은 예수님의 절대적 권위를 강조하며, 이를 부인하는 것은 이단의 핵심 특징입니다.",
+    "cross_references": ["2 Peter 2:1-3", "Galatians 5:13", "Romans 6:1-2", "Titus 1:16", "1 John 2:22"]
+  },
+  "korean_translation": {
+    "natural_translation": "이는 오래전에 그 심판이 기록된 어떤 경건하지 않은 사람들이 너희 가운데 몰래 들어와서, 우리 하나님의 은혜를 방탕함의 구실로 바꾸고 유일한 주재이신 예수 그리스도를 부인하기 때문이라",
+    "translation_notes": "긴 문장을 한국어 구조에 맞게 자연스럽게 연결"
+  },
+  "special_explanation": {
+    "explanation_type": "신학적",
+    "content": "이 구절은 초대교회의 주요 이단인 영지주의(Gnosticism)와 자유방임주의를 반영합니다. 영지주의자들은 영과 육을 분리하여 육체의 행위가 영적 구원에 영향을 주지 않는다고 주장했습니다. 따라서 그들은 은혜를 방종의 구실로 삼았습니다. '오래전에 기록된 심판'은 구약의 예언(신명기 13:5, 이사야 30:10-11 등)과 에녹서 같은 유대 문헌을 가리킬 수 있습니다. 'secretly slipped in'(παρεισδύω)은 군사 용어로, 적군이 성벽을 몰래 침투하는 것을 묘사하여 이단의 교활함을 강조합니다.",
+    "examples": []
+  }
+}

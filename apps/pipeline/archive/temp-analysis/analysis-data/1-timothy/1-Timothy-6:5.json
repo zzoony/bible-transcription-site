@@ -1,0 +1,80 @@
+{
+  "reference": "1 Timothy 6:5",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "지속적 갈등",
+      "original_text": "and constant friction between people of corrupt mind",
+      "korean_translation": "그리고 마음이 부패한 사람들 사이의 끊임없는 마찰이 있으며",
+      "grammatical_explanation": "병렬절 - 계속되는 갈등"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "진리 상실",
+      "original_text": "who have been robbed of the truth",
+      "korean_translation": "그들은 진리를 빼앗긴 사람들이요",
+      "grammatical_explanation": "관계절 - 영적 상태 묘사"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "경건의 왜곡",
+      "original_text": "and who think that godliness is a means to financial gain",
+      "korean_translation": "경건을 이득의 수단으로 생각하는 사람들입니다",
+      "grammatical_explanation": "관계절 - 거짓 동기"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "constant friction",
+      "ipa_pronunciation": "/ˈkɑnstənt ˈfrɪkʃən/",
+      "korean_pronunciation": "칸스턴트 프릭션",
+      "part_of_speech": "명사구",
+      "definition_korean": "끊임없는 마찰, 계속되는 갈등",
+      "usage_note": "그리스어 diaparatribe - 계속되는 충돌"
+    },
+    {
+      "word": "corrupt mind",
+      "ipa_pronunciation": "/kəˈrʌpt maɪnd/",
+      "korean_pronunciation": "커럽트 마인드",
+      "part_of_speech": "명사구",
+      "definition_korean": "부패한 마음, 타락한 생각",
+      "usage_note": "그리스어 diaphtheiro nous - 썩은 마음"
+    },
+    {
+      "word": "robbed of",
+      "ipa_pronunciation": "/rɑbd ʌv/",
+      "korean_pronunciation": "랍드 오브",
+      "part_of_speech": "동사구",
+      "definition_korean": "빼앗기다, 박탈되다",
+      "usage_note": "그리스어 apostereo - 사기 당하다, 빼앗기다"
+    },
+    {
+      "word": "financial gain",
+      "ipa_pronunciation": "/faɪˈnænʃəl ɡeɪn/",
+      "korean_pronunciation": "파이낸셜 게인",
+      "part_of_speech": "명사구",
+      "definition_korean": "재정적 이득, 금전적 이익",
+      "usage_note": "그리스어 porismos - 이득을 얻는 수단"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 거짓 교사의 결과와 동기를 더 설명합니다. '끊임없는 마찰'은 6:4의 시기, 분쟁, 비방, 의심의 결과로, 교회 공동체에 지속적인 갈등을 일으킵니다. '마음이 부패한'은 도덕적, 영적 타락을 의미하며, 진리를 떠난 결과입니다. '진리를 빼앗긴'은 한때 진리를 알았지만 거짓 교리에 미혹되어 진리를 상실한 상태를 묘사합니다. 가장 심각한 것은 '경건을 이득의 수단으로 생각한다'는 것입니다. 에베소의 거짓 교사들은 종교를 사업처럼 여기고, 사역을 통해 부를 축적하려 했습니다. 이는 예수님이 성전에서 장사하는 자들을 쫓아내신 사건(요 2:13-16)과 유사합니다. 참된 경건은 하나님을 사랑하고 섬기는 것이지만, 거짓 교사들은 경건의 외형만 취하고 실제로는 탐욕을 채웁니다. 이는 6:6-10절에서 탐욕의 위험을 경고하는 배경이 됩니다.",
+    "cross_references": [
+      "2 Peter 2:3 (거짓 교사의 탐욕)",
+      "Jude 1:11 (이득을 위한 거짓 교훈)",
+      "John 2:13-16 (성전을 장사하는 집으로 만듦)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "또한 마음이 부패하고 진리를 빼앗긴 사람들 사이에 끊임없는 마찰이 있습니다. 그들은 경건을 이득의 수단으로 생각합니다.",
+    "translation_notes": "세 가지 특징을 자연스럽게 통합"
+  },
+  "special_explanation": {
+    "explanation_type": "경건의 왜곡",
+    "content": "이 구절은 거짓 교사의 가장 큰 죄악을 폭로합니다. 그들은 경건을 '이득의 수단'(porismos)으로 전락시켰습니다. 참된 경건은 하나님을 사랑하고 섬기는 것이지만, 그들은 종교를 사업으로 여기고 물질적 이익을 추구했습니다. 이는 베드로후서 2:3의 '탐심으로 지어낸 말을 가지고 너희로 이득을 삼는다'는 경고와 일치합니다. 경건의 외형만 취하고 실제로는 탐욕을 채우는 것은 신성 모독이며, 복음을 훼손합니다. 이는 오늘날 번영 신학의 위험성도 경고합니다.",
+    "examples": [
+      "경건 ≠ 이득의 수단",
+      "종교를 사업화하는 것은 신성 모독"
+    ]
+  }
+}

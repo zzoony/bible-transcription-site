@@ -1,0 +1,72 @@
+{
+  "reference": "1 Timothy 5:22",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "안수 신중함 경고",
+      "original_text": "Do not be hasty in the laying on of hands",
+      "korean_translation": "아무에게나 경솔하게 안수하지 말며",
+      "grammatical_explanation": "부정 명령 - 조급한 임명 경고"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "죄 연루 경고",
+      "original_text": "and do not share in the sins of others",
+      "korean_translation": "다른 사람의 죄에 참여하지 마십시오",
+      "grammatical_explanation": "병렬 명령 - 부적절한 임명의 결과"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "자기 순결 유지",
+      "original_text": "Keep yourself pure",
+      "korean_translation": "자신을 순결하게 지키십시오",
+      "grammatical_explanation": "긍정 명령 - 개인적 성결 유지"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "hasty",
+      "ipa_pronunciation": "/ˈheɪsti/",
+      "korean_pronunciation": "헤이스티",
+      "part_of_speech": "형용사",
+      "definition_korean": "성급한, 경솔한",
+      "usage_note": "그리스어 tacheos - 빨리, 조급하게"
+    },
+    {
+      "word": "laying on of hands",
+      "ipa_pronunciation": "/ˈleɪɪŋ ɑn ʌv hændz/",
+      "korean_pronunciation": "레잉 온 오브 핸즈",
+      "part_of_speech": "명사구",
+      "definition_korean": "안수, 안수식",
+      "usage_note": "그리스어 epitithemi cheiras - 직분 임명의 의식"
+    },
+    {
+      "word": "share in",
+      "ipa_pronunciation": "/ʃɛr ɪn/",
+      "korean_pronunciation": "셰어 인",
+      "part_of_speech": "동사구",
+      "definition_korean": "참여하다, 연루되다",
+      "usage_note": "그리스어 koinoneo - 공유하다, 함께하다"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 디모데에게 교회 지도자를 세울 때 신중할 것을 경고합니다. '안수'는 직분 임명의 공식적 의식으로, 구약에서는 레위인과 제사장을 세울 때(민 8:10, 27:18), 신약에서는 집사와 장로를 임명할 때 사용되었습니다(행 6:6, 13:3). '경솔하게 안수하지 말라'는 것은 3:6의 '새로 믿은 사람'이 아닐 것과 3:10의 '먼저 시험을 받을 것'과 연결됩니다. 조급하게 검증되지 않은 사람을 세우면, 그가 나중에 죄를 범할 때 임명한 사람도 책임을 지게 됩니다. '다른 사람의 죄에 참여'한다는 것은 부적절한 임명으로 인해 발생하는 죄의 결과를 함께 짊어지게 된다는 의미입니다. '자신을 순결하게 지키라'는 것은 디모데가 임명 과정에서 편파성, 뇌물, 압력에 굴복하지 말고 하나님의 기준을 지켜야 함을 강조합니다.",
+    "cross_references": [
+      "Acts 6:6 (일곱 집사에게 안수)",
+      "Acts 13:3 (바울과 바나바에게 안수)",
+      "1 Timothy 3:6, 10 (신중한 선출)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "아무에게나 경솔하게 안수하지 말며, 다른 사람의 죄에 참여하지 마십시오. 자신을 순결하게 지키십시오.",
+    "translation_notes": "세 가지 명령을 연결하여 번역"
+  },
+  "special_explanation": {
+    "explanation_type": "신중한 지도자 임명",
+    "content": "이 구절은 교회 지도자 선출의 신중함을 강조합니다. 조급한 임명은 세 가지 위험을 초래합니다. 첫째, 부적격자를 세워 교회에 해를 끼칩니다. 둘째, 임명한 자도 그 죄에 연루됩니다. 셋째, 디모데 자신의 영적 순결이 훼손됩니다. 안수는 단순한 형식이 아니라 영적 책임의 전가이므로, 충분한 시간과 검증을 거쳐야 합니다. 현대 교회에서도 이 원칙은 유효합니다. 인기, 재능, 헌금 능력만으로 지도자를 세우는 것은 위험하며, 성품과 신앙의 성숙함을 시간을 두고 확인해야 합니다.",
+    "examples": [
+      "안수는 영적 책임의 전가",
+      "조급한 임명은 임명자도 죄에 연루시킴"
+    ]
+  }
+}

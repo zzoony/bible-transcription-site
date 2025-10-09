@@ -1,0 +1,57 @@
+{
+  "reference": "1 Timothy 6:7",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "출생 시 빈손",
+      "original_text": "For we brought nothing into the world",
+      "korean_translation": "우리가 세상에 아무것도 가지고 온 것이 없고",
+      "grammatical_explanation": "이유절 - 자족의 근거 1"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "죽음 시 빈손",
+      "original_text": "and we can take nothing out of it",
+      "korean_translation": "또한 아무것도 가지고 갈 수 없습니다",
+      "grammatical_explanation": "병렬절 - 자족의 근거 2"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "brought",
+      "ipa_pronunciation": "/brɔt/",
+      "korean_pronunciation": "브롯",
+      "part_of_speech": "동사",
+      "definition_korean": "가져오다",
+      "usage_note": "그리스어 eisphero - 안으로 가져오다"
+    },
+    {
+      "word": "take out",
+      "ipa_pronunciation": "/teɪk aʊt/",
+      "korean_pronunciation": "테이크 아웃",
+      "part_of_speech": "동사구",
+      "definition_korean": "가지고 나가다",
+      "usage_note": "그리스어 ekphero - 밖으로 가져가다"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 자족의 근거를 설명합니다. 출생 시 우리는 빈손으로 왔고, 죽음 시에도 빈손으로 갑니다. 이는 구약 욥기 1:21의 '내가 모태에서 벗은 몸으로 나왔사온즉 또한 벗은 몸이 그리로 돌아가올지라'는 고백과 일치합니다. 전도서 5:15도 같은 진리를 가르칩니다. 이 진리는 두 가지 교훈을 줍니다. 첫째, 물질은 일시적이고 덧없습니다. 둘째, 우리의 진정한 가치는 소유가 아니라 하나님과의 관계에 있습니다. 이는 탐욕의 헛됨을 폭로하고, 6:8절의 '먹을 것과 입을 것'으로 자족해야 한다는 결론으로 이어집니다.",
+    "cross_references": [
+      "Job 1:21 (벗은 몸으로 나왔사온즉)",
+      "Ecclesiastes 5:15 (나온 대로 돌아감)",
+      "Psalm 49:16-17 (죽을 때 아무것도 가져가지 못함)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "우리가 세상에 아무것도 가지고 온 것이 없고, 또한 아무것도 가지고 갈 수 없습니다.",
+    "translation_notes": "대조를 간결하게 표현"
+  },
+  "special_explanation": {
+    "explanation_type": "물질의 일시성",
+    "content": "이 구절은 물질의 일시성과 탐욕의 헛됨을 가르칩니다. 우리는 출생 시 빈손으로 왔고, 죽음 시에도 빈손으로 갑니다(욥 1:21). 이는 두 가지 교훈을 줍니다. 첫째, 물질 축적은 궁극적 목표가 될 수 없습니다. 둘째, 진정한 가치는 하나님과의 관계와 영원한 것에 있습니다. 이 진리는 탐욕을 경계하고 자족을 추구하는 근거가 됩니다.",
+    "examples": [
+      "출생=빈손, 죽음=빈손",
+      "물질은 일시적, 영적 가치는 영원함"
+    ]
+  }
+}

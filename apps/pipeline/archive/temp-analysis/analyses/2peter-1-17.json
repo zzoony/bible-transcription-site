@@ -1,0 +1,50 @@
+{
+  "reference": "2 Peter 1:17",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "영광 수여",
+      "original_text": "He received honor and glory from God the Father",
+      "korean_translation": "그가 하나님 아버지께 존귀와 영광을 받으실 때에",
+      "grammatical_explanation": "'received'는 과거 시제로 변화산에서의 사건. 'honor and glory'는 신적 인정"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "하나님의 음성",
+      "original_text": "when the voice came to him from the Majestic Glory, saying, \"This is my Son, whom I love; with him I am well pleased.\"",
+      "korean_translation": "지극한 영광 중에서 이러한 소리가 그에게 나기를 이는 내 사랑하는 아들이요 내 기뻐하는 자라 하셨느니라",
+      "grammatical_explanation": "시간절 'when the voice came'로 사건 설명. 직접 인용으로 하나님의 선언"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "Majestic Glory",
+      "ipa_pronunciation": "/məˈdʒestɪk ˈɡlɔːri/",
+      "korean_pronunciation": "머제스틱 글로리",
+      "part_of_speech": "명사구",
+      "definition_korean": "지극한 영광 (하나님의 쉐키나 영광)",
+      "usage_note": "하나님의 임재와 영광을 나타내는 표현"
+    },
+    {
+      "word": "well pleased",
+      "ipa_pronunciation": "/wel pliːzd/",
+      "korean_pronunciation": "웰 플리즈드",
+      "part_of_speech": "형용사구",
+      "definition_korean": "기뻐하시는, 만족하시는 (헬라어 eudokeo)",
+      "usage_note": "하나님의 완전한 승인과 기쁨"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "베드로는 변화산에서 들었던 하나님 아버지의 음성을 직접 인용합니다. '이는 내 사랑하는 아들이요 내 기뻐하는 자라'는 예수님의 세례 때와 변화산에서 하나님이 선언하신 말씀입니다(마 3:17, 17:5). 이는 시편 2:7('너는 내 아들이라')과 이사야 42:1('내가 기뻐하는 나의 종')을 결합한 것으로, 예수님이 메시아이자 하나님의 종이심을 확증합니다. '지극한 영광'(Majestic Glory)은 구약의 쉐키나 영광(하나님의 임재)을 가리킵니다. 베드로는 이 경험을 그리스도의 신성과 재림의 확실한 증거로 제시합니다.",
+    "cross_references": [
+      "Matthew 17:5 (이는 내 사랑하는 아들)",
+      "Matthew 3:17 (이는 내 사랑하는 아들이요)",
+      "Psalm 2:7 (너는 내 아들이라)",
+      "Isaiah 42:1 (내가 기뻐하는 나의 종)",
+      "Mark 9:7 (너희는 그의 말을 들으라)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "지극한 영광 중에서 이러한 소리가 그에게 나기를 이는 내 사랑하는 아들이요 내 기뻐하는 자라 하실 때에 그가 하나님 아버지께 존귀와 영광을 받으셨느니라."
+  }
+}

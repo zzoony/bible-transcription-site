@@ -1,0 +1,63 @@
+{
+  "reference": "Jude 1:23",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "불에서 구원하기",
+      "original_text": "save others by snatching them from the fire",
+      "korean_translation": "또 어떤 자를 불에서 끌어내어 구원하라",
+      "grammatical_explanation": "명령문 + by -ing (방법) + from 전치사구"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "두려움으로 긍휼히 여김",
+      "original_text": "to others show mercy, mixed with fear—hating even the clothing stained by corrupted flesh",
+      "korean_translation": "또 어떤 자를 두려움으로 긍휼히 여기되 육체로 더럽혀진 옷까지도 미워하라",
+      "grammatical_explanation": "명령문 + 분사구(mixed with fear) + 분사구(hating)"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "snatching",
+      "ipa_pronunciation": "/ˈsnætʃɪŋ/",
+      "korean_pronunciation": "스내칭",
+      "part_of_speech": "동사 (현재분사)",
+      "definition_korean": "낚아채다, 급히 붙잡다",
+      "usage_note": "헬라어 '하르파조(ἁρπάζω)'로, 급박하게 구출함"
+    },
+    {
+      "word": "stained",
+      "ipa_pronunciation": "/steɪnd/",
+      "korean_pronunciation": "스테인드",
+      "part_of_speech": "동사 (과거분사)",
+      "definition_korean": "얼룩진, 더럽혀진",
+      "usage_note": "죄로 오염됨을 상징"
+    },
+    {
+      "word": "corrupted flesh",
+      "ipa_pronunciation": "/kəˈrʌptɪd fleʃ/",
+      "korean_pronunciation": "커럽티드 플레쉬",
+      "part_of_speech": "명사구",
+      "definition_korean": "타락한 육체",
+      "usage_note": "죄악된 본성과 욕망"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "두 번째와 세 번째 그룹입니다. (2) 불에서 끌어내야 할 자들: 거짓 교사의 영향으로 심각한 위험에 처한 자들로, 급박한 구출이 필요합니다. '불에서'는 임박한 심판을 의미합니다(아모스 4:11, 스가랴 3:2). (3) 두려움으로 긍휼히 여길 자들: 아마도 이미 죄에 깊이 빠진 자들로, 그들을 도우되 극도로 조심해야 합니다. '육체로 더럽혀진 옷'은 죄의 오염을 상징하며, 구원하면서도 죄는 철저히 미워해야 합니다.",
+    "cross_references": [
+      "Amos 4:11",
+      "Zechariah 3:2-4",
+      "1 Corinthians 5:5",
+      "James 5:20"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "또 어떤 자를 불에서 끌어내어 구원하라. 또 어떤 자를 두려움으로 긍휼히 여기되 육체로 더럽혀진 옷까지도 미워하라",
+    "translation_notes": "세 그룹에 대한 차별화된 접근을 명확히 구분"
+  },
+  "special_explanation": {
+    "explanation_type": "목회적",
+    "content": "이 구절은 목회적 지혜를 보여줍니다. 모든 상황에 동일한 접근이 아니라, 각 사람의 상태에 맞는 대응이 필요합니다. '불에서 끌어내기'는 암모스 4:11과 스가랴 3:2의 이미지로, 긴급한 구출을 의미합니다. '육체로 더럽혀진 옷을 미워함'은 레위기 13-15장의 정결 법규를 상기시키며, 죄의 오염에 대한 경계를 강조합니다. 이는 죄인을 사랑하되 죄는 미워하라는 원리입니다. '두려움으로 긍휼히 여김'은 다른 사람을 도우려다 자신도 오염될 위험을 인식하는 것입니다.",
+    "examples": []
+  }
+}

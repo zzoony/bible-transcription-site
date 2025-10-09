@@ -1,0 +1,66 @@
+{
+  "reference": "1 Timothy 6:3",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "조건절 - 거짓 교사의 특징",
+      "original_text": "If anyone teaches otherwise and does not agree to the sound instruction of our Lord Jesus Christ and to godly teaching",
+      "korean_translation": "만약 누가 다르게 가르치며 우리 주 예수 그리스도의 건전한 교훈과 경건에 관한 가르침에 동의하지 않으면",
+      "grammatical_explanation": "조건절 - 거짓 교사의 정의"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "teaches otherwise",
+      "ipa_pronunciation": "/ˈtitʃɪz ˈʌðərˌwaɪz/",
+      "korean_pronunciation": "티치즈 아더와이즈",
+      "part_of_speech": "동사구",
+      "definition_korean": "다르게 가르치다, 다른 교리를 가르치다",
+      "usage_note": "그리스어 heterodidaskaleo - 다른 교리를 가르치다"
+    },
+    {
+      "word": "agree to",
+      "ipa_pronunciation": "/əˈɡri tu/",
+      "korean_pronunciation": "어그리 투",
+      "part_of_speech": "동사구",
+      "definition_korean": "동의하다, 받아들이다",
+      "usage_note": "그리스어 proserchomai - 가까이 오다, 동의하다"
+    },
+    {
+      "word": "sound instruction",
+      "ipa_pronunciation": "/saʊnd ɪnˈstrʌkʃən/",
+      "korean_pronunciation": "사운드 인스트럭션",
+      "part_of_speech": "명사구",
+      "definition_korean": "건전한 교훈, 건강한 가르침",
+      "usage_note": "그리스어 hygiainousin logois - 건강한 말씀들"
+    },
+    {
+      "word": "godly teaching",
+      "ipa_pronunciation": "/ˈɡɑdli ˈtitʃɪŋ/",
+      "korean_pronunciation": "갓리 티칭",
+      "part_of_speech": "명사구",
+      "definition_korean": "경건에 관한 가르침",
+      "usage_note": "그리스어 didaskalia kat eusebeian - 경건을 따르는 교리"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 거짓 교사를 식별하는 기준을 제시합니다. '다르게 가르치다'(heterodidaskaleo)는 1:3에서도 사용된 표현으로, 사도적 가르침에서 벗어난 교리를 의미합니다. 거짓 교사의 특징은 두 가지입니다. 첫째, '우리 주 예수 그리스도의 건전한 교훈'에 동의하지 않습니다. '건전한'(hygiainousin)은 의학 용어로 '건강한'을 의미하며, 바울은 목회서신에서 자주 사용합니다(1:10, 6:3; 딛 1:9, 2:1). 참된 교리는 교회를 건강하게 하지만, 거짓 교리는 병들게 합니다. 둘째, '경건에 관한 가르침'에 동의하지 않습니다. 참된 교리는 경건한 삶으로 이어지지만, 거짓 교리는 도덕적 타락을 초래합니다. 에베소의 거짓 교사들은 논쟁과 변론만 일으키고(6:4-5), 경건을 이득의 수단으로 삼았습니다(6:5). 이 구절은 6:4-5절과 연결되어 거짓 교사의 동기와 결과를 설명합니다.",
+    "cross_references": [
+      "1 Timothy 1:3-7 (거짓 교사 문제)",
+      "Titus 1:9 (건전한 교훈을 가르칠 것)",
+      "2 Timothy 4:3 (건전한 교훈을 듣지 않으려 함)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "만약 누가 다르게 가르치며, 우리 주 예수 그리스도의 건전한 교훈과 경건에 관한 가르침에 동의하지 않으면,",
+    "translation_notes": "거짓 교사의 두 가지 특징을 명확히 표현"
+  },
+  "special_explanation": {
+    "explanation_type": "건전한 교리의 중요성",
+    "content": "'건전한'(hygiainousin)은 의학 용어로, 참된 교리가 교회를 영적으로 건강하게 한다는 것을 강조합니다. 거짓 교리는 영적 질병을 일으키며, 논쟁, 시기, 분열을 초래합니다(6:4-5). 참된 교리는 두 가지 기준을 충족합니다. 첫째, 예수 그리스도의 가르침에 근거합니다. 둘째, 경건한 삶으로 이어집니다. 교리와 삶은 분리될 수 없으며, 바른 교리는 바른 삶을 낳습니다.",
+    "examples": [
+      "참된 교리는 교회를 건강하게 함",
+      "교리와 경건은 분리 불가"
+    ]
+  }
+}

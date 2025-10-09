@@ -1,0 +1,62 @@
+{
+  "reference": "Jude 1:12",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "애찬에서의 문제",
+      "original_text": "These people are blemishes at your love feasts, eating with you without the slightest qualm—shepherds who feed only themselves",
+      "korean_translation": "그들은 너희 애찬에 참여하여 두려움 없이 자기 몸만 먹이는 목자요 너희 가운데 암초라",
+      "grammatical_explanation": "These people are 주어 + 복합 명사구. 삽입구(eating with you without the slightest qualm) + 동격(shepherds who feed only themselves)"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "네 가지 무가치함의 은유",
+      "original_text": "They are clouds without rain, blown along by the wind; autumn trees, without fruit and uprooted—twice dead",
+      "korean_translation": "바람에 불려가는 물 없는 구름이요 죽기를 두 번 당하여 뿌리째 뽑힌 열매 없는 가을 나무요",
+      "grammatical_explanation": "네 개의 은유적 표현이 병렬로 나열. 각각 무가치함을 강조"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "blemishes",
+      "ipa_pronunciation": "/ˈblemɪʃɪz/",
+      "korean_pronunciation": "블레미시스",
+      "part_of_speech": "명사",
+      "definition_korean": "흠, 오점",
+      "usage_note": "일부 사본에서는 '암초'(hidden rocks)로 되어 있음"
+    },
+    {
+      "word": "love feasts",
+      "ipa_pronunciation": "/lʌv fiːsts/",
+      "korean_pronunciation": "러브 피스츠",
+      "part_of_speech": "명사구",
+      "definition_korean": "애찬, 사랑의 잔치",
+      "usage_note": "초대교회의 성찬식과 함께 행해진 공동 식사"
+    },
+    {
+      "word": "qualm",
+      "ipa_pronunciation": "/kwɑːm/",
+      "korean_pronunciation": "퀄",
+      "part_of_speech": "명사",
+      "definition_korean": "거리낌, 양심의 가책"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "유다는 6개의 생생한 은유로 거짓 교사들을 묘사합니다. (1) 애찬의 암초/오점: 교회 교제를 위협하고 더럽힘. (2) 자기만 먹이는 목자: 양 떼는 돌보지 않고 자신만 챙김(에스겔 34:2-3). (3) 물 없는 구름: 약속만 하고 실천 없음. (4) 열매 없는 나무: 영적으로 죽어 있음. '두 번 죽음'은 육체적 죽음과 영적 죽음, 또는 이미 죽었으나 뿌리까지 뽑혀 소생 불가능함을 의미합니다.",
+    "cross_references": [
+      "Ezekiel 34:2-8",
+      "2 Peter 2:13",
+      "Proverbs 25:14",
+      "Matthew 7:16-20"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "그들은 너희 애찬에 참여하여 두려움 없이 자기 몸만 먹이는 목자요 너희 가운데 암초라. 그들은 바람에 불려가는 물 없는 구름이요 죽기를 두 번 당하여 뿌리째 뽑힌 열매 없는 가을 나무요",
+    "translation_notes": "여섯 가지 은유를 자연스럽게 연결"
+  },
+  "special_explanation": {
+    "explanation_type": "문학적",
+    "content": "유다는 자연에서 가져온 강력한 이미지들을 사용합니다. 물 없는 구름은 팔레스타인의 가뭄에서 비를 기대하게 하지만 실망만 주는 구름을 가리킵니다. 가을 나무는 수확기에 열매가 없어 쓸모없음을 의미합니다. '두 번 죽음'(twice dead)은 이미 영적으로 죽었을 뿐 아니라 뿌리까지 뽑혀 회복 불가능함을 강조합니다. 이는 히브리서 6:4-6의 배교자들과 연결됩니다.",
+    "examples": []
+  }
+}

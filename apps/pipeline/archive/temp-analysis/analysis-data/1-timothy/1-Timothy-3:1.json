@@ -1,0 +1,88 @@
+{
+  "reference": "1 Timothy 3:1",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "신뢰성 있는 선언",
+      "original_text": "Here is a trustworthy saying",
+      "korean_translation": "이것은 신뢰할 만한 말입니다",
+      "grammatical_explanation": "도입 공식 - 중요한 진리를 소개하는 구문"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "조건부 진술",
+      "original_text": "Whoever aspires to be an overseer",
+      "korean_translation": "누구든지 감독자가 되기를 갈망하는 사람은",
+      "grammatical_explanation": "관계대명사 whoever를 사용한 일반적 조건절"
+    },
+    {
+      "sequence_order": 3,
+      "semantic_classification": "결과 진술",
+      "original_text": "desires a noble task",
+      "korean_translation": "고귀한 일을 소망하는 것입니다",
+      "grammatical_explanation": "주절 - 감독직의 가치를 긍정적으로 평가"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "trustworthy",
+      "ipa_pronunciation": "/ˈtrʌstˌwɜrði/",
+      "korean_pronunciation": "트러스트워디",
+      "part_of_speech": "형용사",
+      "definition_korean": "신뢰할 수 있는, 믿을 만한",
+      "usage_note": "초대교회의 확립된 가르침을 나타냄"
+    },
+    {
+      "word": "aspires",
+      "ipa_pronunciation": "/əˈspaɪərz/",
+      "korean_pronunciation": "어스파이어즈",
+      "part_of_speech": "동사",
+      "definition_korean": "열망하다, 갈망하다",
+      "usage_note": "강한 내적 동기와 목표 지향성을 나타냄"
+    },
+    {
+      "word": "overseer",
+      "ipa_pronunciation": "/ˈoʊvərˌsiər/",
+      "korean_pronunciation": "오우버시어",
+      "part_of_speech": "명사",
+      "definition_korean": "감독자, 감독 (교회 지도자)",
+      "usage_note": "그리스어 episkopos (επίσκοπος) - 교회의 영적 지도자를 의미"
+    },
+    {
+      "word": "noble",
+      "ipa_pronunciation": "/ˈnoʊbəl/",
+      "korean_pronunciation": "노우블",
+      "part_of_speech": "형용사",
+      "definition_korean": "고귀한, 훌륭한, 존귀한",
+      "usage_note": "감독직의 도덕적, 영적 가치를 강조"
+    },
+    {
+      "word": "task",
+      "ipa_pronunciation": "/tæsk/",
+      "korean_pronunciation": "태스크",
+      "part_of_speech": "명사",
+      "definition_korean": "일, 과업, 임무",
+      "usage_note": "감독직을 명예가 아닌 섬김의 책임으로 제시"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 디모데에게 교회 지도자의 자격 요건을 설명하기 전에, '신뢰할 만한 말'이라는 도입 공식을 사용하여 감독직의 본질을 정의합니다. 이 구절은 1세기 초대교회에서 교회 조직이 형성되던 시기의 중요한 진술입니다. '감독자'(overseer)는 그리스어 'episkopos'의 번역으로, 오늘날의 장로나 목회자에 해당하는 교회의 영적 지도자를 의미합니다. 바울은 감독직을 '고귀한 일'(noble task)로 규정함으로써, 이것이 단순한 명예나 권위의 자리가 아니라 섬김과 헌신을 요구하는 거룩한 책임임을 강조합니다. 이 선언은 3:2-7절에 이어지는 감독의 구체적 자격 요건들의 서론 역할을 하며, 교회 지도력의 중요성과 신성함을 부각시킵니다.",
+    "cross_references": [
+      "Titus 1:7-9 (감독의 자격 요건)",
+      "Acts 20:28 (감독으로서의 장로들)",
+      "1 Peter 5:1-4 (장로의 목양 책임)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "이것은 신뢰할 만한 말입니다. 누구든지 감독자가 되기를 열망한다면, 그는 고귀한 일을 소망하는 것입니다.",
+    "translation_notes": "aspires와 desires의 뉘앙스 차이를 '열망하다'와 '소망하다'로 구분하여 번역"
+  },
+  "special_explanation": {
+    "explanation_type": "신학적 배경",
+    "content": "'신뢰할 만한 말'(trustworthy saying)은 디모데전후서와 디도서에서 다섯 번 등장하는 독특한 공식입니다(1 Tim 1:15, 3:1, 4:9; 2 Tim 2:11; Titus 3:8). 이는 초대교회에서 이미 확립된 가르침이나 신앙고백을 인용할 때 사용되었습니다. 감독(overseer)과 장로(elder)는 신약성경에서 동일한 직분을 가리키는 상호 교환 가능한 용어입니다. '고귀한 일'이라는 표현은 감독직이 권력이나 특권의 자리가 아니라, 교회 공동체를 섬기는 영적 책임임을 분명히 합니다.",
+    "examples": [
+      "초대교회의 감독은 오늘날의 담임목사나 장로와 유사한 역할",
+      "감독직은 자격 요건이 엄격하지만 그만큼 가치 있는 섬김의 자리"
+    ]
+  }
+}

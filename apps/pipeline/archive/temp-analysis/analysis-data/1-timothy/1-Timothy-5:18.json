@@ -1,0 +1,81 @@
+{
+  "reference": "1 Timothy 5:18",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "성경 인용 - 구약 원리",
+      "original_text": "For Scripture says, 'Do not muzzle an ox while it is treading out the grain,'",
+      "korean_translation": "성경이 말하기를, '곡식을 밟아 떠는 소에게 망을 씌우지 말라'",
+      "grammatical_explanation": "신명기 25:4 인용 - 일하는 자의 권리"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "성경 인용 - 신약 원리",
+      "original_text": "and 'The worker deserves his wages.'",
+      "korean_translation": "그리고 '일꾼이 자기 삯을 받는 것이 마땅하다'고 하였습니다",
+      "grammatical_explanation": "누가복음 10:7 또는 예수님 말씀 인용"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "Scripture",
+      "ipa_pronunciation": "/ˈskrɪptʃər/",
+      "korean_pronunciation": "스크립처",
+      "part_of_speech": "명사",
+      "definition_korean": "성경, 경전",
+      "usage_note": "그리스어 graphe - 기록된 하나님의 말씀"
+    },
+    {
+      "word": "muzzle",
+      "ipa_pronunciation": "/ˈmʌzəl/",
+      "korean_pronunciation": "머즐",
+      "part_of_speech": "동사",
+      "definition_korean": "재갈을 물리다, 입을 막다",
+      "usage_note": "그리스어 phimoo - 입을 막다, 침묵시키다"
+    },
+    {
+      "word": "treading out",
+      "ipa_pronunciation": "/ˈtrɛdɪŋ aʊt/",
+      "korean_pronunciation": "트레딩 아웃",
+      "part_of_speech": "동사구",
+      "definition_korean": "밟아서 떨다, 타작하다",
+      "usage_note": "고대 곡식 타작 방법"
+    },
+    {
+      "word": "deserves",
+      "ipa_pronunciation": "/dɪˈzɜrvz/",
+      "korean_pronunciation": "디저브즈",
+      "part_of_speech": "동사",
+      "definition_korean": "받을 자격이 있다, 마땅하다",
+      "usage_note": "그리스어 axios - 가치 있는, 합당한"
+    },
+    {
+      "word": "wages",
+      "ipa_pronunciation": "/ˈweɪdʒɪz/",
+      "korean_pronunciation": "웨이지즈",
+      "part_of_speech": "명사",
+      "definition_korean": "임금, 삯",
+      "usage_note": "그리스어 misthos - 보수, 대가"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "바울은 5:17의 '배나 되는 존경' 원리를 구약과 신약 성경으로 뒷받침합니다. 첫 번째 인용은 신명기 25:4로, 곡식을 밟아 떠는 소에게 재갈을 씌우지 말라는 명령입니다. 바울은 고린도전서 9:9-10에서도 이 구절을 인용하며, 하나님이 단순히 소만 돌보시는 것이 아니라 일하는 자의 권리라는 원리를 가르치신다고 설명합니다. 두 번째 인용은 예수님의 말씀(눅 10:7) 또는 초대교회의 확립된 가르침입니다. 중요한 것은 바울이 두 번째 인용도 '성경'(Scripture)이라고 부른다는 점인데, 이는 신약 문서들이 이미 초대교회에서 권위 있는 성경으로 인정받고 있었음을 시사합니다. 이 두 인용은 장로들, 특히 전적으로 사역에 헌신하는 자들이 교회로부터 물질적 지원을 받는 것이 정당하며 성경적임을 확증합니다.",
+    "cross_references": [
+      "Deuteronomy 25:4 (소 재갈 금지)",
+      "Luke 10:7 (일꾼의 삯)",
+      "1 Corinthians 9:9-14 (사역자의 생활비 권리)"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "성경이 말하기를, '곡식을 밟아 떠는 소에게 재갈을 씌우지 말라'고 하였고, 또한 '일꾼이 자기 삯을 받는 것이 마땅하다'고 하였습니다.",
+    "translation_notes": "두 인용을 병렬로 연결"
+  },
+  "special_explanation": {
+    "explanation_type": "신약 문서의 권위",
+    "content": "이 구절은 신약 정경 형성의 중요한 증거입니다. 바울이 예수님의 말씀(눅 10:7)을 '성경'(graphe)이라고 부른 것은, 초대교회가 예수님의 가르침과 사도들의 글을 구약과 동등한 권위로 인정했음을 보여줍니다. 또한 이는 사역자에 대한 물질적 지원이 선택 사항이 아니라 성경적 명령임을 강력히 입증합니다. 하나님은 일하는 자가 그 수고의 열매를 누리도록 창조 질서를 설계하셨으며, 이는 영적 사역자에게도 적용됩니다.",
+    "examples": [
+      "신약 문서가 초대교회에서 성경으로 인정됨",
+      "사역자 지원은 성경적 명령, 선택 아님"
+    ]
+  }
+}

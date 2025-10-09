@@ -1,0 +1,72 @@
+{
+  "reference": "Jude 1:24",
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "하나님의 보호 능력",
+      "original_text": "To him who is able to keep you from stumbling",
+      "korean_translation": "능히 너희를 넘어지지 않게 지키시며",
+      "grammatical_explanation": "To him (간접목적어 전치) + 관계절(who is able to keep) + from -ing"
+    },
+    {
+      "sequence_order": 2,
+      "semantic_classification": "영광 중 흠 없이 세움",
+      "original_text": "and to present you before his glorious presence without fault and with great joy",
+      "korean_translation": "그의 영광 앞에 흠이 없이 즐거움으로 서게 하실 이에게",
+      "grammatical_explanation": "and to present (병렬 부정사) + 부사구들(before, without, with)"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "keep from stumbling",
+      "ipa_pronunciation": "/kiːp frəm ˈstʌmblɪŋ/",
+      "korean_pronunciation": "킵 프롬 스텀블링",
+      "part_of_speech": "동사구",
+      "definition_korean": "넘어지지 않게 지키다",
+      "usage_note": "헬라어 '아프타이스투스(ἀπταίστους)'로, 실족하지 않게 보호함"
+    },
+    {
+      "word": "present",
+      "ipa_pronunciation": "/prɪˈzent/",
+      "korean_pronunciation": "프리젠트",
+      "part_of_speech": "동사",
+      "definition_korean": "드리다, 세우다",
+      "usage_note": "법정이나 왕 앞에 공식적으로 모시는 것을 의미"
+    },
+    {
+      "word": "glorious presence",
+      "ipa_pronunciation": "/ˈɡlɔːriəs ˈprezns/",
+      "korean_pronunciation": "글로리어스 프레전스",
+      "part_of_speech": "명사구",
+      "definition_korean": "영광스러운 임재, 영광",
+      "usage_note": "하나님의 영광스러운 현존"
+    },
+    {
+      "word": "without fault",
+      "ipa_pronunciation": "/wɪˈðaʊt fɔːlt/",
+      "korean_pronunciation": "위다우트 폴트",
+      "part_of_speech": "전치사구",
+      "definition_korean": "흠이 없이",
+      "usage_note": "헬라어 '아모무스(ἀμώμους)'로, 제사 제물의 흠 없음을 연상"
+    }
+  ],
+  "contextual_explanation": {
+    "integrated_explanation": "유다는 장엄한 송영(doxology)으로 편지를 마무리합니다. 하나님의 두 가지 능력을 찬양합니다. (1) 현재: 넘어지지 않게 지키심. 거짓 교사들의 위협 가운데서도 신자들을 보호하십니다. (2) 미래: 영광 앞에 흠 없이 세우심. 최후 심판 때 우리를 그리스도와 같이 완전하게 만드셔서 기쁨으로 하나님 앞에 서게 하십니다. 이는 1절의 'kept for Jesus Christ'의 최종 성취입니다. 'without fault'는 제사 제물의 흠 없음을 상기시키며, 그리스도의 완전한 의로 우리를 덮으심을 의미합니다.",
+    "cross_references": [
+      "Ephesians 5:27",
+      "Colossians 1:22",
+      "Philippians 1:6",
+      "1 Peter 1:5",
+      "Romans 16:25"
+    ]
+  },
+  "korean_translation": {
+    "natural_translation": "능히 너희를 넘어지지 않게 지키시며 그의 영광 앞에 흠이 없이 즐거움으로 서게 하실 이에게",
+    "translation_notes": "송영의 장엄함을 유지하며 하나님의 두 가지 능력을 강조"
+  },
+  "special_explanation": {
+    "explanation_type": "신학적",
+    "content": "이 구절은 성도의 견인 교리(perseverance of the saints)의 핵심 구절입니다. 우리가 지켜지는 것(1절, 21절)은 궁극적으로 하나님의 능력에 달려 있습니다. '넘어지지 않게'(keep from stumbling)는 배교나 심각한 죄악에 빠지지 않게 보호하심을 의미합니다. '영광 앞에 흠 없이'(without fault before his glorious presence)는 에베소서 5:27과 골로새서 1:22의 교회의 최종 상태를 묘사합니다. '즐거움으로'(with great joy)는 구원의 완성 때 하나님과 성도 모두가 누리는 기쁨을 나타냅니다.",
+    "examples": []
+  }
+}
