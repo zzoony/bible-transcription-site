@@ -37,8 +37,8 @@ tmp/
 temp/
 
 # Next.js
-/.next/
-/out/
+.next/
+out/
 
 # Vercel
 .vercel
