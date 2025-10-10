@@ -43,6 +43,11 @@ interface BibleStructureResponse {
  */
 export async function GET(_request: NextRequest) {
   try {
+    // 환경변수 디버깅
+    console.log('🔑 ENV CHECK:')
+    console.log('  URL:', process.env.NEXT_PUBLIC_SUPABASE_URL?.substring(0, 30))
+    console.log('  KEY length:', process.env.SUPABASE_SERVICE_KEY?.length)
+
     const supabase = createServerClient()
 
     // books 테이블에서 모든 책 정보 가져오기 (order_number 순서로)
@@ -93,13 +98,37 @@ export async function GET(_request: NextRequest) {
       )
     }
 
-    // verses를 chapter별로 그룹화하기 위해 조회
-    const { data: versesData, error: versesError } = await supabase
-      .from('verses')
-      .select('chapter_id, verse_number')
-      .order('chapter_id')
-      .order('verse_number')
-      .returns<{ chapter_id: number; verse_number: number }[]>()
+    // verses를 chapter별로 그룹화하기 위해 조회 (모든 구절)
+    // 페이지네이션으로 모든 데이터 조회 (Supabase 기본 limit 우회)
+    let allVerses: { chapter_id: number; verse_number: number }[] = []
+    let hasMore = true
+    let offset = 0
+    const pageSize = 1000
+
+    while (hasMore) {
+      const { data: pageData, error: pageError } = await supabase
+        .from('verses')
+        .select('chapter_id, verse_number')
+        .order('chapter_id')
+        .order('verse_number')
+        .range(offset, offset + pageSize - 1)
+
+      if (pageError) {
+        console.error(`Verses 조회 오류 (offset: ${offset}):`, pageError)
+        break
+      }
+
+      if (!pageData || pageData.length === 0) {
+        hasMore = false
+      } else {
+        allVerses = allVerses.concat(pageData)
+        offset += pageSize
+        hasMore = pageData.length === pageSize
+      }
+    }
+
+    const versesData = allVerses
+    const versesError = null
 
     if (versesError) {
       console.error('Verses 조회 오류:', versesError)
@@ -109,6 +138,18 @@ export async function GET(_request: NextRequest) {
       )
     }
 
+    // 디버깅: 전체 verses 및 Genesis 확인
+    console.log('📊 전체 verses 개수:', versesData?.length || 0)
+    if (versesData && versesData.length > 0) {
+      console.log('   첫 3개 chapter_id:', versesData.slice(0, 3).map(v => v.chapter_id))
+      // 고유한 chapter_id 목록 (처음 10개)
+      const uniqueChapterIds = [...new Set(versesData.map(v => v.chapter_id))].slice(0, 10)
+      console.log('   고유 chapter_id (처음 10개):', uniqueChapterIds)
+    }
+
+    const genesisVersesTest = versesData?.filter((v) => v.chapter_id === 621)
+    console.log('📖 Genesis chapter 621 verses:', genesisVersesTest?.length || 0)
+
     // verses를 chapter_id로 그룹화
     const versesByChapter = new Map<number, number[]>()
     versesData?.forEach((verse) => {
@@ -117,6 +158,9 @@ export async function GET(_request: NextRequest) {
       }
       versesByChapter.get(verse.chapter_id)!.push(verse.verse_number)
     })
+
+    console.log('📊 전체 Map 크기:', versesByChapter.size)
+    console.log('📖 Genesis chapter 621:', versesByChapter.get(621))
 
     // chapters를 book_id로 그룹화
     const chaptersByBook = new Map<number, typeof chaptersData>()

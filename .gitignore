@@ -35,10 +35,11 @@ coverage/
 .cache/
 tmp/
 temp/
+archive/
 
 # Next.js
-/.next/
-/out/
+.next/
+out/
 
 # Vercel
 .vercel
