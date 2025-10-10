@@ -18,6 +18,8 @@ export interface Book {
   id: number
   name: string
   nameKorean: string
+  testament: string
+  abbreviation: string
   chapters: Chapter[]
 }
 

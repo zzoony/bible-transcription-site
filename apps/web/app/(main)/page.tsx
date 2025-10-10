@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { SearchBar } from '@/components/search/SearchBar'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { BibleNavigator } from '@/components/navigation/BibleNavigator'
+import { BibleBookGrid } from '@/components/navigation/BibleBookGrid'
 
 export default function HomePage() {
   const router = useRouter()
@@ -103,9 +103,9 @@ export default function HomePage() {
         </Card>
       </div>
 
-      {/* Bible Navigator */}
+      {/* Bible Book Grid */}
       <div className="mb-12">
-        <BibleNavigator onNavigate={handleNavigate} />
+        <BibleBookGrid onNavigate={handleNavigate} />
       </div>
 
       {/* Recent Searches */}
