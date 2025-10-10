@@ -63,7 +63,7 @@ export async function GET(_request: NextRequest) {
           name_english: string
           name_korean: string
           order_number: number
-          testament: string
+          testament: number
           abbreviation: string
         }[]
       >()
@@ -189,7 +189,7 @@ export async function GET(_request: NextRequest) {
       })
 
       // testament 숫자를 문자열로 변환 (1 → "Old", 2 → "New")
-      const testamentString = book.testament === '1' || book.testament === 1 ? 'Old' : 'New'
+      const testamentString = book.testament === 1 ? 'Old' : 'New'
 
       return {
         id: book.id,
