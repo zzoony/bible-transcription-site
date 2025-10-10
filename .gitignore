@@ -35,6 +35,7 @@ coverage/
 .cache/
 tmp/
 temp/
+archive/
 
 # Next.js
 .next/
