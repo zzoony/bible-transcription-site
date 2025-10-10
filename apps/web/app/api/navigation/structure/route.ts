@@ -17,6 +17,8 @@ interface BookStructure {
   id: number
   name: string
   nameKorean: string
+  testament: string
+  abbreviation: string
   chapters: ChapterStructure[]
 }
 
@@ -53,7 +55,7 @@ export async function GET(_request: NextRequest) {
     // books 테이블에서 모든 책 정보 가져오기 (order_number 순서로)
     const { data: books, error: booksError } = await supabase
       .from('books')
-      .select('id, name_english, name_korean, order_number, testament')
+      .select('id, name_english, name_korean, order_number, testament, abbreviation')
       .order('order_number')
       .returns<
         {
@@ -62,6 +64,7 @@ export async function GET(_request: NextRequest) {
           name_korean: string
           order_number: number
           testament: string
+          abbreviation: string
         }[]
       >()
 
@@ -185,10 +188,15 @@ export async function GET(_request: NextRequest) {
         }
       })
 
+      // testament 숫자를 문자열로 변환 (1 → "Old", 2 → "New")
+      const testamentString = book.testament === '1' || book.testament === 1 ? 'Old' : 'New'
+
       return {
         id: book.id,
         name: book.name_english,
         nameKorean: book.name_korean,
+        testament: testamentString,
+        abbreviation: book.abbreviation,
         chapters,
       }
     })
