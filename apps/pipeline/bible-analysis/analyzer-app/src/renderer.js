@@ -638,8 +638,9 @@ function finishAnalysis() {
 
     message += `\n💡 "실패한 것만 재분석" 버튼을 클릭하여 재시도할 수 있습니다.`;
 
-    // 재분석 버튼 표시
+    // 재분석 버튼 표시 및 활성화
     document.getElementById('retryFailedBtn').style.display = 'inline-block';
+    document.getElementById('retryFailedBtn').disabled = false;
   }
 
   alert(message);
