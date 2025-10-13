@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>성경 분석 대시보드</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 헤더 -->
+    <header class="header">
+      <h1>성경 분석 대시보드</h1>
+    </header>
+
+    <!-- 전체 진행도 -->
+    <section class="overall-progress">
+      <h2>📊 전체 진행도</h2>
+      <div class="progress-bar">
+        <div class="progress-fill" id="overallProgress"></div>
+        <span class="progress-text" id="overallProgressText">0%</span>
+      </div>
+      <div class="progress-stats">
+        <span>완료: <strong id="completedVerses">0</strong> / 전체: <strong id="totalVerses">31,102</strong> 구절</span>
+      </div>
+    </section>
+
+    <!-- 필터 및 컨트롤 -->
+    <section class="controls">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">전체</button>
+        <button class="filter-btn" data-filter="old">구약 (39권)</button>
+        <button class="filter-btn" data-filter="new">신약 (27권)</button>
+      </div>
+      <div class="control-buttons">
+        <button class="btn btn-secondary" id="selectAllBtn">전체 선택</button>
+        <button class="btn btn-secondary" id="deselectAllBtn">선택 해제</button>
+        <button class="btn btn-secondary" id="refreshBtn">🔄 새로고침</button>
+      </div>
+    </section>
+
+    <!-- 성경 카드 그리드 -->
+    <section class="books-grid" id="booksGrid">
+      <!-- 카드들이 동적으로 생성됩니다 -->
+    </section>
+
+    <!-- 선택 정보 및 실행 버튼 -->
+    <section class="action-panel">
+      <div class="selection-info">
+        <div class="selection-text" id="selectionText">선택된 책이 없습니다</div>
+        <div class="estimate-text" id="estimateText"></div>
+      </div>
+      <div class="action-buttons">
+        <button class="btn btn-primary btn-large" id="startBtn" disabled>🚀 자동 분석 시작</button>
+        <button class="btn btn-secondary btn-large" id="cancelBtn" style="display: none;">⏹️ 중단</button>
+        <button class="btn btn-warning btn-large" id="retryFailedBtn" style="display: none;">🔄 실패한 것만 재분석</button>
+      </div>
+    </section>
+
+    <!-- 분석 진행 패널 (숨김 상태로 시작) -->
+    <section class="analysis-panel" id="analysisPanel" style="display: none;">
+      <h3>🔄 자동 분석 진행 중...</h3>
+      <div class="current-batch">
+        <p><strong>현재:</strong> <span id="currentBook">-</span> <span id="currentBatch">-</span></p>
+        <div class="progress-bar">
+          <div class="progress-fill" id="batchProgress"></div>
+          <span class="progress-text" id="batchProgressText">0%</span>
+        </div>
+      </div>
+      <div class="analysis-stats">
+        <div class="stat">
+          <span class="stat-label">🕐 진행 시간:</span>
+          <span class="stat-value" id="elapsedTime">00:00:00</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">⏱️ 남은 시간:</span>
+          <span class="stat-value" id="remainingTime">-</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">✅ 완료:</span>
+          <span class="stat-value" id="completedCount">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">🔄 처리 중:</span>
+          <span class="stat-value" id="processingCount">0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">⏳ 대기:</span>
+          <span class="stat-value" id="waitingCount">0</span>
+        </div>
+        <div class="stat" style="display: none;">
+          <span class="stat-label">❌ 실패:</span>
+          <span class="stat-value" id="failedCount" style="color: #e74c3c;">0</span>
+        </div>
+      </div>
+      <div class="recent-completions">
+        <h4>📝 최근 완료</h4>
+        <ul id="recentList">
+          <li>대기 중...</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

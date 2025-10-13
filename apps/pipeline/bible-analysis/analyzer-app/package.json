@@ -1,0 +1,17 @@
+{
+  "name": "bible-analyzer",
+  "version": "1.0.0",
+  "description": "성경 구절 자동 분석 도구",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --enable-logging"
+  },
+  "keywords": ["bible", "analyzer", "electron"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0"
+  },
+  "dependencies": {}
+}
