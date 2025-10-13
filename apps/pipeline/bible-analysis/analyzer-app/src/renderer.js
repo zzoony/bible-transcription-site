@@ -35,9 +35,16 @@ let failedVerses = []; // 실패한 구절 목록
 // 배치 크기 설정 (안정성 우선)
 const BATCH_SIZE = 10; // 안정적인 동시 실행 수
 
+// 버전 정보
+const APP_VERSION = '1.0.3';
+
 // 초기화
 async function init() {
   try {
+    // 버전 표시
+    document.getElementById('versionBadge').textContent = `v${APP_VERSION}`;
+    console.log(`📱 성경 분석 앱 v${APP_VERSION} 시작`);
+
     // 성경 구조 데이터 로드
     const structureData = fs.readFileSync(path.join(__dirname, 'bible-structure.json'), 'utf8');
     bibleStructure = JSON.parse(structureData);
