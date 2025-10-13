@@ -403,12 +403,21 @@ async function processBatches() {
       const result = await analyzeVerse(verse);
 
       if (result.success) {
-        // 성공 - JSON 파일 대기
-        await waitForVerseCompletion(verse);
-        analysisController.completed.push(verse);
+        // 성공 - JSON 파일 생성 확인
+        const fileCreated = await waitForVerseCompletion(verse);
 
-        // 최근 완료 업데이트
-        updateRecentCompletions([verse]);
+        if (fileCreated) {
+          analysisController.completed.push(verse);
+          // 최근 완료 업데이트
+          updateRecentCompletions([verse]);
+        } else {
+          // 파일이 생성되지 않음 - 실패로 처리
+          failedVerses.push({
+            ...verse,
+            error: 'JSON 파일이 생성되지 않았습니다'
+          });
+          console.error(`💥 파일 생성 실패: ${verse.reference}`);
+        }
       } else {
         // 실패 처리 - failedVerses에 추가
         failedVerses.push({
@@ -475,7 +484,7 @@ function updateUI(completedCount, totalCount, activeCount) {
 
 // 단일 구절 완료 대기
 async function waitForVerseCompletion(verse) {
-  const maxWaitTime = 60 * 1000; // 최대 1분
+  const maxWaitTime = 120 * 1000; // 최대 2분
   const checkInterval = 2 * 1000; // 2초마다 체크
   const startTime = Date.now();
 
