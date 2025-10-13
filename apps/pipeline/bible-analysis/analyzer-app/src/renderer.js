@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
+const crypto = require('crypto');
 
 // 경로 설정
 const BASE_DIR = path.join(__dirname, '..', '..');
@@ -31,12 +32,14 @@ let selectedBooks = new Set();
 let isAnalyzing = false;
 let analysisController = null;
 let failedVerses = []; // 실패한 구절 목록
+let activeProcesses = new Map(); // 실행 중인 프로세스 추적
+let progressUpdateInterval = null; // 진행도 업데이트 인터벌
 
 // 배치 크기 설정 (안정성 우선)
 const BATCH_SIZE = 10; // 안정적인 동시 실행 수
 
 // 버전 정보
-const APP_VERSION = '1.0.3';
+const APP_VERSION = '1.0.4';
 
 // 초기화
 async function init() {
@@ -61,8 +64,8 @@ async function init() {
     // 이벤트 리스너 설정
     setupEventListeners();
 
-    // 5초마다 진행도 업데이트
-    setInterval(updateProgress, 5000);
+    // 5초마다 진행도 업데이트 (인터벌 참조 저장)
+    progressUpdateInterval = setInterval(updateProgress, 5000);
 
     console.log('앱 초기화 완료');
   } catch (error) {
@@ -519,9 +522,10 @@ async function analyzeVerse(verse, retryCount = 0) {
   return new Promise((resolve, reject) => {
     console.log(`🚀 분석 시작: ${verse.reference}${retryCount > 0 ? ` (재시도 ${retryCount}/${maxRetries})` : ''}`);
 
-    // 프롬프트를 임시 파일로 저장
+    // 각 구절마다 고유한 임시 파일 생성 (경쟁 조건 방지)
+    const tempId = crypto.randomBytes(8).toString('hex');
     const fullPrompt = `${verse.reference}\n\n${promptContent}`;
-    const tempPromptPath = path.join(BASE_DIR, '.temp_prompt.txt');
+    const tempPromptPath = path.join(BASE_DIR, `.temp_prompt_${tempId}.txt`);
     fs.writeFileSync(tempPromptPath, fullPrompt, 'utf8');
 
     // claude를 stdin으로 실행하되 도구를 명시적 허용
@@ -529,6 +533,9 @@ async function analyzeVerse(verse, retryCount = 0) {
       cwd: BASE_DIR,
       stdio: ['ignore', 'pipe', 'pipe']
     });
+
+    // 프로세스 추적 (정리용)
+    activeProcesses.set(verse.reference, { process, tempFile: tempPromptPath });
 
     // 출력 로깅
     let output = '';
@@ -550,6 +557,17 @@ async function analyzeVerse(verse, retryCount = 0) {
     });
 
     process.on('close', async (code) => {
+      // 프로세스 정리
+      const processInfo = activeProcesses.get(verse.reference);
+      if (processInfo) {
+        try {
+          fs.unlinkSync(processInfo.tempFile); // 임시 파일 삭제
+        } catch (err) {
+          // 무시 (이미 삭제되었을 수 있음)
+        }
+        activeProcesses.delete(verse.reference);
+      }
+
       if (code === 0) {
         console.log(`✅ 완료: ${verse.reference}`);
         resolve({ success: true, verse });
@@ -614,6 +632,19 @@ function stopAnalysis() {
   if (!confirm('분석을 중단하시겠습니까?')) return;
 
   isAnalyzing = false;
+
+  // 모든 실행 중인 프로세스 종료
+  for (const [reference, processInfo] of activeProcesses.entries()) {
+    console.log(`🛑 프로세스 종료: ${reference}`);
+    try {
+      processInfo.process.kill('SIGTERM');
+      fs.unlinkSync(processInfo.tempFile); // 임시 파일 삭제
+    } catch (err) {
+      console.error(`프로세스 종료 오류 (${reference}):`, err.message);
+    }
+  }
+  activeProcesses.clear();
+
   analysisController = null;
 
   document.getElementById('startBtn').disabled = false;
@@ -626,6 +657,17 @@ function stopAnalysis() {
 // 분석 완료
 function finishAnalysis() {
   isAnalyzing = false;
+
+  // 남아있는 프로세스 정리
+  for (const [reference, processInfo] of activeProcesses.entries()) {
+    console.warn(`⚠️ 정리: 미완료 프로세스 ${reference}`);
+    try {
+      fs.unlinkSync(processInfo.tempFile);
+    } catch (err) {
+      // 무시
+    }
+  }
+  activeProcesses.clear();
 
   document.getElementById('startBtn').disabled = false;
   document.getElementById('cancelBtn').style.display = 'none';

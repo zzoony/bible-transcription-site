@@ -1,6 +1,6 @@
 {
   "name": "bible-analyzer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "성경 구절 자동 분석 도구",
   "main": "src/main.js",
   "scripts": {

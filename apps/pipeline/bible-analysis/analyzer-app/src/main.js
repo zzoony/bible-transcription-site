@@ -13,7 +13,7 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false
     },
-    titleBarStyle: 'hidden',  // hiddenInset → hidden으로 변경
+    titleBarStyle: 'hidden',  // hiddenInset → hidden으로 변경 (창 드래그 기능 개선)
     backgroundColor: '#f5f5f5',
     trafficLightPosition: { x: 15, y: 15 }  // 신호등 버튼 위치
   });
