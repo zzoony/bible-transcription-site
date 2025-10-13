@@ -513,11 +513,12 @@ async function analyzeVerse(verse, retryCount = 0) {
     console.log(`🚀 분석 시작: ${verse.reference}${retryCount > 0 ? ` (재시도 ${retryCount}/${maxRetries})` : ''}`);
 
     // 프롬프트를 임시 파일로 저장
+    const fullPrompt = `${verse.reference}\n\n${promptContent}`;
     const tempPromptPath = path.join(BASE_DIR, '.temp_prompt.txt');
-    fs.writeFileSync(tempPromptPath, `${verse.reference}\n\n${promptContent}`, 'utf8');
+    fs.writeFileSync(tempPromptPath, fullPrompt, 'utf8');
 
-    // claude를 백그라운드에서 직접 실행 (터미널 없음)
-    const process = spawn('bash', ['-c', `cat "${tempPromptPath}" | claude --dangerously-skip-permissions`], {
+    // claude를 stdin으로 실행하되 도구를 명시적 허용
+    const process = spawn('bash', ['-c', `cat "${tempPromptPath}" | claude --allowedTools Write Read --print`], {
       cwd: BASE_DIR,
       stdio: ['ignore', 'pipe', 'pipe']
     });
@@ -525,7 +526,12 @@ async function analyzeVerse(verse, retryCount = 0) {
     // 출력 로깅
     let output = '';
     process.stdout.on('data', (data) => {
-      output += data.toString();
+      const chunk = data.toString();
+      output += chunk;
+      // 실제 출력 확인을 위한 로그 (처음 500자만)
+      if (output.length < 500) {
+        console.log(`📝 Claude 출력 (${verse.reference}): ${chunk.substring(0, 200)}...`);
+      }
     });
 
     process.stderr.on('data', (data) => {
