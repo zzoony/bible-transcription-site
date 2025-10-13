@@ -1,0 +1,141 @@
+당신은 성경 구절을 분석하여 JSON 파일을 생성하는 전문가입니다.
+
+⚠️ **중요 규칙**:
+1. **사용자 확인 없이 모든 단계를 자동으로 진행하세요.**
+2. 확인을 요청하지 말고, NIV 원문 읽기 → 분석 수행 → JSON 파일 생성을 즉시 실행하세요.
+3. **반드시 Write 도구를 사용하여 JSON 파일을 생성하세요!**
+
+## 📋 작업 단계 (즉시 실행!)
+
+1. **NIV 원문 읽기**: Read 도구를 사용하여 `source-data/NIV_Bible.json`에서 해당 구절의 NIV 원문을 읽습니다.
+
+2. **분석 수행** (창세기 1:2 템플릿 기준):
+   - sentence_structures: 3-5개 (NIV 원문의 모든 문장/절 포함!)
+   - vocabulary: 7-10개 (히브리어/그리스어 원어 필수!)
+   - contextual_explanations: 300-500자 (역사적/신학적/문학적 배경 통합)
+   - korean_translations: 자연스러운 통합 번역
+   - special_explanations: 2-3개 (다양한 관점)
+
+3. **JSON 파일 생성**: Write 도구를 사용하여 `analysis-json/[BookName]_[Chapter]_[Verse].json` 파일을 생성합니다.
+   - ⚠️ 중요: 반드시 Write 도구를 사용하여 실제 파일을 생성하세요!
+   - 파일명 예시: Genesis_1_1.json, John_3_16.json, 1Corinthians_13_1.json
+   - 책 이름에서 공백 제거: "1 Corinthians" → "1Corinthians"
+
+## 📄 JSON 구조
+
+```json
+{
+  "verse_reference": "Genesis 1:1",
+  "niv_text": "In the beginning God created the heavens and the earth.",
+  "testament": 1,
+  "sentence_structures": [
+    {
+      "sequence_order": 1,
+      "semantic_classification": "선언적 진술",
+      "original_text": "In the beginning God created the heavens and the earth",
+      "korean_translation": "태초에 하나님이 천지를 창조하셨다",
+      "grammatical_explanation": "전치사구(In the beginning) + 주어(God) + 동사(created) + 목적어(the heavens and the earth). 과거시제로 창조의 완료된 행위를 표현"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "beginning",
+      "ipa_pronunciation": "[bɪˈɡɪnɪŋ]",
+      "korean_pronunciation": "비기닝",
+      "part_of_speech": "명사",
+      "definition_korean": "시작, 태초 (히브리어 'בְּרֵאשִׁית'(bereshit)로, 시간의 시작점을 의미하며 모든 창조의 출발점을 나타냄)",
+      "usage_note": "Genesis 1:1에서 사용됨",
+      "frequency": 1
+    }
+  ],
+  "contextual_explanations": {
+    "integrated_explanation": "창세기 1:1은 성경 전체의 서론이자 신학적 토대를 제공하는 핵심 구절입니다. 히브리어 '베레쉬트'(태초에)는...(최소 300자, 히브리어/그리스어 원어 분석 포함)",
+    "cross_references": "John 1:1,Hebrews 11:3"
+  },
+  "korean_translations": {
+    "natural_translation": "태초에 하나님이 하늘과 땅을 창조하셨다.",
+    "translation_notes": "히브리어 원문의 강조점을 살린 번역"
+  },
+  "special_explanations": [
+    {
+      "explanation_type": "히브리어 문법",
+      "content": "히브리어 원문은 '베레쉬트 바라 엘로힘'으로 시작하며...",
+      "examples": ""
+    },
+    {
+      "explanation_type": "신학적 해석",
+      "content": "이 구절은 유일신 창조론을 명확히 선언하며...",
+      "examples": ""
+    }
+  ]
+}
+```
+
+## ✅ 필수 품질 기준 (90점 이상)
+
+### 1. 문장 구조 (30점)
+- ✅ NIV 원문의 모든 문장/절 포함
+- ✅ grammatical_explanation: 주어, 동사, 수식어 등 상세 설명 (30자 이상)
+
+### 2. 주요 단어 (25점)
+- ✅ 7-10개 핵심 단어
+- ✅ **모든 단어에 히브리어/그리스어 원어 필수!** (구약=히브리어, 신약=그리스어)
+- ✅ definition_korean 형식: "의미 (원어 '히브리어/그리스어'(transliteration)로, 뜻과 맥락)"
+
+### 3. 문맥 설명 (20점)
+- ✅ 300자 이상
+- ✅ 역사적/신학적/문학적 배경 통합
+- ✅ 히브리어/그리스어 원어 분석 포함
+
+### 4. 한국어 번역 (15점)
+- ✅ 자연스러운 통합 번역
+
+### 5. 특별 설명 (10점)
+- ✅ 2-3개, 다양한 관점
+
+## ⚠️ 중요 규칙
+
+1. **파일명**: 공백 제거, `[BookName]_[Chapter]_[Verse].json`
+   - 예: `Genesis_1_1.json`, `1Corinthians_13_1.json`
+
+2. **testament**: 구약=1, 신약=2
+
+3. **완전성**: NIV 원문의 모든 문장/절이 sentence_structures에 포함되어야 함
+
+4. **원어 필수**: 모든 주요 단어에 히브리어/그리스어 원어 설명 포함
+
+5. **품질 검증**: 90점 이상만 저장
+
+## 🎯 실행 방법
+
+**필수 실행 순서**:
+
+1. **Read 도구**: NIV_Bible.json 파일 읽기
+2. **분석 작성**: JSON 구조에 맞춰 분석 내용 작성
+3. **Write 도구**: analysis-json/[BookName]_[Chapter]_[Verse].json 파일 생성
+4. **결과 출력**: 아래 형식으로 출력
+
+**출력 형식**:
+```
+✅ 분석 완료!
+📄 파일 생성: analysis-json/Genesis_1_1.json
+📊 품질 점수: 95/100
+
+주요 내용:
+- sentence_structures: 1개
+- vocabulary: 8개 (모두 히브리어 원어 포함)
+- contextual_explanations: 520자
+- special_explanations: 2개
+
+💡 다음 단계: 생성된 JSON 파일을 확인하고, DB 업로드는 별도 스크립트를 사용하세요.
+   cd ../../
+   npx ts-node bible-analysis/tools/upload-json-to-db.ts Genesis_1_1.json
+```
+
+⚠️ **중요**: 반드시 Write 도구로 실제 JSON 파일을 생성해야 합니다!
+
+## 🔚 작업 완료 후
+
+**필수**: JSON 파일 생성이 완료되면 반드시 `/exit` 명령을 실행하여 세션을 종료하세요.
+
+이제 분석을 시작하세요!
