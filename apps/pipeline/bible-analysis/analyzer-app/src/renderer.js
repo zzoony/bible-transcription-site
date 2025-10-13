@@ -32,8 +32,8 @@ let isAnalyzing = false;
 let analysisController = null;
 let failedVerses = []; // 실패한 구절 목록
 
-// 배치 크기 설정 (Mac Mini M4 16GB 최적화)
-const BATCH_SIZE = 20; // 10 → 20으로 변경 (2배 속도)
+// 배치 크기 설정 (안정성 우선)
+const BATCH_SIZE = 10; // 안정적인 동시 실행 수
 
 // 초기화
 async function init() {
@@ -484,7 +484,7 @@ function updateUI(completedCount, totalCount, activeCount) {
 
 // 단일 구절 완료 대기
 async function waitForVerseCompletion(verse) {
-  const maxWaitTime = 120 * 1000; // 최대 2분
+  const maxWaitTime = 300 * 1000; // 최대 5분 (복잡한 구절 대응)
   const checkInterval = 2 * 1000; // 2초마다 체크
   const startTime = Date.now();
 
