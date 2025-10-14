@@ -4,14 +4,16 @@ DB 작업을 위한 환경 변수 설정 방법을 설명합니다.
 
 ## 📍 환경 변수 파일 위치
 
+**실제 사용 중인 파일**: 프로젝트 루트의 `.env` 파일
+
 ```
 /Users/peter/Dev/bible-transcription-site/
-└── apps/
-    └── web/
-        └── .env.local  ← 여기!
+└── .env  ← 여기!
 ```
 
-**절대 경로**: `/Users/peter/Dev/bible-transcription-site/apps/web/.env.local`
+**절대 경로**: `/Users/peter/Dev/bible-transcription-site/.env`
+
+**참고**: `apps/web/.env.local`이 아닌 프로젝트 루트의 `.env` 파일을 사용합니다.
 
 ## 🔑 필수 환경 변수
 
@@ -47,7 +49,7 @@ import * as path from 'path';
 
 // ⚠️ 중요: 정확한 경로 지정!
 dotenv.config({
-  path: path.resolve(__dirname, '../../../../apps/web/.env.local')
+  path: path.resolve(__dirname, '../../../../.env')  // 프로젝트 루트의 .env
 });
 
 // Supabase 클라이언트 생성
@@ -63,9 +65,9 @@ const supabase = createClient(
 
 | 스크립트 위치 | 상대 경로 |
 |-------------|----------|
-| `apps/pipeline/scripts/*.ts` | `../../../apps/web/.env.local` |
-| `apps/pipeline/bible-analysis/tools/*.ts` | `../../../../apps/web/.env.local` |
-| `apps/pipeline/bible-analysis/database/*.ts` | `../../../../apps/web/.env.local` |
+| `apps/pipeline/scripts/*.ts` | `../../.env` |
+| `apps/pipeline/bible-analysis/tools/*.ts` | `../../../../.env` |
+| `apps/pipeline/bible-analysis/database/*.ts` | `../../../../.env` |
 
 **팁**: `__dirname`을 사용하면 현재 파일의 디렉토리 기준으로 상대 경로를 계산합니다.
 
@@ -78,7 +80,7 @@ const supabase = createClient(
 import * as dotenv from 'dotenv';
 import * as path from 'path';
 
-dotenv.config({ path: path.resolve(__dirname, '../../../../apps/web/.env.local') });
+dotenv.config({ path: path.resolve(__dirname, '../../../../.env') });
 
 console.log('환경 변수 확인:');
 console.log('✅ NEXT_PUBLIC_SUPABASE_URL:', process.env.NEXT_PUBLIC_SUPABASE_URL ? '설정됨' : '❌ 누락!');
@@ -116,11 +118,11 @@ npx ts-node test-env.ts
 ### 2. 명령어로 확인
 
 ```bash
-# .env.local 파일 존재 확인
-ls -la apps/web/.env.local
+# .env 파일 존재 확인
+ls -la .env
 
 # 환경 변수 내용 확인 (민감 정보 포함!)
-cat apps/web/.env.local | grep SUPABASE
+cat .env | grep SUPABASE
 ```
 
 ## 🔧 Supabase CLI 연결
@@ -168,7 +170,7 @@ const supabase = createClient(...);  // dotenv.config() 없이 사용
 // ✅ 올바른 방법
 import * as dotenv from 'dotenv';
 import * as path from 'path';
-dotenv.config({ path: path.resolve(__dirname, '../../../../apps/web/.env.local') });
+dotenv.config({ path: path.resolve(__dirname, '../../../../.env') });
 
 import { createClient } from '@supabase/supabase-js';
 const supabase = createClient(

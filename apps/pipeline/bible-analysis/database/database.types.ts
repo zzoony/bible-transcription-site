@@ -271,7 +271,7 @@ export interface ContextualExplanationInsert {
   id?: number;
   verse_id: number;
   integrated_explanation: string;
-  cross_references?: string;
+  cross_references?: string[];  // 배열 타입으로 수정
   created_at?: string;
 }
 

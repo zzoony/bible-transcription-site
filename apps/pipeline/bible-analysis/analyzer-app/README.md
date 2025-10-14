@@ -188,12 +188,22 @@ const BATCH_SIZE = 10; // 원하는 크기로 변경
 npm run dev
 ```
 
+## 📚 관련 문서
+
+- **스크립트 가이드**: `docs/SCRIPTS_GUIDE.md`
+  - analyzer-app 사용법
+  - JSON → DB 업로드 방법
+  - NIV 원문 조회 도구
+  - 품질 평가 도구
+  - 전체 워크플로우
+
 ## 🆘 지원
 
 문제가 발생하면:
 1. 콘솔 로그 확인 (`npm run dev`)
 2. `analysis-json/` 폴더 확인
 3. 스크립트 실행 권한 확인
+4. 스크립트 가이드 참조 (`docs/SCRIPTS_GUIDE.md`)
 
 ---
 
