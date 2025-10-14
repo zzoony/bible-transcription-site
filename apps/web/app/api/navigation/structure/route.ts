@@ -112,6 +112,7 @@ export async function GET(_request: NextRequest) {
       const { data: pageData, error: pageError } = await supabase
         .from('verses')
         .select('chapter_id, verse_number')
+        .eq('analysis_completed', true)
         .order('chapter_id')
         .order('verse_number')
         .range(offset, offset + pageSize - 1)
@@ -207,7 +208,9 @@ export async function GET(_request: NextRequest) {
 
     return NextResponse.json(response, {
       headers: {
-        'Cache-Control': 'public, max-age=3600, s-maxage=7200',
+        // 캐시 시간 단축: 5분 브라우저 캐시, 10분 서버 캐시
+        // DB 업데이트 후 빠른 반영을 위해
+        'Cache-Control': 'public, max-age=300, s-maxage=600, stale-while-revalidate=60',
       },
     })
   } catch (error) {
