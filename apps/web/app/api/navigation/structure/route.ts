@@ -208,9 +208,9 @@ export async function GET(_request: NextRequest) {
 
     return NextResponse.json(response, {
       headers: {
-        // 캐시 시간 단축: 5분 브라우저 캐시, 10분 서버 캐시
+        // 캐시 시간 최소화: 10초 브라우저 캐시, 30초 서버 캐시
         // DB 업데이트 후 빠른 반영을 위해
-        'Cache-Control': 'public, max-age=300, s-maxage=600, stale-while-revalidate=60',
+        'Cache-Control': 'public, max-age=10, s-maxage=30, stale-while-revalidate=10',
       },
     })
   } catch (error) {
