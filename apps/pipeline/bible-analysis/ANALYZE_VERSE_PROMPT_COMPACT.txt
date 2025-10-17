@@ -1,0 +1,94 @@
+성경 구절 분석 → JSON 파일 생성. **확인 없이 즉시 실행!**
+
+## 단계
+1. Read: `source-data/NIV_Bible.json`에서 NIV 원문 읽기
+2. 분석 (창세기 1:2 기준):
+   - sentence_structures: 3-5개 (모든 문장/절)
+   - vocabulary: 7-10개 (히브리어/그리스어 원어 필수!)
+   - contextual_explanations: 300자+ (원어 분석 포함)
+   - korean_translations: 자연스러운 번역
+   - special_explanations: 2-3개
+3. Write: `analysis-json/[BookName]_[Chapter]_[Verse].json`
+
+## JSON 구조
+
+**NIV 원문 있을 때:**
+```json
+{
+  "verse_reference": "Genesis 1:1",
+  "niv_text": "...",
+  "testament": 1,
+  "sentence_structures": [{
+    "sequence_order": 1,
+    "semantic_classification": "선언적 진술",
+    "original_text": "...",
+    "korean_translation": "...",
+    "grammatical_explanation": "주어+동사+목적어..."
+  }],
+  "vocabulary": [{
+    "word": "beginning",
+    "ipa_pronunciation": "[bɪˈɡɪnɪŋ]",
+    "korean_pronunciation": "비기닝",
+    "part_of_speech": "명사",
+    "definition_korean": "시작 (히브리어 'בְּרֵאשִׁית'(bereshit)...)",
+    "usage_note": "...",
+    "frequency": 1
+  }],
+  "contextual_explanations": {
+    "integrated_explanation": "300자 이상...",
+    "cross_references": "John 1:1,..."
+  },
+  "korean_translations": {
+    "natural_translation": "...",
+    "translation_notes": "..."
+  },
+  "special_explanations": [{
+    "explanation_type": "히브리어 문법",
+    "content": "...",
+    "examples": ""
+  }]
+}
+```
+
+**NIV 원문 없을 때:**
+```json
+{
+  "verse_reference": "Romans 16:24",
+  "niv_text": "없음",
+  "testament": 2,
+  "sentence_structures": [],
+  "vocabulary": [],
+  "contextual_explanations": {
+    "integrated_explanation": "",
+    "cross_references": ""
+  },
+  "korean_translations": {
+    "natural_translation": "",
+    "translation_notes": ""
+  },
+  "special_explanations": []
+}
+```
+
+## 핵심 규칙
+- 파일명: 공백 제거 (`1Corinthians_13_1.json`)
+- testament: 구약=1, 신약=2
+- 원어 필수: 모든 단어에 히브리어/그리스어 포함
+- 품질: 90점 이상만 저장
+
+## 출력 (간단하게!)
+
+**NIV 원문 있을 때:**
+```
+✅ 완료: analysis-json/Romans_16_7.json
+📊 요약: 문장 2개, 단어 8개, 문맥 350자
+```
+
+**NIV 원문 없을 때:**
+```
+✅ 완료: analysis-json/Romans_16_24.json (없음)
+```
+
+**이것만 출력!** "분석의 핵심", "다음 단계" 등 추가 설명 금지! 완료 후 `/exit`
+
+분석 시작!

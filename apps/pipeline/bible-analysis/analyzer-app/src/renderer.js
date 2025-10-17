@@ -6,7 +6,7 @@ const crypto = require('crypto');
 // 경로 설정
 const BASE_DIR = path.join(__dirname, '..', '..');
 const ANALYSIS_JSON_DIR = path.join(BASE_DIR, 'analysis-json');
-const PROMPT_PATH = path.join(BASE_DIR, 'ANALYZE_VERSE_PROMPT.txt');
+const PROMPT_PATH = path.join(BASE_DIR, 'ANALYZE_VERSE_PROMPT_COMPACT.txt');
 
 // 실제 구절 수 데이터 (미리 추출된 경량 데이터)
 let verseCounts = null;
@@ -39,7 +39,36 @@ let progressUpdateInterval = null; // 진행도 업데이트 인터벌
 const BATCH_SIZE = 10; // 안정적인 동시 실행 수
 
 // 버전 정보
-const APP_VERSION = '1.0.4';
+const APP_VERSION = '1.0.5';
+
+// temp 파일 전체 정리
+function cleanupTempFiles() {
+  try {
+    const files = fs.readdirSync(BASE_DIR);
+    let cleanedCount = 0;
+
+    // .temp로 시작하는 모든 파일 삭제
+    files.forEach(file => {
+      if (file.startsWith('.temp') || file.startsWith('temp_') || file.startsWith('temp-')) {
+        const filePath = path.join(BASE_DIR, file);
+        try {
+          const stat = fs.statSync(filePath);
+          if (stat.isFile()) {
+            fs.unlinkSync(filePath);
+            cleanedCount++;
+            console.log(`🗑️  삭제: ${file}`);
+          }
+        } catch (err) {
+          console.warn(`파일 삭제 실패: ${file}`, err.message);
+        }
+      }
+    });
+
+    console.log(`✅ ${cleanedCount}개 temp 파일 정리됨`);
+  } catch (error) {
+    console.error('❌ temp 파일 정리 오류:', error);
+  }
+}
 
 // 초기화
 async function init() {
@@ -47,6 +76,10 @@ async function init() {
     // 버전 표시
     document.getElementById('versionBadge').textContent = `v${APP_VERSION}`;
     console.log(`📱 성경 분석 앱 v${APP_VERSION} 시작`);
+
+    // 시작 시 남아있는 temp 파일 정리
+    console.log('🧹 시작 시 temp 파일 정리 중...');
+    cleanupTempFiles();
 
     // 성경 구조 데이터 로드
     const structureData = fs.readFileSync(path.join(__dirname, 'bible-structure.json'), 'utf8');
@@ -66,6 +99,21 @@ async function init() {
 
     // 5초마다 진행도 업데이트 (인터벌 참조 저장)
     progressUpdateInterval = setInterval(updateProgress, 5000);
+
+    // 앱 종료 시 cleanup
+    window.addEventListener('beforeunload', () => {
+      console.log('앱 종료 - cleanup 시작');
+      cleanupTempFiles();
+
+      // 실행 중인 프로세스 모두 종료
+      for (const [reference, processInfo] of activeProcesses.entries()) {
+        try {
+          process.kill(-processInfo.process.pid, 'SIGKILL');
+        } catch (err) {
+          // 무시
+        }
+      }
+    });
 
     console.log('앱 초기화 완료');
   } catch (error) {
@@ -409,32 +457,18 @@ async function processBatches() {
     updateUI(verseIndex, verses.length, activeWorkers);
 
     try {
-      // 구절 분석
-      const result = await analyzeVerse(verse);
+      // 구절 분석 및 파일 생성 확인 (재시도 포함)
+      const result = await analyzeVerseWithFileCheck(verse);
 
       if (result.success) {
-        // 성공 - JSON 파일 생성 확인
-        const fileCreated = await waitForVerseCompletion(verse);
-
-        if (fileCreated) {
-          analysisController.completed.push(verse);
-          // 최근 완료 업데이트
-          updateRecentCompletions([verse]);
-        } else {
-          // 파일이 생성되지 않음 - 실패로 처리
-          failedVerses.push({
-            ...verse,
-            error: 'JSON 파일이 생성되지 않았습니다'
-          });
-          console.error(`💥 파일 생성 실패: ${verse.reference}`);
-        }
+        analysisController.completed.push(verse);
+        updateRecentCompletions([verse]);
       } else {
-        // 실패 처리 - failedVerses에 추가
         failedVerses.push({
           ...verse,
           error: result.error
         });
-        console.error(`💥 구절 실패 추가: ${verse.reference}`);
+        console.error(`💥 구절 최종 실패: ${verse.reference} - ${result.error}`);
       }
 
       // 진행도 새로고침
@@ -492,6 +526,49 @@ function updateUI(completedCount, totalCount, activeCount) {
   }
 }
 
+// 구절 분석 및 파일 생성 확인 (재시도 포함)
+async function analyzeVerseWithFileCheck(verse, attemptCount = 0) {
+  const maxAttempts = 3;
+
+  console.log(`📝 분석 시도 ${attemptCount + 1}/${maxAttempts}: ${verse.reference}`);
+
+  // 분석 실행
+  const result = await analyzeVerse(verse, attemptCount);
+
+  if (!result.success) {
+    // analyzeVerse 자체가 실패한 경우 (exit code != 0)
+    if (attemptCount < maxAttempts - 1) {
+      console.warn(`⚠️ 분석 실패 - 재시도: ${verse.reference}`);
+      await sleep(5000);
+      return await analyzeVerseWithFileCheck(verse, attemptCount + 1);
+    }
+    return { success: false, error: result.error };
+  }
+
+  // analyzeVerse가 성공했으면 파일 생성 확인
+  const fileCreated = await waitForVerseCompletion(verse);
+
+  if (fileCreated) {
+    console.log(`✅ 파일 생성 확인: ${verse.reference}`);
+    return { success: true };
+  }
+
+  // 파일이 생성되지 않음
+  console.warn(`⚠️ 파일 미생성: ${verse.reference}`);
+
+  if (attemptCount < maxAttempts - 1) {
+    console.log(`🔄 파일 미생성으로 재시도: ${verse.reference} (${attemptCount + 1}/${maxAttempts})`);
+    await sleep(5000); // 5초 대기
+    return await analyzeVerseWithFileCheck(verse, attemptCount + 1);
+  }
+
+  // 최대 재시도 횟수 초과
+  return {
+    success: false,
+    error: `JSON 파일이 생성되지 않았습니다 (${maxAttempts}회 시도 후)`
+  };
+}
+
 // 단일 구절 완료 대기
 async function waitForVerseCompletion(verse) {
   const maxWaitTime = 300 * 1000; // 최대 5분 (복잡한 구절 대응)
@@ -529,23 +606,32 @@ async function analyzeVerse(verse, retryCount = 0) {
     fs.writeFileSync(tempPromptPath, fullPrompt, 'utf8');
 
     // claude를 stdin으로 실행하되 도구를 명시적 허용
-    const process = spawn('bash', ['-c', `cat "${tempPromptPath}" | claude --allowedTools Write Read --print`], {
+    // detached: true로 프로세스 그룹 생성 (하위 프로세스도 함께 종료 가능)
+    // Haiku 4.5 모델 사용 (최신 버전, 비용 75% 절감)
+    const process = spawn('bash', ['-c', `cat "${tempPromptPath}" | claude --model haiku --allowedTools Write Read --print`], {
       cwd: BASE_DIR,
-      stdio: ['ignore', 'pipe', 'pipe']
+      stdio: ['ignore', 'pipe', 'pipe'],
+      detached: true  // 프로세스 그룹으로 실행
     });
 
     // 프로세스 추적 (정리용)
     activeProcesses.set(verse.reference, { process, tempFile: tempPromptPath });
 
-    // 출력 로깅
+    // 출력 로깅 (강화)
     let output = '';
+    let hasWriteTool = false;
     process.stdout.on('data', (data) => {
       const chunk = data.toString();
       output += chunk;
-      // 실제 출력 확인을 위한 로그 (처음 500자만)
-      if (output.length < 500) {
-        console.log(`📝 Claude 출력 (${verse.reference}): ${chunk.substring(0, 200)}...`);
+
+      // Write 도구 호출 확인
+      if (chunk.includes('Write') || chunk.includes('파일') || chunk.includes('json')) {
+        hasWriteTool = true;
+        console.log(`✍️ Write 도구 감지 (${verse.reference}):`, chunk.substring(0, 300));
       }
+
+      // 전체 출력 로깅 (500자 제한 제거)
+      console.log(`📝 Claude 출력 (${verse.reference}, ${output.length}자):`, chunk.substring(0, 500));
     });
 
     process.stderr.on('data', (data) => {
@@ -570,6 +656,8 @@ async function analyzeVerse(verse, retryCount = 0) {
 
       if (code === 0) {
         console.log(`✅ 완료: ${verse.reference}`);
+        console.log(`   📊 출력 길이: ${output.length}자`);
+        console.log(`   ${hasWriteTool ? '✍️ Write 도구 호출 감지됨' : '⚠️ Write 도구 호출 안 됨 - 파일 미생성 가능성'}`);
         resolve({ success: true, verse });
       } else {
         console.error(`❌ 실패: ${verse.reference} (exit code: ${code})`);
@@ -631,27 +719,39 @@ function updateRecentCompletions(batch) {
 function stopAnalysis() {
   if (!confirm('분석을 중단하시겠습니까?')) return;
 
+  console.log('🛑 분석 중단 시작...');
   isAnalyzing = false;
 
-  // 모든 실행 중인 프로세스 종료
+  // 1. 모든 실행 중인 프로세스 강제 종료
+  let killedCount = 0;
   for (const [reference, processInfo] of activeProcesses.entries()) {
-    console.log(`🛑 프로세스 종료: ${reference}`);
+    console.log(`🛑 프로세스 종료: ${reference} (PID: ${processInfo.process.pid})`);
     try {
-      processInfo.process.kill('SIGTERM');
-      fs.unlinkSync(processInfo.tempFile); // 임시 파일 삭제
+      // SIGKILL로 강제 종료 (bash와 하위 프로세스 모두)
+      process.kill(-processInfo.process.pid, 'SIGKILL');
+      killedCount++;
     } catch (err) {
-      console.error(`프로세스 종료 오류 (${reference}):`, err.message);
+      // 프로세스가 이미 종료되었을 수 있음
+      console.warn(`프로세스 종료 시도 (${reference}):`, err.message);
     }
   }
+  console.log(`✅ ${killedCount}개 프로세스 종료됨`);
+
+  // 2. 모든 temp 파일 정리
+  cleanupTempFiles();
+
+  // 3. activeProcesses 초기화
   activeProcesses.clear();
 
+  // 4. 컨트롤러 초기화
   analysisController = null;
 
+  // 5. UI 상태 복원
   document.getElementById('startBtn').disabled = false;
   document.getElementById('cancelBtn').style.display = 'none';
   document.getElementById('analysisPanel').style.display = 'none';
 
-  console.log('분석 중단됨');
+  console.log('✅ 분석 중단 완료');
 }
 
 // 분석 완료
@@ -662,12 +762,16 @@ function finishAnalysis() {
   for (const [reference, processInfo] of activeProcesses.entries()) {
     console.warn(`⚠️ 정리: 미완료 프로세스 ${reference}`);
     try {
-      fs.unlinkSync(processInfo.tempFile);
+      // 프로세스가 아직 살아있으면 종료
+      processInfo.process.kill('SIGTERM');
     } catch (err) {
-      // 무시
+      // 이미 종료되었을 수 있음
     }
   }
   activeProcesses.clear();
+
+  // 모든 temp 파일 정리
+  cleanupTempFiles();
 
   document.getElementById('startBtn').disabled = false;
   document.getElementById('cancelBtn').style.display = 'none';
