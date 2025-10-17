@@ -8,7 +8,7 @@
    - contextual_explanations: 300자+ (원어 분석 포함)
    - korean_translations: 자연스러운 번역
    - special_explanations: 2-3개
-3. Write: `analysis-json/[BookName]_[Chapter]_[Verse].json`
+3. Write: `bible-analysis/analysis-json/[BookName]_[Chapter]_[Verse].json`
 
 ## JSON 구조
 
@@ -80,13 +80,13 @@
 
 **NIV 원문 있을 때:**
 ```
-✅ 완료: analysis-json/Romans_16_7.json
+✅ 완료: bible-analysis/analysis-json/Romans_16_7.json
 📊 요약: 문장 2개, 단어 8개, 문맥 350자
 ```
 
 **NIV 원문 없을 때:**
 ```
-✅ 완료: analysis-json/Romans_16_24.json (없음)
+✅ 완료: bible-analysis/analysis-json/Romans_16_24.json (없음)
 ```
 
 **이것만 출력!** "분석의 핵심", "다음 단계" 등 추가 설명 금지! 완료 후 `/exit`

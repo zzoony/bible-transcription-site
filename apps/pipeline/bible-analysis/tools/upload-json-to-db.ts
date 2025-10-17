@@ -473,7 +473,12 @@ async function main() {
   // 순차 업로드
   const results: Array<{ success: boolean; reference: string }> = [];
 
-  for (const jsonFile of jsonFiles) {
+  for (let i = 0; i < jsonFiles.length; i++) {
+    const jsonFile = jsonFiles[i];
+    const progress = ((i + 1) / jsonFiles.length * 100).toFixed(1);
+
+    console.log(`\n⏳ 진행: (${i + 1}/${jsonFiles.length}) ${progress}% - ${path.basename(jsonFile)}`);
+
     const result = await uploadAnalysisToDb(jsonFile);
     results.push(result);
 

@@ -3,10 +3,10 @@ const path = require('path');
 const { spawn } = require('child_process');
 const crypto = require('crypto');
 
-// 경로 설정
-const BASE_DIR = path.join(__dirname, '..', '..');
-const ANALYSIS_JSON_DIR = path.join(BASE_DIR, 'analysis-json');
-const PROMPT_PATH = path.join(BASE_DIR, 'ANALYZE_VERSE_PROMPT_COMPACT.txt');
+// 경로 설정 (pipeline 디렉토리 기준)
+const BASE_DIR = path.join(__dirname, '..', '..', '..'); // pipeline 디렉토리
+const ANALYSIS_JSON_DIR = path.join(BASE_DIR, 'bible-analysis', 'analysis-json');
+const PROMPT_PATH = path.join(BASE_DIR, 'bible-analysis', 'ANALYZE_VERSE_PROMPT_COMPACT.txt');
 
 // 실제 구절 수 데이터 (미리 추출된 경량 데이터)
 let verseCounts = null;
@@ -36,10 +36,10 @@ let activeProcesses = new Map(); // 실행 중인 프로세스 추적
 let progressUpdateInterval = null; // 진행도 업데이트 인터벌
 
 // 배치 크기 설정 (안정성 우선)
-const BATCH_SIZE = 10; // 안정적인 동시 실행 수
+const BATCH_SIZE = 15; // 동시 실행 수 (Haiku 모델 사용으로 증가)
 
 // 버전 정보
-const APP_VERSION = '1.0.5';
+const APP_VERSION = '1.0.7';
 
 // temp 파일 전체 정리
 function cleanupTempFiles() {
@@ -526,22 +526,15 @@ function updateUI(completedCount, totalCount, activeCount) {
   }
 }
 
-// 구절 분석 및 파일 생성 확인 (재시도 포함)
-async function analyzeVerseWithFileCheck(verse, attemptCount = 0) {
-  const maxAttempts = 3;
-
-  console.log(`📝 분석 시도 ${attemptCount + 1}/${maxAttempts}: ${verse.reference}`);
+// 구절 분석 및 파일 생성 확인 (재시도 없음)
+async function analyzeVerseWithFileCheck(verse) {
+  console.log(`📝 분석 시작: ${verse.reference}`);
 
   // 분석 실행
-  const result = await analyzeVerse(verse, attemptCount);
+  const result = await analyzeVerse(verse);
 
   if (!result.success) {
     // analyzeVerse 자체가 실패한 경우 (exit code != 0)
-    if (attemptCount < maxAttempts - 1) {
-      console.warn(`⚠️ 분석 실패 - 재시도: ${verse.reference}`);
-      await sleep(5000);
-      return await analyzeVerseWithFileCheck(verse, attemptCount + 1);
-    }
     return { success: false, error: result.error };
   }
 
@@ -555,17 +548,9 @@ async function analyzeVerseWithFileCheck(verse, attemptCount = 0) {
 
   // 파일이 생성되지 않음
   console.warn(`⚠️ 파일 미생성: ${verse.reference}`);
-
-  if (attemptCount < maxAttempts - 1) {
-    console.log(`🔄 파일 미생성으로 재시도: ${verse.reference} (${attemptCount + 1}/${maxAttempts})`);
-    await sleep(5000); // 5초 대기
-    return await analyzeVerseWithFileCheck(verse, attemptCount + 1);
-  }
-
-  // 최대 재시도 횟수 초과
   return {
     success: false,
-    error: `JSON 파일이 생성되지 않았습니다 (${maxAttempts}회 시도 후)`
+    error: 'JSON 파일이 생성되지 않았습니다'
   };
 }
 
@@ -591,13 +576,12 @@ async function waitForVerseCompletion(verse) {
   return false;
 }
 
-// 단일 구절 분석 (재시도 포함)
-async function analyzeVerse(verse, retryCount = 0) {
-  const maxRetries = 3;
+// 단일 구절 분석 (재시도 없음)
+async function analyzeVerse(verse) {
   const promptContent = fs.readFileSync(PROMPT_PATH, 'utf8');
 
-  return new Promise((resolve, reject) => {
-    console.log(`🚀 분석 시작: ${verse.reference}${retryCount > 0 ? ` (재시도 ${retryCount}/${maxRetries})` : ''}`);
+  return new Promise((resolve) => {
+    console.log(`🚀 분석 시작: ${verse.reference}`);
 
     // 각 구절마다 고유한 임시 파일 생성 (경쟁 조건 방지)
     const tempId = crypto.randomBytes(8).toString('hex');
@@ -628,10 +612,10 @@ async function analyzeVerse(verse, retryCount = 0) {
       if (chunk.includes('Write') || chunk.includes('파일') || chunk.includes('json')) {
         hasWriteTool = true;
         console.log(`✍️ Write 도구 감지 (${verse.reference}):`, chunk.substring(0, 300));
+      } else {
+        // Write 도구가 아닌 경우만 전체 출력 로깅
+        console.log(`📝 Claude 출력 (${verse.reference}, ${output.length}자):`, chunk.substring(0, 500));
       }
-
-      // 전체 출력 로깅 (500자 제한 제거)
-      console.log(`📝 Claude 출력 (${verse.reference}, ${output.length}자):`, chunk.substring(0, 500));
     });
 
     process.stderr.on('data', (data) => {
@@ -642,7 +626,7 @@ async function analyzeVerse(verse, retryCount = 0) {
       }
     });
 
-    process.on('close', async (code) => {
+    process.on('close', (code) => {
       // 프로세스 정리
       const processInfo = activeProcesses.get(verse.reference);
       if (processInfo) {
@@ -661,43 +645,13 @@ async function analyzeVerse(verse, retryCount = 0) {
         resolve({ success: true, verse });
       } else {
         console.error(`❌ 실패: ${verse.reference} (exit code: ${code})`);
-
-        // 재시도
-        if (retryCount < maxRetries) {
-          console.log(`🔄 재시도 중... ${verse.reference} (${retryCount + 1}/${maxRetries})`);
-          await sleep(5000); // 5초 대기 후 재시도
-
-          try {
-            const result = await analyzeVerse(verse, retryCount + 1);
-            resolve(result);
-          } catch (err) {
-            reject(err);
-          }
-        } else {
-          // 최대 재시도 횟수 초과
-          console.error(`💥 최종 실패: ${verse.reference} (${maxRetries}회 재시도 후)`);
-          resolve({ success: false, verse, error: `Exit code: ${code}` });
-        }
+        resolve({ success: false, verse, error: `Exit code: ${code}` });
       }
     });
 
-    process.on('error', async (err) => {
+    process.on('error', (err) => {
       console.error(`❌ 오류: ${verse.reference}`, err);
-
-      // 재시도
-      if (retryCount < maxRetries) {
-        console.log(`🔄 재시도 중... ${verse.reference} (${retryCount + 1}/${maxRetries})`);
-        await sleep(5000);
-
-        try {
-          const result = await analyzeVerse(verse, retryCount + 1);
-          resolve(result);
-        } catch (error) {
-          reject(error);
-        }
-      } else {
-        resolve({ success: false, verse, error: err.message });
-      }
+      resolve({ success: false, verse, error: err.message });
     });
   });
 }
